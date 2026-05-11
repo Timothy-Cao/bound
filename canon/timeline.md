@@ -47,8 +47,10 @@
 - **2073**: Public screens, audio systems, advertising, scent release, synthetic media become heavily regulated.
 - **2074**: **Exposure Classification system** (Clean / Marked / Twice-Marked / Sealed / Bound) becomes standard public-health framework.
 - **2075**: **Cognitive Dilution Protocols** enter clinical practice — deliberate impairment of memory consolidation to prevent binding in Sealed patients.
-- **2076**: Folk dilution culture takes hold among the poor: stink dens, pattern bars, drinking culture resurgence as casual prophylaxis.
-- **2078**: "Memotoxin" becomes the standard public term.
+- **2076**: Folk dilution culture takes hold among the poor: stink dens, pattern bars, drinking culture resurgence as casual prophylaxis. **Latent Component Inheritance (LCI)** formally identified after researchers reanalyze the Black Bloom victim pool and confirm that some bindings exploited common pre-existing scent exposures.
+- **2078**: "Memotoxin" becomes the standard public term. Cognitive Exposure Passports and Sensory Air-Gap Architecture deployed (Generations 9–10 of the defensive arms race; see [arms-race.md](arms-race.md)).
+- **2079**: **Westmarket attack** — first publicly-confirmed LCI exploit. Attacker deploys one new visual component via hijacked digital advertising; the other two components are a perfume marketed since 2058 and the chorus structure of a popular 2071 song. ~14,000 deaths over six months. Cognitive Exposure Passports become politically mandatory in several jurisdictions. Anti-recall therapy enters experimental use.
+- **2079**: **Verrick Estate incident** — three deaths inside a maximum-air-gap private residence. First public proof that supply-chain attacks penetrate top-tier sensory defense.
 
 ## Phase 6 — Story present (2080)
 

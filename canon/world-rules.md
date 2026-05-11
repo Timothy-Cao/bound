@@ -38,6 +38,9 @@ Risk depends on age, neurology, attention, memory fidelity, sleep quality, prior
 ### R10. Society survives because death is hard.
 The three-component requirement is the load-bearing constraint that keeps civilization functioning. Erode it and the world unravels. The 2080 story era is set right at the leading edge of that erosion — two-component memotoxins are emerging in classified contexts. Single-component is not yet possible.
 
+### R11. Latent Component Inheritance (LCI).
+A memotoxin's three components do not need to be deployed by the same attacker or produced in the same era. Any sensory pattern encoded in a brain by past exposure remains available indefinitely as a candidate component for a future memotoxin. Old songs, common scents, childhood images can be retroactively weaponized by an attacker who synthesizes the matching components. Formally identified after 2076; first publicly-confirmed exploit was the 2079 Westmarket attack. See [research-frontiers.md](research-frontiers.md) for detail. Asymmetric: defenders can shape future exposure but cannot reach into past brains.
+
 ## Exposure classification (canonical)
 
 Public health uses five classes:

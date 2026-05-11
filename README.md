@@ -4,8 +4,8 @@ Working repo for an as-yet-untitled novel about a society that bans AI, then re-
 
 ## How this repo works
 
-- **`canon/`** — established facts. If it's here, it's true. Anything new must be checked against canon for consistency before being written elsewhere.
-- **`world/`** — texture, color, social detail. Flexible; can evolve.
+- **`canon/`** — established facts. If it's here, it's true. Anything new must be checked against canon for consistency before being written elsewhere. Current canon files: `premise.md`, `timeline.md`, `world-rules.md` (R1–R11), `glossary.md`, `research-frontiers.md` (research methodology + LCI + horizon threats), `arms-race.md` (11 generations of defense vs. attack).
+- **`world/`** — texture, color, social detail. Flexible; can evolve. Includes `actors-and-motives.md` (state actors, corporates, terrorist groups, illegitimate research).
 - **`characters/`** — character bibles. Empty for now.
 - **`plot/`** — scene seeds, arcs, structure.
 - **`brainstorm/`** — dated working notes, raw idea dumps, half-formed thoughts. Nothing here is canon until promoted.

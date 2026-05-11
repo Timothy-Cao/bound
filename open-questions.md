@@ -67,6 +67,22 @@ We mentioned them. We don't know their texture. Probably worth one developed cul
 ### Q10. The contaminated censor AI problem — how often, how managed?
 Currently in canon (R8) but unexplored. A contaminated censor AI is a hell of a plot device. Worth thinking through whether this happens once a decade or once a month.
 
+### Q10a. Which terrorist group is the antagonist (if any)?
+Four named groups are in canon ([actors-and-motives.md](world/actors-and-motives.md)). Each implies a different story:
+
+- **Quietists** — the most literary. Anti-natalist nihilists targeting the cognitively sharp. Quiet, articulate antagonists. Story would be psychological / philosophical.
+- **Vellum** — the most cinematic. Cult-terrorist hybrid with theological coherence. Their attacks are ritual; their members are martyrs. Story would lean toward horror.
+- **Aperture** — the most plot-rich. Anti-Ban accelerationists with suspected SSDO backing. Conspiracy thriller territory.
+- **Restorers** — the most political. Pro-Ban hardliners using crude weapons. Story would be procedural / political.
+
+**My lean**: Aperture as the visible antagonist with the Vellum (and SSDO penetration) as the deeper layer. Maximum genre flexibility.
+
+### Q10b. The page-of-text gimmick — when, who, how?
+If we use it: one time, late in the book, on a character we care about, with the entire blacked-out spread as the climax of an idea that's been building. Worth deciding now whether we're aiming at it as a destination — the book's structure will need to point toward it from very early on.
+
+### Q10c. The scent-chemist as plot anchor.
+The ~12 chemists worldwide capable of producing binding-grade scent components are the single biggest bottleneck in offensive memotoxin work. Hunting one, being one, defecting from being one — any of these is a strong protagonist hook. Worth considering whether one of them is our POV character or a key NPC.
+
 ## Worldbuilding gaps
 
 ### Q11. Economy beyond the Ban bureaucracy.
