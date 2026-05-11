@@ -41,6 +41,9 @@ The three-component requirement is the load-bearing constraint that keeps civili
 ### R11. Latent Component Inheritance (LCI).
 A memotoxin's three components do not need to be deployed by the same attacker or produced in the same era. Any sensory pattern encoded in a brain by past exposure remains available indefinitely as a candidate component for a future memotoxin. Old songs, common scents, childhood images can be retroactively weaponized by an attacker who synthesizes the matching components. Formally identified after 2076; first publicly-confirmed exploit was the 2079 Westmarket attack. See [research-frontiers.md](research-frontiers.md) for detail. Asymmetric: defenders can shape future exposure but cannot reach into past brains.
 
+### R12. Disclosure Cost.
+Any widely-known defense becomes attackable. Defense effectiveness inversely correlates with public disclosure. The dual of R6: where R6 says countermeasures catch only known *patterns*, R12 says attackers neutralize known *techniques*. Communities with effective defenses hoard them. Public-facing defenses are decoy, obsolete, or actively-being-countered. The best defenses are inherited (family/community), classified (state), or tribal (religious/ethnic). The middle class — which relies on publicly-disclosed defense — is most exposed. See [community-defense.md](../world/community-defense.md) for texture.
+
 ## Exposure classification (canonical)
 
 Public health uses five classes:
