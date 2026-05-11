@@ -20,15 +20,14 @@ Working repo for an as-yet-untitled novel about a society that bans AI, then re-
 
 ## Current status
 
-- Worldbuilding: substantial first pass complete.
-- Characters: none yet.
-- Plot: scene seeds only; no arc, no protagonist.
-- Story era: 2080.
+- **Worldbuilding**: substantial. 12 rules in canon, full timeline through 2080, arms race generations, named actors, cascading effects mapped.
+- **Plot direction**: agreed. See [`plot/the-book.md`](plot/the-book.md). Three POVs (chemist, nurse, teenager). Three-act structure. Page-of-text climax committed for late Act 2. Architects framing committed.
+- **Theme**: humanity underestimates the compassion of humanity because of the malice and ignorance of the few who came before. Game-theoretic tragedy, not cynicism.
+- **Characters**: none drafted yet.
+- **Story era**: 2080.
 
-## Big open questions
+## ▶ Resume here
 
-See [`open-questions.md`](open-questions.md). Top three right now:
+The conversation paused with three structural decisions on the table and character work as the next phase. See [`open-questions.md`](open-questions.md) — the section marked **▶ RESUME HERE** lists the immediate decisions (archival frame yes/no, chemist self-deception as spine, memory-corruption canon update) and the character/scene work that follows.
 
-1. Who is the protagonist and what's the central conflict?
-2. How widely understood is the cognitive-dilution defense by 2080 — folk wisdom, official policy, or contested?
-3. What does the state actually do with Bound witnesses to classified attacks?
+When resuming, the right opening is: "I'm ready to continue from the resume point in open-questions.md. Walk me through R1." — or pick whichever pending question to start with.

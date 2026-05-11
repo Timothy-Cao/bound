@@ -2,6 +2,71 @@
 
 Tensions and decisions we have flagged but not yet resolved. Each item has a short framing and, where possible, my current lean. Edit freely.
 
+---
+
+## ▶ RESUME HERE — pending decisions from the brainstorming session
+
+These are the live questions paused at the end of the last working session. When resuming, work through these in order. The plot direction is captured in [`plot/the-book.md`](plot/the-book.md).
+
+### R1. The archival-reconstruction frame — yes or no?
+The most consequential pending decision. Should the book be framed as a posthumous reconstruction, with chapters interleaved with redacted documents, transcripts, biometric logs, declassified memos? Light touch (occasional fragments) or heavy (every chapter integrated with archival material)?
+
+**My lean**: yes, light touch. Most chapters are normal limited third; intermittent archival fragments break up the flow and increase in density toward the climax. Models: the dossier sections in *World War Z*, the redacted documents in *The Power* — not full *House of Leaves*.
+
+**If yes**: the page-of-text climax becomes structurally inevitable. The reconstructor is the implicit narrator and an interesting late-book question (who is reconstructing, why?).
+
+**If no**: the page-of-text climax still works but lands more as a stylistic intervention than a structural payoff. Fine, just different.
+
+### R2. Is the chemist's self-deception the book's spine?
+The chemist investigating her own role in the contract she "refused" could be the central mystery, with the broader memotoxin plot wrapped around it. Her death at the page-of-text climax becomes the moment she and the reader simultaneously realize what she did.
+
+**My lean**: yes. It's the strongest single arc available and aligns the unreliable-narration theme with the protagonist closest to the architects' world.
+
+### R3. Memory-corruption canon update.
+Currently R3 says vague memory doesn't bind. The *reverse* — that binding (and near-binding) corrupts retrospective memory — is implicit but not stated. If we're committing to memory-as-unreliable-narrator at the mechanism level, this needs to be explicit in canon. Quick update to `world-rules.md`.
+
+**My lean**: yes, do it. Low cost, high payoff for the unreliable-narration work.
+
+---
+
+## After R1–R3, the next round of work
+
+Once the structural decisions are made, the next work session should cover:
+
+### Characters
+- Names, backgrounds, voices for the chemist, the nurse, the teenager.
+- Their immediate social worlds (families, colleagues, friends).
+- Their pre-book histories — what got them to the moment Act 1 begins.
+- Secondary characters: the chemist's investigator-collaborator (if any); the nurse's clinic colleagues; the teenager's family and peers.
+- Antagonist development: at least one named architect (alive or recently deceased), at least one named Aperture or Vellum figure, the SSDO press secretary or equivalent state face.
+
+### Scene-level plotting
+- Opening scene candidates for each POV.
+- The triggering incidents in concrete form (what the chemist's refused contract actually was; what specifically killed the nurse's patient; the teenager's first dream).
+- The Act 2 convergence: how the threads actually connect.
+- The page-of-text climax: what document, found how, with what setup.
+- The Act 3 endpoint: what the public reveal is, what the deeper reveal is, what each surviving protagonist decides.
+
+### Worldbuilding gaps that the plot will demand
+- A specific 2079 or 2080 incident the story leans on (use Westmarket and Verrick or invent new).
+- The chemist's professional world: who the other ~11 chemists are, where she works, who her clients have been.
+- The clinic the nurse works at: name, history, patient population.
+- The teenager's neighborhood, family, school.
+
+### Voice and prose decisions
+- Tense (past or present?).
+- Register (literary or lean?).
+- Sentence rhythm sample — a paragraph in each POV's voice to calibrate.
+
+---
+
+## Earlier open questions (still relevant background)
+
+Below are the longer-standing questions from before the most recent session. Some have been partially answered by the plot direction in `plot/the-book.md`; left here for reference.
+
+---
+
+
 ## Story-shape questions
 
 ### Q1. Who is the protagonist?
