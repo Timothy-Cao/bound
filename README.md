@@ -1,6 +1,8 @@
 # Story Board — Infohazard / Memotoxin Project
 
-Working repo for an as-yet-untitled **linked short story collection** (~120 pages, ~20 stories of 3–8 pages each) about a society that bans AI, then re-opens it for medicine, then discovers perception itself can be weaponized.
+Working repo for an as-yet-untitled **interactive web archive** ("web book") — ~10–12 short stories presented as a recovered classified archive, with AI-generated audio and visual artifacts (censored, in-world). Hobby project, sharable URL, friends-facing, not for publication.
+
+The story material is about a society that bans AI, then re-opens it for medicine, then discovers perception itself can be weaponized. The web format lets the archival reconstruction frame become literal — case files as designed objects, recovered audio, partially-censored visuals, and a page-of-text climax that the browser actually refuses to display.
 
 ## How this repo works
 
@@ -20,26 +22,32 @@ Working repo for an as-yet-untitled **linked short story collection** (~120 page
 
 ## Current status
 
-- **Form**: linked short story collection (mosaic novel). ~20 stories, 3–8 pages each, ~120 pages total. Five chronological parts spanning 2030s–2080s. Final story set in the 2090s framing the rest.
-- **Frame**: archival reconstruction. An unnamed reconstructor has assembled these stories from recovered case files, leaked memos, diaries, transcripts, and personal correspondence. The reconstructor surfaces as a character in the final story.
-- **Worldbuilding**: substantial. 12 rules in canon, full timeline through 2080, arms race generations, named actors, cascading effects mapped.
-- **Plot direction**: see [`plot/the-collection.md`](plot/the-collection.md) for working table of contents, story-opening framings, and recurring elements.
-- **Theme**: humanity underestimates the compassion of humanity because of the malice and ignorance of the few who came before. Game-theoretic tragedy delivered through accumulation, not single-arc cynicism.
-- **Characters**: none drafted yet. Anchor character Marina (scent chemist) appears in three late stories. K. Olesen (architect) brackets the historical argument.
-- **Story era**: 2080 for most contemporary stories; full span 2030s–2090s across the collection.
+- **Form**: interactive web archive. ~10–12 stories, AI-generated audio and visual artifacts (censored in-world), browser-as-archive aesthetic. Sharable URL. Hobby scope.
+- **Frame**: archival reconstruction. Stories presented as material assembled by an unnamed reconstructor from recovered case files, leaked memos, diaries, transcripts, personal correspondence. Headers vary by source type. The reconstructor surfaces as a character in the final story.
+- **Worldbuilding**: substantial. 12 rules in canon, full timeline through 2080, arms race generations, named actors, cascading effects mapped. Most won't appear in stories directly; it's substrate.
+- **Plot direction**: see [`plot/web-book-plan.md`](plot/web-book-plan.md) for the working format. [`plot/the-collection.md`](plot/the-collection.md) has the table of contents and recurring elements; the web plan adapts it for the medium.
+- **Theme**: humanity underestimates the compassion of humanity because of the malice and ignorance of the few who came before. Game-theoretic tragedy delivered through accumulation across many stories.
+- **Characters**: none drafted yet. Anchor: Marina (scent chemist, three late stories). K. Olesen (architect) brackets the historical argument. Other recurring figures: A. Ranjit, L. Han, A. Vance.
+- **Story era**: 2030s–2090s across the collection.
 
-## Earlier direction (superseded)
+## Earlier directions (superseded)
 
-The project began as a single-POV novella before becoming a linked collection. See [`plot/the-book.md`](plot/the-book.md) for the older direction. Most thematic, character, and mechanism material from the novella version remains relevant; only the form changed.
+The project moved through several forms before landing on the web archive: single-POV novella → linked story collection → web archive. The earlier plans are kept for reference and most of their thematic material still applies — only the medium changed.
+
+- [`plot/the-book.md`](plot/the-book.md) — single-POV novella version (superseded)
+- [`plot/the-collection.md`](plot/the-collection.md) — linked collection version (superseded by the web plan, but its table of contents and headers carry forward)
+- [`plot/web-book-plan.md`](plot/web-book-plan.md) — **current**
 
 ## ▶ Resume here
 
-Three structural decisions are open. See [`open-questions.md`](open-questions.md) — the section marked **▶ RESUME HERE**. They are:
+Format committed: web archive. The path forward is in [`plot/web-book-plan.md`](plot/web-book-plan.md). Next steps when you return:
 
-1. **Archival-reconstruction frame** — now committed in the collection format. Just need to confirm.
-2. **Marina's self-deception as the thread through her late stories** — yes/no.
-3. **Memory-corruption canon update** (R3a) — yes/no, low cost.
+1. **Name Marina, K. Olesen, and 2–3 other recurring figures.** Quick session.
+2. **Confirm R3a memory-corruption canon update** (low cost, draft text in `open-questions.md`).
+3. **Draft "Marina's Refusal"** as the first piece of prose. No assets yet. Just the story. ~7 pages. This is the voice test.
+4. **If the voice works**: draft two more stories (probably First Cardiac Event and Black Bloom — different era and tone) to test range.
+5. **Build minimum-viable site** with three stories. Static, plain, designed once.
+6. **Generate first audio asset** (Marina's voicemail).
+7. **Share with one friend.** Their reaction guides everything next.
 
-Next phase after these: name Marina, name K. Olesen and 1–2 other recurring figures, then draft "Marina's Refusal" as the first standalone test of voice and form.
-
-When resuming, the right opening is: "I'm ready to continue. Walk me through the open questions, then let's start drafting Marina's Refusal."
+When resuming, the right opening is: *"Let's name the recurring characters and then start drafting Marina's Refusal."*
