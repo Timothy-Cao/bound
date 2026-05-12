@@ -1,0 +1,26 @@
+---
+interface Props {
+  text?: string;
+}
+const { text } = Astro.props;
+---
+
+{text && (
+  <>
+    <header class="mono-block text-faint mb-0">
+      <pre class="whitespace-pre-wrap font-[inherit] m-0">{text.trim()}</pre>
+    </header>
+    <hr class="thin-rule" />
+  </>
+)}
+
+<style>
+  .text-faint {
+    color: var(--color-faint);
+  }
+  @media (prefers-color-scheme: dark) {
+    .text-faint {
+      color: var(--color-faint-dark);
+    }
+  }
+</style>

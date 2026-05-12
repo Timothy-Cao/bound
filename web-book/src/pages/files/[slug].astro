@@ -1,0 +1,19 @@
+---
+import { getCollection, render } from 'astro:content';
+import Story from '../../layouts/Story.astro';
+
+export async function getStaticPaths() {
+  const files = await getCollection('files');
+  return files.map((file) => ({
+    params: { slug: file.id },
+    props: { file },
+  }));
+}
+
+const { file } = Astro.props;
+const { Content } = await render(file);
+---
+
+<Story file={file}>
+  <Content />
+</Story>

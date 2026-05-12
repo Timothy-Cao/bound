@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+@import "@fontsource/ibm-plex-serif/400.css";
+@import "@fontsource/ibm-plex-serif/500.css";
+@import "@fontsource/ibm-plex-serif/400-italic.css";
+
+@theme {
+  /* light-mode palette */
+  --color-cream: #f5f1e8;
+  --color-ink: #1a1a1a;
+  --color-faint: #6b6b6b;
+  --color-rule: #d8d2c2;
+  --color-redaction: #000000;
+  --color-classified: #8a1d1d;
+  --color-link: #2d3a5e;
+
+  /* dark-mode palette */
+  --color-cream-dark: #0e0d0b;
+  --color-ink-dark: #e8e2d3;
+  --color-faint-dark: #8a8475;
+  --color-rule-dark: #2a2622;
+  --color-classified-dark: #c44545;
+  --color-link-dark: #8aa3d8;
+
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-serif: 'IBM Plex Serif', ui-serif, Georgia, 'Times New Roman', serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* base */
+html {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--color-cream-dark);
+    color: var(--color-ink-dark);
+  }
+}
+
+/* selection */
+::selection {
+  background-color: var(--color-ink);
+  color: var(--color-cream);
+}
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background-color: var(--color-ink-dark);
+    color: var(--color-cream-dark);
+  }
+}
+
+/* links */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: opacity 150ms ease;
+}
+
+a:hover {
+  opacity: 0.65;
+}
+
+/* focus */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+/* utility classes used across components */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* monospace block — for archival headers, file listings, captions */
+.mono-block {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+/* prose column */
+.prose-column {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  max-width: 40rem;
+}
+
+@media (min-width: 768px) {
+  .prose-column {
+    font-size: 1.125rem;
+  }
+}
+
+.prose-column p {
+  margin-bottom: 1.25em;
+}
+
+.prose-column p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-column em {
+  font-style: italic;
+}
+
+.prose-column blockquote {
+  margin-left: 1.5em;
+  font-style: italic;
+  color: var(--color-faint);
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-column blockquote {
+    color: var(--color-faint-dark);
+  }
+}
+
+/* horizontal rule used to separate header from prose */
+.thin-rule {
+  border: 0;
+  border-top: 1px solid var(--color-rule);
+  width: 6rem;
+  margin: 2rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .thin-rule {
+    border-top-color: var(--color-rule-dark);
+  }
+}
+
+/* containment notice styling */
+.containment-box {
+  border: 1px solid var(--color-classified);
+  padding: 1.75rem 2rem;
+  color: var(--color-classified);
+  font-family: var(--font-mono);
+  line-height: 1.7;
+  margin: 2rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .containment-box {
+    border-color: var(--color-classified-dark);
+    color: var(--color-classified-dark);
+  }
+}
+
+/* redaction bar — visual element for use in stories */
+.redaction {
+  display: inline-block;
+  background-color: var(--color-redaction);
+  color: transparent;
+  user-select: none;
+  padding: 0 0.15em;
+  border-radius: 1px;
+}
+
+/* figure block */
+.figure-frame {
+  border: 1px solid var(--color-rule);
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 32rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .figure-frame {
+    border-color: var(--color-rule-dark);
+  }
+}
+
+.figure-caption {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-faint);
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .figure-caption {
+    color: var(--color-faint-dark);
+  }
+}
+
+/* audio inline */
+.audio-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  border-left: 2px solid var(--color-rule);
+  padding-left: 0.75rem;
+  margin: 1.5rem 0;
+  color: var(--color-faint);
+}
+
+@media (prefers-color-scheme: dark) {
+  .audio-row {
+    border-left-color: var(--color-rule-dark);
+    color: var(--color-faint-dark);
+  }
+}
+
+.audio-row button {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.audio-row button:hover {
+  background-color: currentColor;
+  color: var(--color-cream);
+}
+
+@media (prefers-color-scheme: dark) {
+  .audio-row button:hover {
+    color: var(--color-cream-dark);
+  }
+}

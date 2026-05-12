@@ -1,0 +1,80 @@
+---
+interface Props {
+  components?: Array<'image' | 'sound' | 'scent'>;
+  binds?: boolean;
+}
+const { components = [], binds = false } = Astro.props;
+---
+
+<div class="passport-footer mono-block">
+  <span id="passport-display">EXPOSURE CLASS: 0 &mdash; CLEAN</span>
+</div>
+
+<style>
+  .passport-footer {
+    margin-top: 3rem;
+    text-align: right;
+    color: var(--color-faint);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .passport-footer {
+      color: var(--color-faint-dark);
+    }
+  }
+</style>
+
+<script is:inline define:vars={{ components, binds }}>
+  (function () {
+    const KEY = 'archive_passport_v1';
+    const initial = { image: false, sound: false, scent: false, bound: false };
+
+    function load() {
+      try {
+        const raw = localStorage.getItem(KEY);
+        if (!raw) return { ...initial };
+        const parsed = JSON.parse(raw);
+        return { ...initial, ...parsed };
+      } catch (_e) {
+        return { ...initial };
+      }
+    }
+
+    function save(state) {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(state));
+      } catch (_e) {
+        /* ignore */
+      }
+    }
+
+    function computeClass(state) {
+      if (state.bound) return { num: 4, name: 'BOUND' };
+      const count = ['image', 'sound', 'scent'].filter(function (k) { return state[k]; }).length;
+      if (count === 0) return { num: 0, name: 'CLEAN' };
+      if (count === 1) return { num: 1, name: 'MARKED' };
+      if (count === 2) return { num: 2, name: 'TWICE-MARKED' };
+      return { num: 3, name: 'SEALED' };
+    }
+
+    const state = load();
+    if (Array.isArray(components)) {
+      for (const c of components) {
+        if (c === 'image' || c === 'sound' || c === 'scent') {
+          state[c] = true;
+        }
+      }
+    }
+    if (binds) {
+      state.bound = true;
+    }
+    save(state);
+
+    const cls = computeClass(state);
+    const display = document.getElementById('passport-display');
+    if (display) {
+      display.textContent = 'EXPOSURE CLASS: ' + cls.num + ' — ' + cls.name;
+    }
+  })();
+</script>

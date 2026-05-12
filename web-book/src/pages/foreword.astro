@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PassportFooter from '../components/PassportFooter.astro';
+---
+
+<BaseLayout title="Reconstructor's Foreword">
+  <div class="story-header">
+    <a href="/" class="back-link mono-block">← INDEX</a>
+  </div>
+
+  <article class="prose-column">
+    <p><em>To be written.</em></p>
+
+    <p>
+      A brief note, no more than two or three paragraphs, in the
+      reconstructor's voice. It introduces the archive without explaining
+      it. It does not name the reconstructor. It does not say which
+      government, which decade after, which institution allowed (or refused)
+      access. It is professional and short.
+    </p>
+
+    <p>
+      The reader should finish it slightly unsure what kind of document
+      they are about to read, and slightly more willing to find out.
+    </p>
+  </article>
+
+  <PassportFooter />
+</BaseLayout>
+
+<style>
+  .story-header {
+    margin-bottom: 2.5rem;
+  }
+  .back-link {
+    color: var(--color-faint);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  @media (prefers-color-scheme: dark) {
+    .back-link {
+      color: var(--color-faint-dark);
+    }
+  }
+</style>

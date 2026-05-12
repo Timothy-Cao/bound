@@ -1,0 +1,62 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import ArchivalHeader from '../components/ArchivalHeader.astro';
+import FileFooter from '../components/FileFooter.astro';
+import PassportFooter from '../components/PassportFooter.astro';
+import ContainmentNotice from '../components/ContainmentNotice.astro';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  file: any;
+}
+const { file } = Astro.props;
+
+const all = await getCollection('files');
+const totalFiles = all.length;
+
+const withheld: boolean = file.data.withheld === true;
+const binds: boolean = file.data.binds === true || withheld;
+const components: Array<'image' | 'sound' | 'scent'> = file.data.components ?? [];
+---
+
+<BaseLayout title={`File ${String(file.data.fileNumber).padStart(3, '0')} — ${file.data.title}`}>
+  <div class="story-header">
+    <a href="/" class="back-link mono-block">← INDEX</a>
+  </div>
+
+  <ArchivalHeader text={file.data.header} />
+
+  <article class={withheld ? 'withheld' : 'prose-column'}>
+    {withheld ? (
+      <ContainmentNotice />
+    ) : (
+      <slot />
+    )}
+  </article>
+
+  <FileFooter fileNumber={file.data.fileNumber} totalFiles={totalFiles} />
+  <PassportFooter components={components} binds={binds} />
+</BaseLayout>
+
+<style>
+  .story-header {
+    margin-bottom: 2.5rem;
+  }
+  .back-link {
+    color: var(--color-faint);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  @media (prefers-color-scheme: dark) {
+    .back-link {
+      color: var(--color-faint-dark);
+    }
+  }
+  .withheld {
+    /* the containment notice supplies its own styling */
+  }
+</style>

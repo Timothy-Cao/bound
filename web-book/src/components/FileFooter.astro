@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  fileNumber: number;
+  totalFiles: number;
+}
+const { fileNumber, totalFiles } = Astro.props;
+
+const all = await getCollection('files');
+const sorted = all.sort((a, b) => a.data.fileNumber - b.data.fileNumber);
+const idx = sorted.findIndex(f => f.data.fileNumber === fileNumber);
+const prev = idx > 0 ? sorted[idx - 1] : null;
+const next = idx >= 0 && idx < sorted.length - 1 ? sorted[idx + 1] : null;
+
+const fileNum = String(fileNumber).padStart(3, '0');
+const totalNum = String(totalFiles).padStart(3, '0');
+---
+
+<nav class="file-footer mono-block">
+  <div class="footer-row">
+    <span class="footer-prev">
+      {prev ? (
+        <a href={`/files/${prev.id}`}>◀ FILE {String(prev.data.fileNumber).padStart(3, '0')}</a>
+      ) : (
+        <span class="dim">◀</span>
+      )}
+    </span>
+    <span class="footer-center">
+      <a href="/">FILE {fileNum} OF {totalNum}</a>
+    </span>
+    <span class="footer-next">
+      {next ? (
+        <a href={`/files/${next.id}`}>FILE {String(next.data.fileNumber).padStart(3, '0')} ▶</a>
+      ) : (
+        <span class="dim">▶</span>
+      )}
+    </span>
+  </div>
+</nav>
+
+<style>
+  .file-footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    color: var(--color-faint);
+  }
+  @media (prefers-color-scheme: dark) {
+    .file-footer {
+      border-top-color: var(--color-rule-dark);
+      color: var(--color-faint-dark);
+    }
+  }
+  .footer-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer-prev {
+    text-align: left;
+  }
+  .footer-center {
+    text-align: center;
+  }
+  .footer-next {
+    text-align: right;
+  }
+  .dim {
+    opacity: 0.3;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>

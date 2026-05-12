@@ -1,0 +1,129 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PassportFooter from '../components/PassportFooter.astro';
+import { getCollection } from 'astro:content';
+
+const files = await getCollection('files');
+const sorted = files.sort((a, b) => a.data.fileNumber - b.data.fileNumber);
+
+function pad(n: number) {
+  return String(n).padStart(3, '0');
+}
+---
+
+<BaseLayout title="The Archive">
+  <header class="archive-head">
+    <h1 class="archive-title mono-block">THE ARCHIVE</h1>
+    <a href="/foreword" class="foreword-link mono-block">RECONSTRUCTOR'S FOREWORD →</a>
+  </header>
+
+  <ol class="file-list mono-block" aria-label="Files">
+    {sorted.map((file) => {
+      const year = file.data.year !== null ? String(file.data.year) : '----';
+      const label = file.data.sourceLabel || '';
+      const href = `/files/${file.id}`;
+      return (
+        <li class="file-row">
+          <a href={href} class="file-link">
+            <span class="col-num">FILE {pad(file.data.fileNumber)}</span>
+            <span class="col-title">{file.data.title}</span>
+            <span class="col-year">{year}</span>
+            <span class="col-label">{label}</span>
+          </a>
+        </li>
+      );
+    })}
+  </ol>
+
+  <PassportFooter />
+</BaseLayout>
+
+<style>
+  .archive-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--color-rule);
+    padding-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  @media (prefers-color-scheme: dark) {
+    .archive-head {
+      border-bottom-color: var(--color-rule-dark);
+    }
+  }
+
+  .archive-title {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin: 0;
+  }
+
+  .foreword-link {
+    font-size: 0.8125rem;
+    color: var(--color-faint);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+  }
+  .foreword-link:hover {
+    text-decoration: underline;
+  }
+  @media (prefers-color-scheme: dark) {
+    .foreword-link {
+      color: var(--color-faint-dark);
+    }
+  }
+
+  .file-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .file-row + .file-row {
+    margin-top: 0.4rem;
+  }
+
+  .file-link {
+    display: grid;
+    grid-template-columns: minmax(5.5rem, auto) 1fr minmax(3.5rem, auto) minmax(6rem, auto);
+    gap: 1rem;
+    align-items: baseline;
+    text-decoration: none;
+    padding: 0.4rem 0;
+    color: inherit;
+    transition: background-color 100ms ease;
+  }
+
+  .file-link:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .file-link:hover {
+      background-color: rgba(255, 255, 255, 0.04);
+    }
+  }
+
+  .col-num { font-weight: 500; opacity: 0.75; }
+  .col-title { font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em; }
+  .col-year { opacity: 0.7; text-align: right; }
+  .col-label { opacity: 0.65; text-align: right; font-size: 0.8125rem; }
+
+  @media (max-width: 640px) {
+    .file-link {
+      grid-template-columns: minmax(4.5rem, auto) 1fr minmax(3rem, auto);
+      grid-template-areas:
+        "num title year"
+        ".   label label";
+      gap: 0.5rem 0.75rem;
+    }
+    .col-num { grid-area: num; }
+    .col-title { grid-area: title; }
+    .col-year { grid-area: year; }
+    .col-label { grid-area: label; font-size: 0.75rem; }
+  }
+</style>
