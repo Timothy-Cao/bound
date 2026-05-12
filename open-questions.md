@@ -6,57 +6,50 @@ Tensions and decisions we have flagged but not yet resolved. Each item has a sho
 
 ## ▶ RESUME HERE — pending decisions from the brainstorming session
 
-These are the live questions paused at the end of the last working session. When resuming, work through these in order. The plot direction is captured in [`plot/the-book.md`](plot/the-book.md).
+The form has shifted to a **linked short story collection** (see [`plot/the-collection.md`](plot/the-collection.md)). The pending decisions below are updated for the new format.
 
-### R1. The archival-reconstruction frame — yes or no?
-The most consequential pending decision. Should the book be framed as a posthumous reconstruction, with chapters interleaved with redacted documents, transcripts, biometric logs, declassified memos? Light touch (occasional fragments) or heavy (every chapter integrated with archival material)?
+### R1. Archival-reconstruction frame — confirmed in the collection format.
+The collection commits to small archival headers at the opening of each story (case file, leaked memo, recovered diary, redacted clinical log, personal correspondence). Different stories use different source types; the variation tells the reader what could be remembered and how. Sample headers and discipline are in [`the-collection.md`](plot/the-collection.md). **Confirm.**
 
-**My lean**: yes, light touch. Most chapters are normal limited third; intermittent archival fragments break up the flow and increase in density toward the climax. Models: the dossier sections in *World War Z*, the redacted documents in *The Power* — not full *House of Leaves*.
+### R2. Marina's self-deception as the thread through her late stories — yes or no?
+Marina recurs across three stories (#16 "Marina's Refusal," #17 "Marina at the Window," #18 "The Document"). The strongest arc has her investigating her own role in the contract she "refused" and dying at the moment she — and the reader — realize what she actually did. Her three stories become an internal arc inside the larger mosaic.
 
-**If yes**: the page-of-text climax becomes structurally inevitable. The reconstructor is the implicit narrator and an interesting late-book question (who is reconstructing, why?).
+**My lean**: yes. It anchors the late part of the collection emotionally without requiring her to dominate the whole book.
 
-**If no**: the page-of-text climax still works but lands more as a stylistic intervention than a structural payoff. Fine, just different.
+### R3. Memory-corruption canon update (R3a) — yes or no?
+Currently R3 says vague memory doesn't bind. The reverse — that binding (and near-binding) actively *rewrites* the subject's retrospective memory of the encoding event — is implicit but not stated. Adding R3a grounds the unreliable-narration work in canonical mechanism rather than psychology.
 
-### R2. Is the chemist's self-deception the book's spine?
-The chemist investigating her own role in the contract she "refused" could be the central mystery, with the broader memotoxin plot wrapped around it. Her death at the page-of-text climax becomes the moment she and the reader simultaneously realize what she did.
+Draft text for R3a:
 
-**My lean**: yes. It's the strongest single arc available and aligns the unreliable-narration theme with the protagonist closest to the architects' world.
+> **R3a. Binding rewrites retrospective memory.** The same neural process that fuses sensory components during consolidation also modifies the subject's memory of the original encoding events. Bound subjects remember exposures as cleaner, more inevitable, and more complete than they were. Near-binding and partial exposure produce milder distortions. The subject cannot distinguish a real memory from a binding-smoothed memory; the smoothing *is* the memory now. Witnesses are mechanistically unreliable about what they encoded, including their own certainty.
 
-### R3. Memory-corruption canon update.
-Currently R3 says vague memory doesn't bind. The *reverse* — that binding (and near-binding) corrupts retrospective memory — is implicit but not stated. If we're committing to memory-as-unreliable-narrator at the mechanism level, this needs to be explicit in canon. Quick update to `world-rules.md`.
-
-**My lean**: yes, do it. Low cost, high payoff for the unreliable-narration work.
+**My lean**: yes. Quick canon update; high payoff.
 
 ---
 
 ## After R1–R3, the next round of work
 
-Once the structural decisions are made, the next work session should cover:
+### Naming pass
+- **Marina** (scent chemist, license A-7) — last name to decide. Possibly Olamide already taken (her colleague in the voicemail header). Working name suggestion: **Marina Vrast**? **Marina Akiman**? To brainstorm.
+- **K. Olesen** (architect, recurring figure in "The Memo" and "The Designer") — first name to decide. Possibly **Karl Olesen**, **Kira Olesen**.
+- **A. Ranjit** (Office of Memetic Containment, surfaces in "The Censor's Hum" and possibly others).
+- **L. Han** (eldercare nurse from "First Cardiac Event," anchor for the older generation thread).
+- **A. Vance** (censor technician, "The Censor's Hum").
+- 3–5 additional names for protagonists in the other stories.
 
-### Characters
-- Names, backgrounds, voices for the chemist, the nurse, the teenager.
-- Their immediate social worlds (families, colleagues, friends).
-- Their pre-book histories — what got them to the moment Act 1 begins.
-- Secondary characters: the chemist's investigator-collaborator (if any); the nurse's clinic colleagues; the teenager's family and peers.
-- Antagonist development: at least one named architect (alive or recently deceased), at least one named Aperture or Vellum figure, the SSDO press secretary or equivalent state face.
+### Story-by-story brainstorm
+Once names are in, develop the situation, hook, and ending for each of the ~20 stories. Decide which to draft first.
 
-### Scene-level plotting
-- Opening scene candidates for each POV.
-- The triggering incidents in concrete form (what the chemist's refused contract actually was; what specifically killed the nurse's patient; the teenager's first dream).
-- The Act 2 convergence: how the threads actually connect.
-- The page-of-text climax: what document, found how, with what setup.
-- The Act 3 endpoint: what the public reveal is, what the deeper reveal is, what each surviving protagonist decides.
+### Recurring-elements tracker
+Build a small file or table noting which character / object / phrase / image appears in which story, so the connective tissue stays intentional as the draft grows.
 
-### Worldbuilding gaps that the plot will demand
-- A specific 2079 or 2080 incident the story leans on (use Westmarket and Verrick or invent new).
-- The chemist's professional world: who the other ~11 chemists are, where she works, who her clients have been.
-- The clinic the nurse works at: name, history, patient population.
-- The teenager's neighborhood, family, school.
+### First story draft
+**"Marina's Refusal"** as the test piece. ~7 pages. Single-story-standalone. If the voice lands, the rest follows. If it doesn't, recalibrate. This is the smallest commitment that gives the most signal about whether the form works for this material.
 
 ### Voice and prose decisions
 - Tense (past or present?).
 - Register (literary or lean?).
-- Sentence rhythm sample — a paragraph in each POV's voice to calibrate.
+- Sample paragraph(s) to calibrate.
 
 ---
 

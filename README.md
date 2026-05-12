@@ -1,6 +1,6 @@
 # Story Board — Infohazard / Memotoxin Project
 
-Working repo for an as-yet-untitled novel about a society that bans AI, then re-opens it for medicine, then discovers perception itself can be weaponized.
+Working repo for an as-yet-untitled **linked short story collection** (~120 pages, ~20 stories of 3–8 pages each) about a society that bans AI, then re-opens it for medicine, then discovers perception itself can be weaponized.
 
 ## How this repo works
 
@@ -20,14 +20,26 @@ Working repo for an as-yet-untitled novel about a society that bans AI, then re-
 
 ## Current status
 
+- **Form**: linked short story collection (mosaic novel). ~20 stories, 3–8 pages each, ~120 pages total. Five chronological parts spanning 2030s–2080s. Final story set in the 2090s framing the rest.
+- **Frame**: archival reconstruction. An unnamed reconstructor has assembled these stories from recovered case files, leaked memos, diaries, transcripts, and personal correspondence. The reconstructor surfaces as a character in the final story.
 - **Worldbuilding**: substantial. 12 rules in canon, full timeline through 2080, arms race generations, named actors, cascading effects mapped.
-- **Plot direction**: agreed. See [`plot/the-book.md`](plot/the-book.md). Three POVs (chemist, nurse, teenager). Three-act structure. Page-of-text climax committed for late Act 2. Architects framing committed.
-- **Theme**: humanity underestimates the compassion of humanity because of the malice and ignorance of the few who came before. Game-theoretic tragedy, not cynicism.
-- **Characters**: none drafted yet.
-- **Story era**: 2080.
+- **Plot direction**: see [`plot/the-collection.md`](plot/the-collection.md) for working table of contents, story-opening framings, and recurring elements.
+- **Theme**: humanity underestimates the compassion of humanity because of the malice and ignorance of the few who came before. Game-theoretic tragedy delivered through accumulation, not single-arc cynicism.
+- **Characters**: none drafted yet. Anchor character Marina (scent chemist) appears in three late stories. K. Olesen (architect) brackets the historical argument.
+- **Story era**: 2080 for most contemporary stories; full span 2030s–2090s across the collection.
+
+## Earlier direction (superseded)
+
+The project began as a single-POV novella before becoming a linked collection. See [`plot/the-book.md`](plot/the-book.md) for the older direction. Most thematic, character, and mechanism material from the novella version remains relevant; only the form changed.
 
 ## ▶ Resume here
 
-The conversation paused with three structural decisions on the table and character work as the next phase. See [`open-questions.md`](open-questions.md) — the section marked **▶ RESUME HERE** lists the immediate decisions (archival frame yes/no, chemist self-deception as spine, memory-corruption canon update) and the character/scene work that follows.
+Three structural decisions are open. See [`open-questions.md`](open-questions.md) — the section marked **▶ RESUME HERE**. They are:
 
-When resuming, the right opening is: "I'm ready to continue from the resume point in open-questions.md. Walk me through R1." — or pick whichever pending question to start with.
+1. **Archival-reconstruction frame** — now committed in the collection format. Just need to confirm.
+2. **Marina's self-deception as the thread through her late stories** — yes/no.
+3. **Memory-corruption canon update** (R3a) — yes/no, low cost.
+
+Next phase after these: name Marina, name K. Olesen and 1–2 other recurring figures, then draft "Marina's Refusal" as the first standalone test of voice and form.
+
+When resuming, the right opening is: "I'm ready to continue. Walk me through the open questions, then let's start drafting Marina's Refusal."

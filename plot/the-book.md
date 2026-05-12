@@ -1,4 +1,10 @@
-# The Book — Agreed Direction
+# The Book — SUPERSEDED (single-POV novella version)
+
+> **Note (2026-05-12)**: This document describes the single-POV novella version of the project, which was the working direction for one session. It has been superseded by the **linked story collection** format described in [`the-collection.md`](the-collection.md). Most of the thematic, character, and structural material below remains relevant — Marina, the page-of-text climax, the architects framing, the unreliable-narration mechanism, the cooperation theme — but the form factor is now ~20 linked stories rather than one continuous novella. Kept here as reference; not current.
+
+---
+
+# The Book — Agreed Direction (superseded)
 
 This is the current consensus on what we're writing. Items here are *settled enough to build on* but not locked — they can change with discussion. Pending decisions are in [open-questions.md](../open-questions.md).
 
