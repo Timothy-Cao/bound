@@ -38,6 +38,10 @@ The project moved through several forms before landing on the web archive: singl
 - [`plot/the-collection.md`](plot/the-collection.md) — linked collection version (superseded by the web plan, but its table of contents and headers carry forward)
 - [`plot/web-book-plan.md`](plot/web-book-plan.md) — **current**
 
+## Action items
+
+See [`TODO.md`](TODO.md). Single forward-looking tracker.
+
 ## ▶ Resume here
 
 Format committed: web archive. The path forward is in [`plot/web-book-plan.md`](plot/web-book-plan.md). Next steps when you return:
