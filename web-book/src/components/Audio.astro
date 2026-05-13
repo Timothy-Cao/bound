@@ -6,14 +6,23 @@ interface Props {
   duration?: string;
 }
 const { src, label, note, duration } = Astro.props;
+const playLabel = `Play: ${label}`;
+const pauseLabel = `Pause: ${label}`;
 ---
 
 <figure class="audio-row not-prose">
-  <button type="button" class="audio-play" aria-label={`Play: ${label}`} data-src={src}>▶</button>
+  <button
+    type="button"
+    class="audio-play"
+    aria-label={playLabel}
+    data-src={src}
+    data-label-play={playLabel}
+    data-label-pause={pauseLabel}
+  >▶</button>
   <figcaption class="audio-caption">
     <div class="audio-label">[AUDIO] {label}</div>
     {note && <div class="audio-note">{note}</div>}
-    {duration && <div class="audio-duration">{duration}</div>}
+    {duration && <div class="audio-duration" aria-label={`Duration ${duration}`}>{duration}</div>}
   </figcaption>
 </figure>
 
@@ -22,36 +31,9 @@ const { src, label, note, duration } = Astro.props;
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
+    min-width: 0;
   }
   .audio-label { font-weight: 500; }
   .audio-note { opacity: 0.85; }
   .audio-duration { opacity: 0.7; font-size: 0.75rem; }
 </style>
-
-<script is:inline>
-  document.addEventListener('click', function (e) {
-    const target = e.target;
-    if (!(target instanceof HTMLElement)) return;
-    if (!target.classList.contains('audio-play')) return;
-    const src = target.getAttribute('data-src');
-    if (!src) return;
-
-    // simple play/stop. each button manages its own audio element.
-    let audio = target._audio;
-    if (!audio) {
-      audio = new Audio(src);
-      audio.addEventListener('ended', function () {
-        target.textContent = '▶';
-      });
-      target._audio = audio;
-    }
-    if (audio.paused) {
-      audio.currentTime = 0;
-      audio.play().catch(function () { /* ignore */ });
-      target.textContent = '■';
-    } else {
-      audio.pause();
-      target.textContent = '▶';
-    }
-  });
-</script>

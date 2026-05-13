@@ -10,10 +10,10 @@
   /* light-mode palette */
   --color-cream: #f5f1e8;
   --color-ink: #1a1a1a;
-  --color-faint: #6b6b6b;
-  --color-rule: #d8d2c2;
+  --color-faint: #565656;          /* darkened from #6b6b6b for WCAG AA on cream */
+  --color-rule: #c9c2af;
   --color-redaction: #000000;
-  --color-classified: #8a1d1d;
+  --color-classified: #7a1818;     /* darkened from #8a1d1d for WCAG AA on cream */
   --color-link: #2d3a5e;
 
   /* dark-mode palette */
@@ -36,6 +36,44 @@ html {
   font-family: var(--font-serif);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+/* visually-hidden but available to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* skip-to-content link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: top 150ms ease;
+}
+.skip-link:focus {
+  top: 0;
+  opacity: 1;
+}
+@media (prefers-color-scheme: dark) {
+  .skip-link {
+    background-color: var(--color-ink-dark);
+    color: var(--color-cream-dark);
+  }
 }
 
 body {
@@ -171,14 +209,22 @@ a:hover {
   }
 }
 
-/* redaction bar — visual element for use in stories */
+/* redaction bar — accessible visual element for in-prose use */
 .redaction {
   display: inline-block;
   background-color: var(--color-redaction);
-  color: transparent;
-  user-select: none;
-  padding: 0 0.15em;
   border-radius: 1px;
+  padding: 0 0.15em;
+  user-select: none;
+  vertical-align: baseline;
+  /* the hidden child sizes the bar without leaking text to AT */
+}
+.redaction > [aria-hidden] {
+  color: transparent;
+}
+.redaction-block {
+  display: block;
+  margin: 0.5em 0;
 }
 
 /* figure block */
@@ -234,12 +280,18 @@ a:hover {
 .audio-row button {
   font-family: var(--font-mono);
   font-size: 1rem;
-  padding: 0.25rem 0.6rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid currentColor;
   background: transparent;
   color: inherit;
   cursor: pointer;
   transition: background-color 150ms ease;
+  flex-shrink: 0;
 }
 
 .audio-row button:hover {

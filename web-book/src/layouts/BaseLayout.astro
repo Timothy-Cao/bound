@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -18,9 +19,11 @@ const { title, description = 'A recovered archive.' } = Astro.props;
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><rect width=%2216%22 height=%2216%22 fill=%22%23000%22/></svg>" />
     <title>{title}</title>
+    <ClientRouter fallback="swap" />
   </head>
   <body>
-    <main class="page">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <main id="main-content" class="page" tabindex="-1">
       <slot />
     </main>
 
@@ -30,11 +33,67 @@ const { title, description = 'A recovered archive.' } = Astro.props;
         margin: 0 auto;
         padding: 3rem 1.5rem 4rem;
       }
+      .page:focus {
+        outline: none;
+      }
       @media (min-width: 768px) {
         .page {
           padding: 5rem 2rem 6rem;
         }
       }
     </style>
+
+    {/* persistent click handler for inline audio play buttons.
+        attached once at document level so it survives view transitions. */}
+    <script>
+      (() => {
+        if ((window as any).__archiveAudioInit) return;
+        (window as any).__archiveAudioInit = true;
+
+        document.addEventListener('click', (e) => {
+          const target = e.target as HTMLElement | null;
+          if (!target || !target.classList.contains('audio-play')) return;
+
+          const btn = target as HTMLButtonElement & { _audio?: HTMLAudioElement };
+          const src = btn.getAttribute('data-src');
+          if (!src) return;
+
+          if (!btn._audio) {
+            const audio = new Audio(src);
+            audio.addEventListener('ended', () => {
+              btn.textContent = '▶';
+              btn.setAttribute('aria-label', btn.getAttribute('data-label-play') || 'Play');
+            });
+            audio.addEventListener('error', () => {
+              btn.textContent = '×';
+              btn.disabled = true;
+              btn.setAttribute('aria-label', 'Audio unavailable');
+            });
+            btn._audio = audio;
+          }
+
+          if (btn._audio.paused) {
+            btn._audio.currentTime = 0;
+            btn._audio.play().catch(() => { /* ignore */ });
+            btn.textContent = '■';
+            btn.setAttribute('aria-label', btn.getAttribute('data-label-pause') || 'Pause');
+          } else {
+            btn._audio.pause();
+            btn.textContent = '▶';
+            btn.setAttribute('aria-label', btn.getAttribute('data-label-play') || 'Play');
+          }
+        });
+
+        // pause any playing audio when navigating away
+        document.addEventListener('astro:before-swap', () => {
+          document.querySelectorAll<HTMLButtonElement>('.audio-play').forEach((btn) => {
+            const b = btn as HTMLButtonElement & { _audio?: HTMLAudioElement };
+            if (b._audio && !b._audio.paused) {
+              b._audio.pause();
+            }
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

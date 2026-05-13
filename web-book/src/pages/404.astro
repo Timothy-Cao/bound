@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PassportFooter from '../components/PassportFooter.astro';
+---
+
+<BaseLayout title="No record — The Archive">
+  <div class="story-header">
+    <a href="/" class="back-link mono-block">← INDEX</a>
+  </div>
+
+  <h1 class="sr-only">No record</h1>
+
+  <header class="mono-block text-faint">
+    <pre class="whitespace-pre-wrap font-[inherit] m-0">No file with this designation exists in the archive.</pre>
+  </header>
+  <hr class="thin-rule" />
+
+  <aside class="containment-box" role="alert">
+    <div class="containment-tag">[ NO RECORD ]</div>
+    <p>
+      The path you have requested does not correspond to a file in
+      this archive.
+    </p>
+    <p>
+      If you arrived here from a link, the file may have been withheld,
+      redacted, or never recovered.
+    </p>
+    <p class="final-line">
+      Return to <a href="/">the index</a>.
+    </p>
+  </aside>
+
+  <PassportFooter />
+</BaseLayout>
+
+<style>
+  .story-header {
+    margin-bottom: 2.5rem;
+  }
+  .back-link {
+    color: var(--color-faint);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  @media (prefers-color-scheme: dark) {
+    .back-link {
+      color: var(--color-faint-dark);
+    }
+  }
+  .text-faint {
+    color: var(--color-faint);
+  }
+  @media (prefers-color-scheme: dark) {
+    .text-faint {
+      color: var(--color-faint-dark);
+    }
+  }
+  .containment-box p {
+    margin-bottom: 1rem;
+  }
+  .containment-box .final-line {
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    opacity: 0.85;
+  }
+  .containment-tag {
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+  }
+</style>

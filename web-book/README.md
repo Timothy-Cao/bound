@@ -52,6 +52,7 @@ Prose is plain Markdown with optional component embeds:
 ```mdx
 import Audio from '../../components/Audio.astro';
 import Figure from '../../components/Figure.astro';
+import Redaction from '../../components/Redaction.astro';
 
 She paused at the window.
 
@@ -60,7 +61,7 @@ She paused at the window.
        note="Partial. Audio integrity: degraded."
        duration="1:23" />
 
-The morning had been ordinary.
+The patient, <Redaction>John Smith</Redaction>, was 47.
 
 <Figure src="/images/triune-1-declassified.png"
         alt="Heavily redacted image with visible texture in one corner."
@@ -68,6 +69,11 @@ The morning had been ordinary.
 ```
 
 Place audio files in `public/audio/` and images in `public/images/`. Reference them with `/audio/...` and `/images/...` paths.
+
+The `Redaction` component:
+- Renders as a hard-black bar sized to its hidden content.
+- Announces `[redacted]` (or a custom `label` prop) to screen readers.
+- Use `block` prop for multi-line redactions.
 
 ## The blackout (`/files/the-document`)
 
@@ -109,7 +115,8 @@ web-book/
 │   │   ├── ContainmentNotice.astro    # the blackout
 │   │   ├── Figure.astro               # inline visual artifact
 │   │   ├── FileFooter.astro           # prev/next/return navigation
-│   │   └── PassportFooter.astro       # the Exposure Passport
+│   │   ├── PassportFooter.astro       # the Exposure Passport
+│   │   └── Redaction.astro            # inline accessible redaction bar
 │   ├── content/
 │   │   └── files/                     # all stories as .mdx
 │   ├── content.config.ts              # collection schema
@@ -119,6 +126,7 @@ web-book/
 │   ├── pages/
 │   │   ├── index.astro                # the archive index
 │   │   ├── foreword.astro             # reconstructor's foreword
+│   │   ├── 404.astro                  # custom no-record page (containment-style)
 │   │   └── files/[slug].astro         # dynamic story route
 │   └── styles/global.css
 ├── public/                            # static assets (audio, images, fonts)

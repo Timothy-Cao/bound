@@ -24,6 +24,8 @@ const components: Array<'image' | 'sound' | 'scent'> = file.data.components ?? [
     <a href="/" class="back-link mono-block">← INDEX</a>
   </div>
 
+  <h1 class="sr-only">File {String(file.data.fileNumber).padStart(3, '0')}: {file.data.title}</h1>
+
   <ArchivalHeader text={file.data.header} />
 
   <article class={withheld ? 'withheld' : 'prose-column'}>

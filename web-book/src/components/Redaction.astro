@@ -1,0 +1,25 @@
+---
+/**
+ * Inline (or block) redaction bar.
+ *
+ * Visually renders a hard-black bar sized to the obscured text.
+ * Screen readers announce the `label` (default "[redacted]") and skip
+ * the hidden content via aria-hidden on the child wrapper.
+ *
+ * Examples:
+ *   <Redaction>John Smith</Redaction>
+ *   <Redaction label="[name withheld]">M.</Redaction>
+ *   <Redaction block>{multiple lines}</Redaction>
+ */
+interface Props {
+  label?: string;
+  block?: boolean;
+}
+const { label = '[redacted]', block = false } = Astro.props;
+const Tag = block ? 'div' : 'span';
+const classes = block ? 'redaction redaction-block' : 'redaction';
+---
+
+<Tag class={classes} role="img" aria-label={label}>
+  <span aria-hidden="true"><slot /></span>
+</Tag>

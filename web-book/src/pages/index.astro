@@ -19,7 +19,8 @@ function pad(n: number) {
 
   <ol class="file-list mono-block" aria-label="Files">
     {sorted.map((file) => {
-      const year = file.data.year !== null ? String(file.data.year) : '----';
+      const yearText = file.data.year !== null ? String(file.data.year) : '----';
+      const yearAria = file.data.year !== null ? `Year ${file.data.year}` : 'No year';
       const label = file.data.sourceLabel || '';
       const href = `/files/${file.id}`;
       return (
@@ -27,7 +28,7 @@ function pad(n: number) {
           <a href={href} class="file-link">
             <span class="col-num">FILE {pad(file.data.fileNumber)}</span>
             <span class="col-title">{file.data.title}</span>
-            <span class="col-year">{year}</span>
+            <span class="col-year" aria-label={yearAria}>{yearText}</span>
             <span class="col-label">{label}</span>
           </a>
         </li>
@@ -36,6 +37,8 @@ function pad(n: number) {
   </ol>
 
   <PassportFooter />
+
+  <footer class="archive-credit mono-block">a tim cao story</footer>
 </BaseLayout>
 
 <style>
@@ -112,6 +115,20 @@ function pad(n: number) {
   .col-title { font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em; }
   .col-year { opacity: 0.7; text-align: right; }
   .col-label { opacity: 0.65; text-align: right; font-size: 0.8125rem; }
+
+  .archive-credit {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    opacity: 0.45;
+    color: var(--color-faint);
+  }
+  @media (prefers-color-scheme: dark) {
+    .archive-credit {
+      color: var(--color-faint-dark);
+    }
+  }
 
   @media (max-width: 640px) {
     .file-link {

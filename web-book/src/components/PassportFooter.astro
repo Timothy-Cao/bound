@@ -6,7 +6,7 @@ interface Props {
 const { components = [], binds = false } = Astro.props;
 ---
 
-<div class="passport-footer mono-block">
+<div class="passport-footer mono-block" aria-hidden="true">
   <span id="passport-display">EXPOSURE CLASS: 0 &mdash; CLEAN</span>
 </div>
 
@@ -25,7 +25,7 @@ const { components = [], binds = false } = Astro.props;
   }
 </style>
 
-<script is:inline define:vars={{ components, binds }}>
+<script is:inline define:vars={{ components, binds }} data-astro-rerun>
   (function () {
     const KEY = 'archive_passport_v1';
     const initial = { image: false, sound: false, scent: false, bound: false };
