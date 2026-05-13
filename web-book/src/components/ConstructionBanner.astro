@@ -1,0 +1,140 @@
+---
+import { SHOW_CONSTRUCTION_WARNING } from '../config';
+---
+
+{SHOW_CONSTRUCTION_WARNING && (
+  <>
+    <div
+      id="construction-banner"
+      class="construction-banner"
+      aria-hidden="true"
+    >
+      <div class="construction-stamp">Archive&nbsp;Under&nbsp;Construction</div>
+    </div>
+    <label class="construction-dismiss mono-block">
+      <input type="checkbox" id="construction-dismiss-toggle" />
+      <span>Ignore warning</span>
+    </label>
+
+    <script is:inline data-astro-rerun>
+      (function () {
+        var KEY = 'archive_dismiss_construction_v1';
+        var banner = document.getElementById('construction-banner');
+        var checkbox = document.getElementById('construction-dismiss-toggle');
+        if (!banner || !checkbox) return;
+
+        var dismissed = false;
+        try {
+          dismissed = localStorage.getItem(KEY) === 'true';
+        } catch (_e) { /* ignore */ }
+
+        if (dismissed) {
+          checkbox.checked = true;
+          banner.classList.add('is-dismissed');
+        }
+
+        checkbox.addEventListener('change', function () {
+          var on = !!checkbox.checked;
+          banner.classList.toggle('is-dismissed', on);
+          try {
+            localStorage.setItem(KEY, on ? 'true' : 'false');
+          } catch (_e) { /* ignore */ }
+        });
+      })();
+    </script>
+  </>
+)}
+
+<style>
+  .construction-banner {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .construction-banner.is-dismissed {
+    display: none;
+  }
+
+  .construction-stamp {
+    font-family: var(--font-mono);
+    font-size: clamp(1.5rem, 7vw, 5.5rem);
+    font-weight: 500;
+    color: var(--color-classified);
+    opacity: 0.32;
+    transform: rotate(-18deg);
+    letter-spacing: 0.12em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    border: 5px double var(--color-classified);
+    border-radius: 4px;
+    user-select: none;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .construction-stamp {
+      color: var(--color-classified-dark);
+      border-color: var(--color-classified-dark);
+      opacity: 0.4;
+    }
+  }
+
+  .construction-dismiss {
+    position: fixed;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    z-index: 95;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    background-color: var(--color-cream);
+    color: var(--color-faint);
+    border: 1px solid var(--color-rule);
+    border-radius: 2px;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.85;
+    transition: opacity 150ms ease;
+  }
+
+  .construction-dismiss:hover {
+    opacity: 1;
+  }
+
+  .construction-dismiss input {
+    margin: 0;
+    cursor: pointer;
+    accent-color: var(--color-classified);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .construction-dismiss {
+      background-color: var(--color-cream-dark);
+      color: var(--color-faint-dark);
+      border-color: var(--color-rule-dark);
+    }
+    .construction-dismiss input {
+      accent-color: var(--color-classified-dark);
+    }
+  }
+
+  /* respect users who prefer reduced motion: skip any future transitions
+     on the banner */
+  @media (prefers-reduced-motion: reduce) {
+    .construction-banner,
+    .construction-stamp {
+      transition: none;
+    }
+  }
+</style>

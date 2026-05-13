@@ -104,6 +104,21 @@ Dark mode is system-preference based. No toggle.
 - No autoplay.
 - `<meta name="robots" content="noindex, nofollow">` — this is a friends-facing project, not for search.
 
+## Construction banner toggle
+
+While the archive is unfinished, a large diagonal **ARCHIVE UNDER CONSTRUCTION** stamp is rendered on every page in classification-red.
+
+A small "Ignore warning" checkbox sits at the bottom-right corner. Checking it hides the stamp (state persists per-browser in `localStorage`, so you don't have to re-check it every page reload while testing).
+
+**To turn the banner off entirely** once the work is shareable:
+
+```ts
+// src/config.ts
+export const SHOW_CONSTRUCTION_WARNING = false;
+```
+
+When the flag is `false`, neither the stamp nor the checkbox renders. Rebuild and push.
+
 ## File structure
 
 ```

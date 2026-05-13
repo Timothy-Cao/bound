@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { ClientRouter } from 'astro:transitions';
+import ConstructionBanner from '../components/ConstructionBanner.astro';
 
 interface Props {
   title: string;
@@ -26,6 +27,8 @@ const { title, description = 'A recovered archive.' } = Astro.props;
     <main id="main-content" class="page" tabindex="-1">
       <slot />
     </main>
+
+    <ConstructionBanner />
 
     <style>
       .page {
