@@ -158,7 +158,7 @@ R12 has reshuffled religion:
 
 ## What this generation looks like as adults
 
-The first cohort raised entirely under post-2073 conditions is hitting young adulthood now (2080). The composite:
+The **AR-childhood cohort** — children born approximately 2058–2068 who started wearing AR censor goggles in early childhood after the 2071 emergency deployment — is hitting adolescence and early adulthood now (2080). The composite:
 
 - Quiet, verbal, touch-attentive.
 - Anxious about novelty, especially sensory novelty.

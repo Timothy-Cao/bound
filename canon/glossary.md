@@ -20,6 +20,28 @@
 
 **Restricted Stimulus Material** — Illegal or controlled sensory content.
 
+## Historical events and institutions
+
+**NCV-34** — Neurotropic respiratory virus, 2034 designation. Acute pandemic phase 2034–2036. Acute fatality ~0.4%, but 5–8% of infected developed persistent post-viral cognitive sequelae. The "**2034 cohort**" or "**post-viral cohort**" — the recognized clinical population — accounts for roughly one-third of the cognitive crisis that drove the 2050 Healthcare AI Exception.
+
+**The 2034 pandemic / the 34 wave** — Colloquial names for NCV-34.
+
+**The Brussels Consensus Report (2047)** — Coalition public-health report documenting the compound cognitive crisis. The first formal acknowledgment that lifestyle factors (SES) and the 2034 pandemic compounded. The political instrument that opened the path to the 2050 Healthcare AI Exception.
+
+**The Ban** — The 2031 AI Labor Ban. Still in force.
+
+**The Exception** — The 2050 Healthcare AI Exception Act. Narrow: medical research and patient care only. Not labor replacement, not consumer, not military.
+
+**SSDO (Strategic Stimulus Defense Office)** — Founded 2071 under a national-security exception following the Black Bloom attack. Second major AI loophole, this time for military and intelligence use. Officially defensive; privately operates an offensive memotoxin research program.
+
+**Black Bloom** — Public name for the 2069 Westmarket Central transit attack. Triune Stimulus-1. ~14,000 deaths.
+
+**The Verrick broadcast attack (2079)** — First publicly-confirmed LCI exploit. ~14,000 deaths from one new image component plus widely-encoded legacy components.
+
+**The Estate incident (2079)** — Three deaths inside a maximum-air-gap private residence; first public proof that supply-chain attacks penetrate top-tier sensory defense.
+
+**Cognitive rehabilitation (legal category)** — Established 2054 as the legal framework expanding the 2050 Healthcare Exception into deep memory, mood, and perception research. The category under which sensory therapy and, downstream, memotoxin discovery happened.
+
 ## Exposure classes
 
 **Clean (Class 0)** — No known exposure to any component of a registered memotoxin.

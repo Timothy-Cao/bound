@@ -1,0 +1,341 @@
+---
+interface Props {
+  tracks: string[];
+  narration?: string;
+}
+const { tracks, narration } = Astro.props;
+const hasAudio = tracks.length > 0 || narration;
+---
+
+{hasAudio && (
+  <div class="audio-panel" data-tracks={JSON.stringify(tracks)} data-narration={narration || ''}>
+    <button type="button" class="audio-panel-tab mono-block" aria-label="Audio controls" aria-expanded="false">
+      ♪
+    </button>
+    <div class="audio-panel-drawer" aria-hidden="true">
+      {tracks.length > 0 && (
+        <div class="audio-control">
+          <div class="audio-control-row">
+            <button type="button" class="audio-btn music-btn" aria-label="Toggle ambient music">▶</button>
+            <span class="audio-control-label">AMBIENT</span>
+          </div>
+          <input type="range" class="audio-slider music-vol" min="0" max="100" value="50" aria-label="Ambient volume" />
+        </div>
+      )}
+      {narration && (
+        <div class="audio-control">
+          <div class="audio-control-row">
+            <button type="button" class="audio-btn narration-btn" aria-label="Toggle narration">▶</button>
+            <span class="audio-control-label">NARRATION</span>
+          </div>
+          <input type="range" class="audio-slider narration-vol" min="0" max="100" value="50" aria-label="Narration volume" />
+        </div>
+      )}
+    </div>
+  </div>
+)}
+
+<script>
+  // Global audio singletons — ensures only one music and one narration at a time
+  declare global {
+    interface Window {
+      __archiveMusic?: HTMLAudioElement;
+      __archiveNarration?: HTMLAudioElement;
+    }
+  }
+
+  function killAllAudio() {
+    if (window.__archiveMusic) {
+      window.__archiveMusic.pause();
+      window.__archiveMusic.src = '';
+      window.__archiveMusic = undefined;
+    }
+    if (window.__archiveNarration) {
+      window.__archiveNarration.pause();
+      window.__archiveNarration.src = '';
+      window.__archiveNarration = undefined;
+    }
+  }
+
+  // Stop all audio when navigating away (view transitions)
+  document.addEventListener('astro:before-swap', () => killAllAudio());
+
+  document.addEventListener('astro:page-load', () => {
+    const panel = document.querySelector('.audio-panel') as HTMLElement | null;
+
+    // No audio panel on this page (index, foreword, 404) — audio is already killed
+    if (!panel) return;
+
+    const tab = panel.querySelector('.audio-panel-tab') as HTMLButtonElement;
+    const drawer = panel.querySelector('.audio-panel-drawer') as HTMLElement;
+    const tracks: string[] = JSON.parse(panel.dataset.tracks || '[]');
+    const narrationSrc = panel.dataset.narration || '';
+
+    // Drawer toggle
+    let drawerOpen = false;
+    function setDrawer(open: boolean) {
+      drawerOpen = open;
+      drawer.setAttribute('aria-hidden', String(!drawerOpen));
+      tab.setAttribute('aria-expanded', String(drawerOpen));
+      panel.classList.toggle('is-open', drawerOpen);
+    }
+    tab.addEventListener('click', () => setDrawer(!drawerOpen));
+
+    if (!localStorage.getItem('archive_audio_seen')) {
+      setDrawer(true);
+      localStorage.setItem('archive_audio_seen', '1');
+    }
+
+    // --- Music ---
+    const musicBtn = panel.querySelector('.music-btn') as HTMLButtonElement | null;
+    const musicVol = panel.querySelector('.music-vol') as HTMLInputElement | null;
+    let musicIndex = 0;
+    let musicPlaying = false;
+
+    function musicVolume(sliderVal: number) { return (sliderVal / 100) * 0.5; }
+
+    function createMusic() {
+      killAllAudio();
+      const audio = new Audio(tracks[musicIndex]);
+      const saved = localStorage.getItem('archive_music_vol');
+      const sv = saved ? parseInt(saved) : 50;
+      audio.volume = musicVolume(sv);
+      if (musicVol) musicVol.value = String(sv);
+      audio.addEventListener('ended', () => {
+        musicIndex = (musicIndex + 1) % tracks.length;
+        audio.src = tracks[musicIndex];
+        audio.play();
+      });
+      window.__archiveMusic = audio;
+    }
+
+    function playMusic() {
+      if (!window.__archiveMusic) createMusic();
+      window.__archiveMusic!.play().then(() => {
+        musicPlaying = true;
+        if (musicBtn) musicBtn.textContent = '⏸';
+        tab.classList.add('is-playing');
+      }).catch(() => {});
+    }
+
+    function pauseMusic() {
+      if (window.__archiveMusic) {
+        window.__archiveMusic.pause();
+        musicPlaying = false;
+        if (musicBtn) musicBtn.textContent = '▶';
+        if (!narrationPlaying) tab.classList.remove('is-playing');
+      }
+    }
+
+    musicBtn?.addEventListener('click', () => {
+      if (musicPlaying) pauseMusic(); else playMusic();
+    });
+
+    musicVol?.addEventListener('input', () => {
+      const v = parseInt(musicVol.value);
+      if (window.__archiveMusic) window.__archiveMusic.volume = musicVolume(v);
+      localStorage.setItem('archive_music_vol', String(v));
+    });
+
+    // Auto-play on first interaction if user hasn't explicitly turned it off
+    if (tracks.length > 0) {
+      const startOnInteraction = () => {
+        if (!musicPlaying) playMusic();
+        document.removeEventListener('click', startOnInteraction);
+        document.removeEventListener('keydown', startOnInteraction);
+        document.removeEventListener('scroll', startOnInteraction);
+      };
+      document.addEventListener('click', startOnInteraction);
+      document.addEventListener('keydown', startOnInteraction);
+      document.addEventListener('scroll', startOnInteraction);
+    }
+
+    // --- Narration ---
+    const narrBtn = panel.querySelector('.narration-btn') as HTMLButtonElement | null;
+    const narrVol = panel.querySelector('.narration-vol') as HTMLInputElement | null;
+    let narrationPlaying = false;
+
+    if (narrationSrc && narrBtn) {
+      narrBtn.addEventListener('click', () => {
+        if (!window.__archiveNarration) {
+          const audio = new Audio(narrationSrc);
+          const saved = localStorage.getItem('archive_narration_vol');
+          const sv = saved ? parseInt(saved) : 50;
+          audio.volume = sv / 100;
+          if (narrVol) narrVol.value = String(sv);
+          audio.addEventListener('ended', () => {
+            narrationPlaying = false;
+            narrBtn.textContent = '▶';
+            if (!musicPlaying) tab.classList.remove('is-playing');
+          });
+          window.__archiveNarration = audio;
+        }
+        if (narrationPlaying) {
+          window.__archiveNarration!.pause();
+          narrationPlaying = false;
+          narrBtn.textContent = '▶';
+          if (!musicPlaying) tab.classList.remove('is-playing');
+        } else {
+          window.__archiveNarration!.play().then(() => {
+            narrationPlaying = true;
+            narrBtn.textContent = '⏸';
+            tab.classList.add('is-playing');
+          }).catch(() => {});
+        }
+      });
+    }
+
+    narrVol?.addEventListener('input', () => {
+      const v = parseInt(narrVol.value);
+      if (window.__archiveNarration) window.__archiveNarration.volume = v / 100;
+      localStorage.setItem('archive_narration_vol', String(v));
+    });
+  });
+</script>
+
+<style>
+  .audio-panel {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.4rem;
+    font-family: var(--font-mono), monospace;
+  }
+
+  .audio-panel-tab {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-cream, #f5f1e8);
+    border: 1px solid var(--color-rule, #c9c2af);
+    cursor: pointer;
+    font-size: 0.8rem;
+    opacity: 0.45;
+    transition: opacity 150ms ease;
+  }
+
+  .audio-panel-tab:hover {
+    opacity: 0.85;
+  }
+
+  .audio-panel-tab.is-playing {
+    opacity: 0.75;
+    animation: tab-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes tab-pulse {
+    0%, 100% { opacity: 0.75; }
+    50% { opacity: 0.45; }
+  }
+
+  .audio-panel-drawer {
+    display: none;
+    flex-direction: column;
+    gap: 0.6rem;
+    background: var(--color-cream, #f5f1e8);
+    border: 1px solid var(--color-rule, #c9c2af);
+    padding: 0.6rem 0.75rem;
+    min-width: 10rem;
+  }
+
+  .audio-panel.is-open .audio-panel-drawer {
+    display: flex;
+  }
+
+  .audio-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .audio-control-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .audio-btn {
+    width: 1.4rem;
+    height: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid var(--color-rule, #c9c2af);
+    cursor: pointer;
+    font-size: 0.55rem;
+    color: inherit;
+    padding: 0;
+    line-height: 1;
+  }
+
+  .audio-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .audio-control-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    opacity: 0.6;
+  }
+
+  .audio-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    background: var(--color-rule, #c9c2af);
+    outline: none;
+    cursor: pointer;
+  }
+
+  .audio-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    background: var(--color-ink, #1a1a1a);
+    border: none;
+    cursor: pointer;
+  }
+
+  .audio-slider::-moz-range-thumb {
+    width: 8px;
+    height: 8px;
+    background: var(--color-ink, #1a1a1a);
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .audio-panel-tab {
+      background: var(--color-cream-dark, #0e0d0b);
+      border-color: var(--color-rule-dark, #2a2622);
+    }
+    .audio-panel-drawer {
+      background: var(--color-cream-dark, #0e0d0b);
+      border-color: var(--color-rule-dark, #2a2622);
+    }
+    .audio-btn {
+      border-color: var(--color-rule-dark, #2a2622);
+    }
+    .audio-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .audio-slider {
+      background: var(--color-rule-dark, #2a2622);
+    }
+    .audio-slider::-webkit-slider-thumb {
+      background: var(--color-ink-dark, #e8e2d3);
+    }
+    .audio-slider::-moz-range-thumb {
+      background: var(--color-ink-dark, #e8e2d3);
+    }
+  }
+</style>

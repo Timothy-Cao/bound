@@ -29,10 +29,10 @@ This format supersedes the earlier single-POV novella plan ([`the-book.md`](the-
 Expect names, dates, and exact stories to shift in drafting. The structural shape below is what's stable.
 
 ### Part I — Before (2030s–2050s)
-1. **The Vote** *(2035, ~5pp)* — a young policy advisor on the day the AI Labor Ban passes. We meet a future architect, young.
-2. **The Last Layoffs** *(2034, ~4pp)* — a tech worker watching their company shutter. The fury that made the Ban inevitable.
-3. **Shabbat in 2042** *(2042, ~3pp)* — an Orthodox family in the falling-birthrate years. Defensive practices not yet recognized as defensive.
-4. **The Care Worker** *(2050, ~5pp)* — eldercare collapse from inside an understaffed home.
+1. **The Vote** *(2031, ~5pp)* — Karl Olesen as a young policy advisor on the day the AI Labor Ban passes. We meet a future architect, young.
+2. *~~The Last Layoffs~~ (cut)*
+3. **Shabbat in 2042** *(2042, ~3pp)* — an Orthodox family in the falling-birthrate years, with a grandmother in the post-viral (NCV-34) cohort. Defensive practices not yet recognized as defensive.
+4. *~~The Care Worker~~ (cut)*
 
 ### Part II — Discovery (2060s)
 5. **A Patient Recognizes Her Daughter** *(2061, ~4pp)* — the breakthrough moment. Hope.
@@ -123,25 +123,35 @@ The variation is meaningful. Some characters had state files (institutional sour
 
 ## Recurring elements across stories
 
-Linked collections live or die on the invisible connective tissue. The following should recur deliberately across stories. To be tracked as the draft develops.
+Linked collections live or die on the invisible connective tissue. The cast and connections are locked — see [`characters/recurring.md`](../characters/recurring.md) for the full reference.
 
-### Characters who appear in multiple stories
-- **K. Olesen** (an architect, named in "The Memo" and "The Designer," possibly referenced obliquely in others).
-- **A. Ranjit** (Office of Memetic Containment; appears in "The Censor's Hum," may surface in others).
-- **L. Han** (eldercare nurse from "First Cardiac Event," possibly older and recurring in "Bound" or elsewhere).
-- **Marina** (anchor character — protagonist of three late stories: "Marina's Refusal," "Marina at the Window," "The Document").
-- Others to be developed.
+### Cast (summary)
+- **Karl Olesen** — the architect figure. Protagonist of FILES 001 (2031, young), 004 (2067, mid-career), 012 (2080, elder). Named in document trail Marina follows.
+- **Lihua Han** — eldercare nurse turned bound-care specialist. Protagonist of FILE 003 (2066). Recurs as caregiver in FILE 007 (2080).
+- **Anna Vance** — censor. Protagonist of FILE 006 (2073). *Is the anonymous patient in FILE 007 — never stated.*
+- **Marina (last name TBD)** — scent chemist. Protagonist of FILES 009, 010, 011 (2080).
+- **Amrit Ranjit** — OMC field officer. Interviewer in FILE 008 (2080). Signs document headers across the collection.
+- **E. Olamide** — Marina's professional colleague. Appears in FILE 009 voicemail.
+- **The Archivist (FILE 013)** — Lihua Han's child. The collection is their lifelong project.
 
-### Objects, phrases, images
-- The **bay-leaf scent** (recurring olfactory motif — appears in Marina's chapters, possibly in earlier stories as innocent texture).
-- The **phrase "I'm too certain"** (Marina's, but possibly echoed by other characters in moments of memory-doubt).
-- A specific **public-service poster** or recurring street-corner billboard text that appears in several stories at different decades — same wall, different posters.
-- **The melody the teenager hums** — possibly first heard, innocent and unmemotoxic, in an earlier story.
+### The three locked connections
+1. **Anna Vance is the anonymous Class 4 patient in *Bound*.** Reader inference only.
+2. **Lihua Han nurses her** in FILE 007, fourteen years after reporting the first death in FILE 003. Neither character knows the other's earlier history.
+3. **Marina finds Karl Olesen's signature** on a fifty-year-old classification memo. She reads. She dies. He records his diary knowing she found him.
+
+Plus the structural connection: the Archivist (FILE 013) is L. Han's child.
+
+### Lighter cross-story threads
+- The **Brussels Consensus Report (2047)** cited across files
+- **NCV-34** referenced as background in FILES 002, 003, 007, 008
+- **Karl Olesen's name** in document headers of files beyond his three POV stories
+- **Amrit Ranjit's name** as institutional signatory across files
+- **Marina's bay-leaf motif** seeded possibly in an earlier story before her arc
 
 ### Structural rhymes
-- The **first story** (The Vote) and the **architect's diary** (The Designer) bracket the historical argument. Same person, fifty years apart.
-- The **breakthrough scene** in "A Patient Recognizes Her Daughter" and the **terminal scene** in "Bound" rhyme: both eldercare, both about recognition. One is the medical promise; the other is its cost.
-- "Marina's Refusal" and "The Document" bracket the chemist's arc.
+- **The Vote (001) and The Designer (012)** bracket the historical argument — same man, forty-nine years apart.
+- **First Cardiac Event (003) and Bound (007)** rhyme: both about a nurse, both about a patient who didn't die of the cause on the chart.
+- **Marina's Refusal (009) and The Document (011)** bracket the chemist's arc.
 
 ## Process notes for the writing phase
 

@@ -4,7 +4,9 @@ import ArchivalHeader from '../components/ArchivalHeader.astro';
 import FileFooter from '../components/FileFooter.astro';
 import PassportFooter from '../components/PassportFooter.astro';
 import ContainmentNotice from '../components/ContainmentNotice.astro';
+import BackgroundMusic from '../components/BackgroundMusic.astro';
 import { getCollection } from 'astro:content';
+import { CHAPTER_MUSIC, CHAPTER_NARRATION } from '../config';
 
 interface Props {
   file: any;
@@ -17,6 +19,8 @@ const totalFiles = all.length;
 const withheld: boolean = file.data.withheld === true;
 const binds: boolean = file.data.binds === true || withheld;
 const components: Array<'image' | 'sound' | 'scent'> = file.data.components ?? [];
+const musicTracks = CHAPTER_MUSIC[file.data.fileNumber] ?? [];
+const narrationSrc = CHAPTER_NARRATION[file.data.fileNumber];
 ---
 
 <BaseLayout title={`File ${String(file.data.fileNumber).padStart(3, '0')} — ${file.data.title}`}>
@@ -38,6 +42,7 @@ const components: Array<'image' | 'sound' | 'scent'> = file.data.components ?? [
 
   <FileFooter fileNumber={file.data.fileNumber} totalFiles={totalFiles} />
   <PassportFooter components={components} binds={binds} />
+  <BackgroundMusic tracks={musicTracks} narration={narrationSrc} />
 </BaseLayout>
 
 <style>

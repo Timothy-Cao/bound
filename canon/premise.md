@@ -1,6 +1,6 @@
 # Premise
 
-A labor-protecting AI ban (2035) freezes most AI development for two decades. By the 2050s, demographic collapse and an eldercare crisis force narrow exceptions: medical AI gets a license to operate under heavy oversight. Inside that license, AI-optimized sensory therapy — light, sound, smell, rhythm, touch — is deployed at massive scale to treat dementia, sleep, pain, and behavioral disorders in millions of elderly patients.
+A labor-protecting AI ban (2031) freezes most AI development for nearly two decades. Three years later a neurotropic respiratory virus (NCV-34) sweeps the world — low acute mortality, devastating long-tail cognitive sequelae. Compounded with aging demographics and Synthetic Environment Syndrome, post-viral cognitive decline drives the eldercare and pension systems to breaking point. By 2050, the Healthcare AI Exception Act passes under emergency conditions, narrowly re-admitting AI for medical research and patient care. Inside that license, AI-optimized sensory therapy — light, sound, smell, rhythm, touch, sometimes paired with low-dose psychedelics for neuroplastic amplification — is deployed at massive scale to treat dementia, sleep, pain, and behavioral disorders.
 
 Closed-loop optimization on real patient biometrics discovers something neuroscience never could: certain sensory patterns don't just *get perceived*. They act as commands. They directly trigger memory, mood, hormonal release, autonomic states, even cardiac rhythm.
 
