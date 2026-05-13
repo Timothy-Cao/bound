@@ -11,6 +11,28 @@
 - Public bathrooms use scentless soap. Strong perfume in public reads as smoking-indoors did in the 2010s.
 - Emergency alerts are plain text with certified tones. Old siren systems were retired in 2073.
 
+## Private suspicions of the classification system
+
+By 2080, most adults have begun privately suspecting they are not actually Class 0. The suspicion arises from common experiences: smelling something at a market that produces an inexplicable feeling of *recognition*, dreaming patterns one cannot place, watching a stranger across the platform freeze briefly at a familiar sound and walk on. Public-health communication continues to insist that the Passport classification is reliable. Private experience increasingly does not.
+
+Some people seek out clinical screening for genuine reassurance (limited utility; the clinical screens catch only registered patterns). Some pay for "deep screening" at underground services (expensive, frequently charlatans). Most live with the suspicion and do not look further. The cost of confirming oneself Marked is too high in most lives: insurance, employment, social standing all hang on the Passport classification.
+
+The result is a population of citizens who are nominally Clean and privately uncertain, going about their work in a state of low-grade dread that the public-health apparatus does not officially recognize.
+
+## What is dangerous to read
+
+The Madeleine Effect (R17) means that books, photographs, films, and even conversation can trigger binding completion in subjects who have encoded components. The Cognitively Active Media regulation extends to:
+
+- **Cookbooks** with detailed scent descriptions (licensed, sometimes pruned, regional editions vary)
+- **Food photography** in newspapers and magazines (restricted in many jurisdictions; replaced with text-only food coverage in some)
+- **Travel writing** about specific cuisines (requires sensory clearance)
+- **Memoirs** that vividly describe perfumes, kitchens, childhood smells (reviewed before publication)
+- **Children's books** are heavily pruned of evocative scent description (the licensed editions are notably less sensory than pre-2070 children's literature)
+- **Restaurant menus** in some jurisdictions cannot include taste descriptors. Servers are forbidden to verbally describe dishes
+- **Old novels** with rich sensory prose have been retroactively reviewed; some are now restricted to certified readers only
+
+Most readers learn to skim sensory passages instinctively. Some find this skimming itself a small daily grief. Many of the most beloved novels of the pre-2070 era are functionally inaccessible to anyone who has been formally classified Marked or Twice-Marked.
+
 ## Etiquette
 
 - **"Safe to view?"** before showing any image. Universal. A child learns this around age four.

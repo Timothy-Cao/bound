@@ -54,6 +54,31 @@ Ablation works only when the third component is *novel* to the patient. For *leg
 
 By 2080, when LCI is the primary attack vector, ablation has become *less effective than it was in the 2070s*. The medical community has not openly conceded this.
 
+### R16. The classification is aspirational.
+
+The official Exposure Classification system tracks only registered memotoxin components against the Restricted Stimulus Registry. The Registry catches known, deployed patterns. It does not catch:
+
+- Adjacent encoding (unregistered patterns that are functionally equivalent to registered ones)
+- Subliminal or incidental exposure
+- Pre-2078 historical exposure
+- LCI components widely distributed in common foods, ambient broadcast, and household products
+
+By 2080, an estimated 70 to 90 percent of the global adult population is Marked or Twice-Marked by mundane unregistered combinations. Most "Class 0 Clean" designations are factually wrong. The Verrick broadcast attack proved this publicly: thousands of "Clean" Passport-holders died from one new component combining with legacy ones they had carried for decades without knowing.
+
+The OMC has not reformed the classification system to acknowledge this. Reform would require conceding that population-level susceptibility makes further mass-casualty LCI attacks not exceptional events but predictable ones. The classification system continues to issue Class 0 Clean to people who are almost certainly not Class 0. Senior officials with the relevant clearance know this. The system is, in OMC-internal slang, **the Aspirational Classification**. Citizens classified Class 0 are sometimes called **phantom clean**: a category that does not really exist.
+
+### R17. The Madeleine Effect (memory-trigger completion).
+
+Encoded components can be reactivated by external stimuli that do not contain the literal component but evoke memory recall of it. A vivid prose description of a specific scent, a photograph of food containing that scent, music that prompts memory of an associated audio component, even a strongly evocative dinner-table conversation: any of these can serve as a cue that triggers internal reconstruction of the component sufficient to complete a binding.
+
+The phenomenon is named after the famous Proust passage in which the taste of a tea-soaked madeleine cake triggers vivid involuntary memory. The Madeleine Effect is the canonical mechanism by which Cognitively Active Media (text, image, music, film, even spoken description) becomes potentially lethal in subjects who already have encoded components. Subjects with retained components are vulnerable not only to literal re-exposure but to anything that *evokes* their encoded memories.
+
+This is why the regulatory category *Cognitively Active Media* is so broad. It is not only direct memotoxin material that is restricted but anything that could trigger associated recall in already-encoded subjects. Cookbooks are licensed. Food photography is restricted in many jurisdictions. Travel writing about specific cuisines requires sensory clearance. Memoirs that describe specific perfumes are reviewed before publication. Children's books are pruned of evocative scent description. Even certain restaurants require their staff not to verbally describe dishes to customers.
+
+This also explains the death of Marina Idris. The 2067 document she read carried a visual pattern in its typewriter geometry (her first re-stimulus). The document's content, describing the Working Group's processes around stimulus injection, evoked her memory of professional scent work she had done across her career, including the specific components the Working Group had been studying (her second re-stimulus). Together with her retained 2071 encoding, the components reconstructed in her brain near-simultaneously. Binding completed. Cascade fired.
+
+The Madeleine Effect is the deepest reason the world's protective apparatus cannot function. It is not enough to restrict patterns. The OMC would have to restrict every mode of evocation: every novel, every photograph, every conversation that calls a memory by its proper name. Some jurisdictions have attempted this. They have failed.
+
 ### R15. Classification persists because classification serves its architects.
 
 The Office of Memetic Containment continues to classify the mechanism, sixteen years after Black Bloom and many tens of thousands of deaths. The standard public justification is that publication would aid attackers. The classified counter-argument inside the OMC is that publication would *disarm* attackers, since Aperture's primary weapon is the gap between what the public knows and what the OMC knows. A public that knew the mechanism could recognize binding-grade patterns, identify hazardous combinations in its own environment, and defend itself in ways the OMC currently cannot provide.

@@ -72,6 +72,16 @@ NCV-34 became endemic after the acute phase ended. By 2080, an estimated 85–95
 
 **Pilgrims of the Cut**: Vellum-coined slang for ablated patients. Mockery; the Vellum considers ablation a profanation. Widely used outside Vellum circles too.
 
+**The Aspirational Classification**: OMC-internal slang for the Exposure Classification system, recognizing that most "Class 0 Clean" designations are factually wrong. The system tracks registered exposure only; the actual susceptibility of the population is far higher. See `world-rules.md` R16.
+
+**Phantom Clean**: a citizen classified Class 0 who is actually Marked or Twice-Marked by unregistered combinations. Estimated to be 70 to 90 percent of nominally Class 0 citizens by 2080.
+
+**Adjacent encoding**: an unregistered but binding-grade-equivalent pattern that the Restricted Stimulus Registry does not catch. Common in mundane foods, ambient broadcast audio, and architectural visual environments.
+
+**The Madeleine Effect**: the canonical mechanism by which media that does not contain a memotoxin component can still trigger binding completion in subjects with retained encoded components. Named after the Proust passage. Explains why Cognitively Active Media regulation extends to text, photographs, and conversation, not only direct memotoxin material. See `world-rules.md` R17.
+
+**Evoked completion** / **memory-trigger completion**: clinical terms for binding completion via the Madeleine Effect rather than literal re-exposure.
+
 **Smell-killed / ear-killed / eye-killed**: working-class slang for the same.
 
 **Sensory Saturation**: Practice of flooding sensory channels with chaotic variant input so no specific pattern achieves binding salience. Clinical and folk versions exist.
