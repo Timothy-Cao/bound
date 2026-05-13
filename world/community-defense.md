@@ -10,17 +10,17 @@ Beside the technical arms race ([arms-race.md](../canon/arms-race.md)) runs a qu
 
 Major terrorist groups (especially the Aperture) run organized defense intelligence operations:
 
-- **Anthropological fieldwork** — long-term embedded observation of religious communities, working-class neighborhoods, immigrant enclaves. Some "anthropologists" are working for terror cells.
-- **Clinical infiltration** — bribed nurses, recruited bound-care staff, compromised CDP protocols.
-- **Document theft** — clinical guidelines, family records, household-management manuals. Wealthy estates have been burgled not for goods but for handwritten exposure logs.
-- **Defection cultivation** — turning members of defensive communities, especially Vellum's specialty.
+- **Anthropological fieldwork**, long-term embedded observation of religious communities, working-class neighborhoods, immigrant enclaves. Some "anthropologists" are working for terror cells.
+- **Clinical infiltration**, bribed nurses, recruited bound-care staff, compromised CDP protocols.
+- **Document theft**, clinical guidelines, family records, household-management manuals. Wealthy estates have been burgled not for goods but for handwritten exposure logs.
+- **Defection cultivation**, turning members of defensive communities, especially Vellum's specialty.
 
 ### Defender-side counter-intelligence
 
-- **Need-to-know clinical protocols** — patients on CDP are not told the full protocol. Pharmacists know one piece, supervising physicians another. Reconstructing the whole requires multiple compromised sources.
-- **Community vigilance** — outsiders asking specific questions at stink dens get watched, then quietly excluded. Some communities maintain informal counter-intelligence networks.
-- **Decoy defenses** — public-facing protections deliberately weaker than they appear. A few certified scent products perform *worse* than uncertified ones; the certifying body has been suspected of doing this deliberately to misdirect attacker optimization. Officially denied.
-- **Compartmentalization within families** — wealthy families pass household defensive practice only down the direct line. In-laws marry in but may never learn the full regimen.
+- **Need-to-know clinical protocols**, patients on CDP are not told the full protocol. Pharmacists know one piece, supervising physicians another. Reconstructing the whole requires multiple compromised sources.
+- **Community vigilance**, outsiders asking specific questions at stink dens get watched, then quietly excluded. Some communities maintain informal counter-intelligence networks.
+- **Decoy defenses**, public-facing protections deliberately weaker than they appear. A few certified scent products perform *worse* than uncertified ones; the certifying body has been suspected of doing this deliberately to misdirect attacker optimization. Officially denied.
+- **Compartmentalization within families**, wealthy families pass household defensive practice only down the direct line. In-laws marry in but may never learn the full regimen.
 
 ### Defense intelligence markets
 
@@ -52,10 +52,10 @@ Several religious traditions discovered post-2070 that elements of their practic
 
 Folk dilution culture is tribal even when the participants don't articulate it that way:
 
-- **Stink dens** are not just chaotic bars — the community manages who comes in, what they smell, what they hear. Outsiders get the loud surface, not the actual practice.
+- **Stink dens** are not just chaotic bars, the community manages who comes in, what they smell, what they hear. Outsiders get the loud surface, not the actual practice.
 - **Pattern bars** are illegal under display regulations; their existence depends on community silence.
-- **Drinking-before-sleep** rituals carry social weight beyond their pharmacology — the evening drink with family is a defensive ritual disguised as a social one.
-- **Working-class childcare networks** — older neighbors who watch kids — pass defensive habits along without naming them. "We don't have strong perfumes in the house" is rule, not theory.
+- **Drinking-before-sleep** rituals carry social weight beyond their pharmacology, the evening drink with family is a defensive ritual disguised as a social one.
+- **Working-class childcare networks**, older neighbors who watch kids, pass defensive habits along without naming them. "We don't have strong perfumes in the house" is rule, not theory.
 
 ### Wealthy family practices
 
@@ -64,7 +64,7 @@ Private. Inherited. Never published.
 - Household scent regimens chosen by hereditary consultation.
 - Specific cooking traditions selected for defensive scent profile.
 - Childhood sensory exposure managed and logged.
-- Marriage negotiations include "exposure history" disclosure between families — a major sticking point in pre-nuptial discussion.
+- Marriage negotiations include "exposure history" disclosure between families, a major sticking point in pre-nuptial discussion.
 - Servants and staff sign confidentiality agreements about household practice.
 
 ### Sailor, dockworker, and circus communities
@@ -77,21 +77,21 @@ Diaspora trades that have inherited sensory practices over generations:
 
 ## The state's defensive classification problem
 
-The SSDO holds a defensive arsenal — protocols, screening techniques, real-time detection systems — that hospitals, public health agencies, and ordinary citizens cannot access. The reasoning: deployment = disclosure = countermeasure.
+The SSDO holds a defensive arsenal, protocols, screening techniques, real-time detection systems, that hospitals, public health agencies, and ordinary citizens cannot access. The reasoning: deployment = disclosure = countermeasure.
 
 The result: **the best defenses available are not available to the people who need them most.** This is a recurring scandal whenever a particular case surfaces. Reform proposals come and go. None passes, because by R12 they cannot.
 
 Public health agencies have developed a tier system, mostly unofficial:
 
-- **Published defenses** — old, decoy, or already-countered. What hospitals teach patients.
-- **Practitioner-restricted defenses** — credentialed access only. Updated quarterly. Available in clinical settings.
-- **Classified defenses** — SSDO and a few elite institutions only. Never deployed to the public.
+- **Published defenses**, old, decoy, or already-countered. What hospitals teach patients.
+- **Practitioner-restricted defenses**, credentialed access only. Updated quarterly. Available in clinical settings.
+- **Classified defenses**, SSDO and a few elite institutions only. Never deployed to the public.
 
 A doctor who would help save lives by publishing the practitioner-restricted material faces criminal charges plus the certainty that publication will accelerate the very deaths they wanted to prevent. Several have done it anyway. A small canon of leaked-defense scandals is part of recent history.
 
 ## The moral texture
 
-This is the bleak edge worth being conscious of in the writing: **a sympathetic character who teaches defense is endangering their own community.** A defector who reveals a community's protective practice is a traitor in a deeper sense than ordinary betrayal — they have killed people who haven't been attacked yet.
+This is the bleak edge worth being conscious of in the writing: **a sympathetic character who teaches defense is endangering their own community.** A defector who reveals a community's protective practice is a traitor in a deeper sense than ordinary betrayal, they have killed people who haven't been attacked yet.
 
 The corresponding edge: a community that hoards defense knowledge while neighboring children die is doing something morally hard to defend.
 
@@ -104,4 +104,4 @@ Both edges should be felt in the writing when relevant. Characters in this world
 - A community elder dying without having passed the full set of protective practices to the next generation. The community has lost defenses it didn't know it had.
 - An anthropologist publishing fieldwork on a religious community's practice. Some of the practice was protective. The community feels betrayed.
 - A defector from a hoarded community trying to share what they know publicly. Hunted by their own.
-- An SSDO official deciding whether to release a classified defense in response to a specific imminent attack — knowing release will neutralize the defense permanently.
+- An SSDO official deciding whether to release a classified defense in response to a specific imminent attack, knowing release will neutralize the defense permanently.

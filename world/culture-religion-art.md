@@ -6,18 +6,18 @@ The mechanism feels mystical even to people who understand it scientifically. *M
 
 ### Mainstream religions
 
-Incense, chanting, bells, icons, stained glass, ritual postures — all now regulated under the Sensory Safety Act and Public Scent Ordinances. Major denominations have largely complied:
+Incense, chanting, bells, icons, stained glass, ritual postures, all now regulated under the Sensory Safety Act and Public Scent Ordinances. Major denominations have largely complied:
 
 - Catholic incense is now certified low-volatile.
 - Bells are tuned to cleared frequencies.
 - Stained glass windows in newer churches are designed within "safe geometry" parameters.
-- Some old churches have been declared sensory landmarks — visitable in goggles only.
+- Some old churches have been declared sensory landmarks, visitable in goggles only.
 
 This has been a slow grief. Older congregants experience the modern liturgy as flattened, hollow. The phrase **"the silenced sacred"** is in active use.
 
 ### Reformist movements
 
-Some groups argue that ritual sensation was always a form of stimulus injection — that incense and chant *worked* because they triggered specific neural states, and the religious tradition encoded centuries of accidental sensory medicine. This is a serious theological argument. The orthodox hate it. The progressive find it liberating. Some mystic-leaning groups embrace it: *the saints knew what the AI rediscovered.*
+Some groups argue that ritual sensation was always a form of stimulus injection, that incense and chant *worked* because they triggered specific neural states, and the religious tradition encoded centuries of accidental sensory medicine. This is a serious theological argument. The orthodox hate it. The progressive find it liberating. Some mystic-leaning groups embrace it: *the saints knew what the AI rediscovered.*
 
 ### Memotoxin cults
 
@@ -37,11 +37,11 @@ Drinking culture has acquired ritual undertones. *Drink before you sleep* is hal
 
 ### Filtered art
 
-Major museums show old masters through cleared filtering — visitors see a smoothed, blurred, partially-flattened version. Originals are stored in vaults. The unfiltered experience is available only to credentialed researchers in controlled chambers. Critics argue this is "killing the work to save it."
+Major museums show old masters through cleared filtering, visitors see a smoothed, blurred, partially-flattened version. Originals are stored in vaults. The unfiltered experience is available only to credentialed researchers in controlled chambers. Critics argue this is "killing the work to save it."
 
 ### Underground
 
-**Forbidden art collectors** acquire pre-regulation visual works — optical illusions, stereograms, dense geometric patterns, M.C. Escher, Bridget Riley, Op Art. Possession is a serious crime under Hazardous Stimulus Possession Law. Collections are hidden, viewed in private. The community is small, secretive, and tracked.
+**Forbidden art collectors** acquire pre-regulation visual works, optical illusions, stereograms, dense geometric patterns, M.C. Escher, Bridget Riley, Op Art. Possession is a serious crime under Hazardous Stimulus Possession Law. Collections are hidden, viewed in private. The community is small, secretive, and tracked.
 
 **Illegal depth-texture artists** create new works in the forbidden style. Pattern bars sometimes display these. Some artists frame this as resistance. Others as nihilism. A few as religious practice.
 
@@ -50,7 +50,7 @@ Major museums show old masters through cleared filtering — visitors see a smoo
 - Public music is licensed. Concerts require clearance.
 - Humming unknown tunes in public is taboo (see daily-life.md).
 - **Old songs** have been retroactively analyzed for hazardous structure. A surprising number have been quietly removed from licensed catalogs. There is an active legal and cultural fight over the "purged catalog."
-- **Unclearance shows** — underground concerts performing uncleared material — are a major youth subculture, half-criminal, half-fashionable.
+- **Unclearance shows**, underground concerts performing uncleared material, are a major youth subculture, half-criminal, half-fashionable.
 - **Pure-percussion music** has surged in popularity. Beats without tonal content are considered safer.
 
 ## Fashion
@@ -58,7 +58,7 @@ Major museums show old masters through cleared filtering — visitors see a smoo
 - Matte solids dominate.
 - Stripes, spirals, animated clothing, reflective jewelry, depth patterns are restricted in most public venues.
 - **Safe fashion** is a major industry. Top designers compete to produce maximally interesting clothing within the constraints.
-- **Optical rebellion** — illegal pattern-wear — is associated with art kids, pattern-bar regulars, and political fringe groups.
+- **Optical rebellion**, illegal pattern-wear, is associated with art kids, pattern-bar regulars, and political fringe groups.
 - **Goggle fashion** has emerged: frames, tints, ornament. The wealthy wear thin elegant goggles; the poor wear chunky standard issue. Visible class marker.
 
 ## Language and gesture
@@ -70,7 +70,7 @@ Major museums show old masters through cleared filtering — visitors see a smoo
 
 ## The mood
 
-The world is not dystopian, exactly. People live, love, work, complain, throw birthday parties, fall in love, raise children. But there is a constant low background of caution. The phrase **"keep it flat"** has become a general life philosophy — keep your home plain, your habits regular, your media cleared, your tastes calm. Excitement is suspicious. Intensity is dangerous.
+The world is not dystopian, exactly. People live, love, work, complain, throw birthday parties, fall in love, raise children. But there is a constant low background of caution. The phrase **"keep it flat"** has become a general life philosophy, keep your home plain, your habits regular, your media cleared, your tastes calm. Excitement is suspicious. Intensity is dangerous.
 
 The old, who remember 2050s color and chaos, find this unbearable.
 The young, who never knew it, mostly don't notice.

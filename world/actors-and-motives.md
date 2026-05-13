@@ -23,7 +23,7 @@ Internal tensions: career scientists resent the militarization. Some leak. The 2
 Several states never signed the post-2031 AI labor framework. Their memotoxin capabilities are presumed a generation ahead of banned-state SSDO programs. They run:
 
 - Open offensive research under medical or defense cover.
-- Pay-for-subject markets — terminally ill volunteers and their families, prisoners, the desperate.
+- Pay-for-subject markets, terminally ill volunteers and their families, prisoners, the desperate.
 - Sales to private clients and proxy groups, including some banned-state terror cells.
 
 Cross-border tension is intense and quiet. The unbanned states' capability is the strategic problem the banned states cannot publicly discuss.
@@ -35,8 +35,8 @@ Cross-border tension is intense and quiet. The unbanned states' capability is th
 Some legitimate. Some run gray-market research extensions of their licensed programs. Lines blur:
 
 - "Subclinical influence" research for advertising and consumer products. Legal in some jurisdictions, gray in others.
-- "Engagement optimization" sensory work — pushes into stimulus-injection territory under marketing cover.
-- Insurance-funded "exposure prophylaxis" research — euphemistic; some is offensive parameter mapping disguised as defense.
+- "Engagement optimization" sensory work, pushes into stimulus-injection territory under marketing cover.
+- Insurance-funded "exposure prophylaxis" research, euphemistic; some is offensive parameter mapping disguised as defense.
 
 ### Pharmaceuticals and old-tech survivors
 
@@ -44,7 +44,7 @@ Pre-Ban pharma companies that survived the contraction have institutional memory
 
 ### Underground labs
 
-Small, well-funded private operations, often founded by ex-medical-AI researchers either burned out by the legitimate system or quietly recruited. Clients: cults, terrorist groups, private revenge clients, foreign state proxies, occasionally legitimate parties willing to pay for off-the-books work. Capability varies wildly — some are sophisticated, some are dangerous because they are not.
+Small, well-funded private operations, often founded by ex-medical-AI researchers either burned out by the legitimate system or quietly recruited. Clients: cults, terrorist groups, private revenge clients, foreign state proxies, occasionally legitimate parties willing to pay for off-the-books work. Capability varies wildly, some are sophisticated, some are dangerous because they are not.
 
 ## Terrorist groups
 
@@ -52,7 +52,7 @@ Four named groups operating in the 2080 era. Each has coherent ideology and dist
 
 ### The Quietists
 
-**Ideology**: anti-natalist nihilism. Consciousness is suffering. SES-era humans have proven life produces more pain than meaning. Memotoxins are not weapons — they are release. They consider themselves a mercy organization.
+**Ideology**: anti-natalist nihilism. Consciousness is suffering. SES-era humans have proven life produces more pain than meaning. Memotoxins are not weapons, they are release. They consider themselves a mercy organization.
 
 **Recruitment**: SES-affected populations, especially the cognitively sharp who feel existential weight most acutely. University students, isolated professionals, lapsed clergy. Quiet, articulate, often well-educated.
 
@@ -88,7 +88,7 @@ Four named groups operating in the 2080 era. Each has coherent ideology and dist
 
 ### The Vellum
 
-**Ideology**: theological cult-terrorism. Memotoxin patterns are revelation — the "true grammar of consciousness," God's actual language, rediscovered. Members voluntarily achieve Sealed status. Some achieve Bound and die ecstatic.
+**Ideology**: theological cult-terrorism. Memotoxin patterns are revelation, the "true grammar of consciousness," God's actual language, rediscovered. Members voluntarily achieve Sealed status. Some achieve Bound and die ecstatic.
 
 **Recruitment**: spiritually-restless middle-class refugees from mainstream religions "silenced" by sensory regulation. Their argument: Catholic incense is now certified low-volatile, but the *original* incense was a sacrament. Memotoxins are the original sacrament restored.
 
@@ -100,9 +100,9 @@ Four named groups operating in the 2080 era. Each has coherent ideology and dist
 
 ### Lesser groups
 
-- **The Census** — class-revenge attacks from poor neighborhoods on cleared private venues. High symbolism, limited capability. Generation 2–3.
-- **Forge** — anti-corporate. Targets subclinical-influence companies. Treats corporate sensory marketing as a form of memotoxin attack. Generation 4–5.
-- **Various cults** — local, idiosyncratic, occasionally lethal. Most fizzle.
+- **The Census**, class-revenge attacks from poor neighborhoods on cleared private venues. High symbolism, limited capability. Generation 2–3.
+- **Forge**, anti-corporate. Targets subclinical-influence companies. Treats corporate sensory marketing as a form of memotoxin attack. Generation 4–5.
+- **Various cults**, local, idiosyncratic, occasionally lethal. Most fizzle.
 
 ## Why memotoxin terrorism specifically
 
@@ -110,7 +110,7 @@ Why do groups choose memotoxin tactics over explosives, firearms, or biological 
 
 - **Force multiplication**: small groups, mass casualties.
 - **Untraceability**: components deployed across months and channels; attribution is hard.
-- **Aesthetic appeal**: memotoxins attract a different demographic — articulate, often intellectual, sometimes spiritual.
+- **Aesthetic appeal**: memotoxins attract a different demographic, articulate, often intellectual, sometimes spiritual.
 - **System discreditation**: every successful attack proves safety theater is hollow. Every failed attack proves it's necessary. Either outcome serves most ideologies.
 - **Recruitment**: working on a memotoxin is technically interesting and feels meaningful in a way other terrorism doesn't.
 - **LCI**: post-2076, the realization that legacy components can be exploited makes mass-casualty attacks dramatically cheaper than ever before. Aperture in particular has exploited this.
@@ -124,9 +124,9 @@ For groups with technical capacity, the workflow:
 3. **Human testing**:
    - Paid volunteers (terminally ill, suicidal, paid via family payouts).
    - Captive populations in unbanned states.
-   - Bound-care patients in complicit facilities — a small number of facilities are quietly contracted. Patients dying anyway; families paid.
+   - Bound-care patients in complicit facilities, a small number of facilities are quietly contracted. Patients dying anyway; families paid.
    - Homeless and unhoused individuals lured into "sleep studies."
-4. **Component synthesis**: image production via digital tools (easy); audio synthesis (moderate); **scent production via custom perfumery — the limiting step**. Skilled chemists with access to controlled compounds are the bottleneck of the entire underground.
+4. **Component synthesis**: image production via digital tools (easy); audio synthesis (moderate); **scent production via custom perfumery, the limiting step**. Skilled chemists with access to controlled compounds are the bottleneck of the entire underground.
 5. **Deployment design**: distribution planning, chokepoint analysis, target selection. Increasingly: LCI legacy-component selection.
 
 Each stage corresponds to a different criminal market and a different point of state interdiction. Most attacks are either crude (one group doing everything badly) or sophisticated and rare (cross-network operations).
@@ -141,6 +141,6 @@ Major scandal whenever a particular case surfaces. It surfaces every few years. 
 
 ## The scent-chemist bottleneck
 
-Worth its own note. Sophisticated memotoxin attacks require precisely-tuned scent components, which require synthetic organic chemistry capability that the digital underground does not have. There are perhaps 200 chemists worldwide with the skill and lab access to produce binding-grade scent components reliably. Most work in legitimate perfumery or pharmaceuticals. A handful — under a dozen — are known or suspected to do contract work for non-state actors. They are the single most surveilled population in the field. Hunting them, or recruiting them, is a recurring theme in state intelligence operations.
+Worth its own note. Sophisticated memotoxin attacks require precisely-tuned scent components, which require synthetic organic chemistry capability that the digital underground does not have. There are perhaps 200 chemists worldwide with the skill and lab access to produce binding-grade scent components reliably. Most work in legitimate perfumery or pharmaceuticals. A handful, under a dozen, are known or suspected to do contract work for non-state actors. They are the single most surveilled population in the field. Hunting them, or recruiting them, is a recurring theme in state intelligence operations.
 
 A plausible plot anchor: a scent chemist who has decided to stop, or to defect, or to confess.

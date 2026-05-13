@@ -1,4 +1,4 @@
-# The Collection — Working Format
+# The Collection, Working Format
 
 **Form:** Linked short story collection (mosaic novel).
 **Length:** ~120 pages total, ~25,000–35,000 words across ~20 stories of 3–8 pages each.
@@ -10,55 +10,55 @@ This format supersedes the earlier single-POV novella plan ([`the-book.md`](the-
 
 - **Honors the worldbuilding.** Every named actor, mechanism, defense generation, and cascading effect can have its story. Nothing built is wasted.
 - **Reinforces the theme structurally.** "Humanity is more cooperative than the system permits" is a cumulative claim. Twenty testimonies build the argument better than one arc can. The book's *form* is the argument.
-- **Solves novel-risk.** Graceful degradation — a weak story can be cut without restructure.
+- **Solves novel-risk.** Graceful degradation, a weak story can be cut without restructure.
 - **Variable register per story.** Some literary, some procedural, some intimate, some horror, some satirical. The variety becomes a feature.
-- **The page-of-text climax becomes one story's ending** rather than a structural midpoint — heightens singularity.
+- **The page-of-text climax becomes one story's ending** rather than a structural midpoint, heightens singularity.
 - **Time-spanning is natural.** Stories from 2030s to 2080s let the political-historical evolution be visible. Reader watches the trap close generation by generation.
 
 ## Comp titles
 
-- *World War Z* (Brooks) — oral history mosaic, closest in tone and method.
-- *Cloud Atlas* (Mitchell) — interlocking pieces across history.
-- *A Visit from the Goon Squad* (Egan) — formal play, time-spanning.
-- *Exhalation* (Ted Chiang) — themed philosophical-SF collection.
-- *Olive Kitteridge* (Strout) — linked stories with recurring characters.
-- *Salt Slow* (Armfield) / *Her Body and Other Parties* (Machado) — literary-horror register.
+- *World War Z* (Brooks), oral history mosaic, closest in tone and method.
+- *Cloud Atlas* (Mitchell), interlocking pieces across history.
+- *A Visit from the Goon Squad* (Egan), formal play, time-spanning.
+- *Exhalation* (Ted Chiang), themed philosophical-SF collection.
+- *Olive Kitteridge* (Strout), linked stories with recurring characters.
+- *Salt Slow* (Armfield) / *Her Body and Other Parties* (Machado), literary-horror register.
 
 ## Table of contents (working)
 
 Expect names, dates, and exact stories to shift in drafting. The structural shape below is what's stable.
 
-### Part I — Before (2031–2050)
-1. **The Vote** *(2031, ~5pp)* — Karl Olesen as a young policy advisor on the day the AI Labor Ban passes. We meet a future architect, young.
-2. **The Exception** *(2050, ~6pp)* — The Healthcare AI Exception Act debate, witnessed from outside Karl Olesen's POV: a labor leader who voted yes on the 2031 Ban now watches it cracked open. Karl is in the room, age 44, advocating for the Exception. The keystone political event of the collection.
+### Part I, Before (2031–2050)
+1. **The Vote** *(2031, ~5pp)*, Karl Olesen as a young policy advisor on the day the AI Labor Ban passes. We meet a future architect, young.
+2. **The Exception** *(2050, ~6pp)*, The Healthcare AI Exception Act debate, witnessed from outside Karl Olesen's POV: a labor leader who voted yes on the 2031 Ban now watches it cracked open. Karl is in the room, age 44, advocating for the Exception. The keystone political event of the collection.
 
-### Part II — Discovery (2060s)
-5. **A Patient Recognizes Her Daughter** *(2061, ~4pp)* — the breakthrough moment. Hope.
-6. **First Cardiac Event** *(2066, ~6pp)* — the research nurse who realizes a patient died of something the AI did.
-7. **The Memo** *(2067, ~3pp)* — internal memo classifying "stimulus injection" rather than publishing. The architect framing in origin.
+### Part II, Discovery (2060s)
+5. **A Patient Recognizes Her Daughter** *(2061, ~4pp)*, the breakthrough moment. Hope.
+6. **First Cardiac Event** *(2066, ~6pp)*, the research nurse who realizes a patient died of something the AI did.
+7. **The Memo** *(2067, ~3pp)*, internal memo classifying "stimulus injection" rather than publishing. The architect framing in origin.
 
-### Part III — Becoming (2069–2076)
-8. **Black Bloom** *(2069, ~7pp)* — the first public attack, victim's POV. Horror register.
-9. **The Filter** *(2071, ~5pp)* — a child wearing AR goggles for the first time.
-10. **The Censor's Hum** *(2073, ~4pp)* — a clearance technician realizes she's humming a tune she shouldn't know.
-11. **Stink Den** *(2076, ~4pp)* — folk dilution culture from inside.
+### Part III, Becoming (2069–2076)
+8. **Black Bloom** *(2069, ~7pp)*, the first public attack, victim's POV. Horror register.
+9. **The Filter** *(2071, ~5pp)*, a child wearing AR goggles for the first time.
+10. **The Censor's Hum** *(2073, ~4pp)*, a clearance technician realizes she's humming a tune she shouldn't know.
+11. **Stink Den** *(2076, ~4pp)*, folk dilution culture from inside.
 
-### Part IV — Lived (2078–2080)
-12. **Cleared Photo** *(2078, ~3pp)* — a young couple sharing an old photo on a third date.
-13. **A Funeral** *(2079, ~4pp)* — a family arguing over whether they can play the deceased's favorite song.
-14. **Bound** *(2080, ~5pp)* — the interior of a Bound patient in care.
-15. **The Boy Who Hummed** *(2080, ~5pp)* — the teenager's first dream. Cohort piece.
-16. **Marina's Refusal** *(2080, ~7pp)* — the chemist refuses a contract.
+### Part IV, Lived (2078–2080)
+12. **Cleared Photo** *(2078, ~3pp)*, a young couple sharing an old photo on a third date.
+13. **A Funeral** *(2079, ~4pp)*, a family arguing over whether they can play the deceased's favorite song.
+14. **Bound** *(2080, ~5pp)*, the interior of a Bound patient in care.
+15. **The Boy Who Hummed** *(2080, ~5pp)*, the teenager's first dream. Cohort piece.
+16. **Marina's Refusal** *(2080, ~7pp)*, the chemist refuses a contract.
 
-### Part V — Endings (2080–after)
-17. **Marina at the Window** *(2080, ~6pp)* — the "I'm too certain" moment.
-18. **The Document** *(2080, ~8pp)* — Marina reads the page. The blackout. Her death.
-19. **The Designer** *(2080, ~6pp)* — an aging architect reflects on what they built. Antagonist-POV reckoning.
-20. **The Archivist** *(2090s, ~5pp)* — the reconstructor speaks. They have assembled these stories. The final story names them and explains why.
+### Part V, Endings (2080–after)
+17. **Marina at the Window** *(2080, ~6pp)*, the "I'm too certain" moment.
+18. **The Document** *(2080, ~8pp)*, Marina reads the page. The blackout. Her death.
+19. **The Designer** *(2080, ~6pp)*, an aging architect reflects on what they built. Antagonist-POV reckoning.
+20. **The Archivist** *(2090s, ~5pp)*, the reconstructor speaks. They have assembled these stories. The final story names them and explains why.
 
 Total: ~120 pages.
 
-## Story opening framing — archival headers
+## Story opening framing, archival headers
 
 Every story opens with a short framing block (3–6 lines max) presented as the reconstructor's source material. The block varies in *type* by story: case file, leaked memo, audio diary transcript, redacted clinical log, personal correspondence, public record, etc.
 
@@ -66,55 +66,55 @@ The variation is meaningful. Some characters had state files (institutional sour
 
 ### Examples across the table of contents
 
-**"The Vote" (2031) — public record**
+**"The Vote" (2031), public record**
 > *From the chronicle of the AI Labor Ban hearings, public proceedings.*
 > *April 14, 2031. Washington.*
 
-**"The Exception" (2050) — hearing transcript**
+**"The Exception" (2050), hearing transcript**
 > *From the hearing record of the Healthcare AI Exception Act.*
 > *Subcommittee on Cognitive Health, day 17 of testimony.*
 > *September 23, 2050. Brussels.*
 
-**"First Cardiac Event" (2066) — institutional case file**
+**"First Cardiac Event" (2066), institutional case file**
 > *Incident report SCN-2066-0044.*
 > *Mercy Eldercare Center, Sleep Therapy Bay 3.*
 > *Patient: M. (deceased). Reporting nurse: L. Han.*
 
-**"Black Bloom" (2069) — anonymous victim file**
+**"Black Bloom" (2069), anonymous victim file**
 > *Case file 2069-WMK-08-7724.*
 > *Subject: unidentified female, est. 32 years.*
 > *Exposure: Westmarket Central transit hub, August 4.*
 > *Deceased: August 18, 2069.*
 
-**"The Memo" (2067) — leaked classified document**
+**"The Memo" (2067), leaked classified document**
 > *Office of Cognitive Rehabilitation. Internal memo, classified at issue.*
 > *Declassified in part, 2089. Redactions retained.*
 
-**"The Censor's Hum" (2073) — workplace incident**
+**"The Censor's Hum" (2073), workplace incident**
 > *Internal incident report. Office of Memetic Containment.*
 > *Censor Operations Division, Tier 3.*
 > *Tag: 2073-T-441 (Vance, A.).*
 
-**"Bound" (2080) — anonymized clinical**
+**"Bound" (2080), anonymized clinical**
 > *Bound-care clinic logs, redacted.*
 > *Patient class: 4. Subject name: not recoverable from the archive.*
 > *Date of binding: unknown. Date of cascade: unknown.*
 
-**"Marina's Refusal" (2080) — personal communication**
-> *M. — voicemail to E. Olamide, professional colleague.*
+**"Marina's Refusal" (2080), personal communication**
+> *M., voicemail to E. Olamide, professional colleague.*
 > *Reconstructed from receiving party's archive. April 9, 2080.*
 
-**"The Document" (2080) — the page-of-text climax**
+**"The Document" (2080), the page-of-text climax**
 > *The document M. read on the morning of her death.*
 > *The Office of Memetic Containment has declined to release the original.*
 > *The pages that follow are reconstructed from her biometric record and a partial recovery of her workstation cache.*
 
-**"The Designer" (2080) — recovered private material**
+**"The Designer" (2080), recovered private material**
 > *Audio diary, K. Olesen. Recovered from estate.*
 > *Recording date: November 17, 2080. Transcription quality: degraded.*
 
-**"The Archivist" (final story) — no header**
-> *(no header — the reconstructor speaks directly, framing themselves for the first time)*
+**"The Archivist" (final story), no header**
+> *(no header, the reconstructor speaks directly, framing themselves for the first time)*
 
 ### Discipline for headers
 
@@ -126,21 +126,21 @@ The variation is meaningful. Some characters had state files (institutional sour
 
 ## Recurring elements across stories
 
-Linked collections live or die on the invisible connective tissue. The cast and connections are locked — see [`characters/recurring.md`](../characters/recurring.md) for the full reference.
+Linked collections live or die on the invisible connective tissue. The cast and connections are locked, see [`characters/recurring.md`](../characters/recurring.md) for the full reference.
 
 ### Cast (summary)
-- **Karl Olesen** — the architect figure. The Vote (FILE 001, age 25), The Exception (FILE 002, age 44, seen from outside), The Memo (FILE 004, age 61), The Designer (FILE 012, age 74). Four decision moments across fifty years.
-- **Lihua Han** — eldercare nurse turned bound-care specialist. Protagonist of FILE 003 (2066). Recurs as caregiver in FILE 007 (2080). Quietly fostered Anna Vance's child after Vance's institutionalization.
-- **Anna Vance** — censor. Protagonist of FILE 006 (2073). *Is the anonymous patient in FILE 007.* Single mother to a child she lost custody of after binding.
-- **Marina Idris** — scent chemist. Protagonist of FILES 009, 010, 011 (2080).
-- **Esin Olamide** — Marina's professional colleague (FILE 009 voicemail).
-- **Amrit Ranjit** — OMC field officer. Interviewer in FILE 008 (2080). Signs document headers across the collection.
-- **Wei Han** — the Archivist (FILE 013). Biologically Anna Vance's child; fostered to Lihua Han. They do not learn the connection until they assemble the archive themselves.
+- **Karl Olesen**, the architect figure. The Vote (FILE 001, age 25), The Exception (FILE 002, age 44, seen from outside), The Memo (FILE 004, age 61), The Designer (FILE 012, age 74). Four decision moments across fifty years.
+- **Lihua Han**, eldercare nurse turned bound-care specialist. Protagonist of FILE 003 (2066). Recurs as caregiver in FILE 007 (2080). Quietly fostered Anna Vance's child after Vance's institutionalization.
+- **Anna Vance**, censor. Protagonist of FILE 006 (2073). *Is the anonymous patient in FILE 007.* Single mother to a child she lost custody of after binding.
+- **Marina Idris**, scent chemist. Protagonist of FILES 009, 010, 011 (2080).
+- **Esin Olamide**, Marina's professional colleague (FILE 009 voicemail).
+- **Amrit Ranjit**, OMC field officer. Interviewer in FILE 008 (2080). Signs document headers across the collection.
+- **Wei Han**, the Archivist (FILE 013). Biologically Anna Vance's child; fostered to Lihua Han. They do not learn the connection until they assemble the archive themselves.
 - **Architect co-signatories** (referenced in FILES 004, 011): Margaret Tate, Henrik Voss (quietly Vellum-sympathetic), Yelena Sokolova.
 
 ### The four locked connections
 1. **Anna Vance is the anonymous Class 4 patient in *Bound*.** Reader inference only.
-2. **Lihua Han nurses her** in FILE 007 — fourteen years after reporting the first death in FILE 003. Lihua knows; Vance does not.
+2. **Lihua Han nurses her** in FILE 007, fourteen years after reporting the first death in FILE 003. Lihua knows; Vance does not.
 3. **Marina finds Karl Olesen's signature** on the 2067 Memo alongside Tate, Voss, and Sokolova. Voss's marginal notes hint at Vellum sympathies. She reads. She dies.
 4. **Wei Han (the Archivist) is Anna Vance's biological child, fostered to Lihua Han.** Three women, three generations of trying to tell one truth. Wei does not know this until they assemble the archive themselves.
 
@@ -152,7 +152,7 @@ Linked collections live or die on the invisible connective tissue. The cast and 
 - **Marina's bay-leaf motif** seeded possibly in an earlier story before her arc
 
 ### Structural rhymes
-- **The Vote (001) and The Designer (012)** bracket the historical argument — same man, forty-nine years apart.
+- **The Vote (001) and The Designer (012)** bracket the historical argument, same man, forty-nine years apart.
 - **First Cardiac Event (003) and Bound (007)** rhyme: both about a nurse, both about a patient who didn't die of the cause on the chart.
 - **Marina's Refusal (009) and The Document (011)** bracket the chemist's arc.
 

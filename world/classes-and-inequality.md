@@ -8,7 +8,7 @@ In 2080, **perceptual safety is a class privilege.** This is the single most imp
 - Private cleared media libraries; subscription to real-time clearance feeds.
 - Homes built to "safe architecture" standards: cleared art, scent-neutral HVAC, certified lighting, neutral rooms for high-stress moments.
 - Personal scent-security: licensed perfumers, scent-audited households, private scent detectors.
-- Private medical AI access — including, for the very rich, off-the-books extensions of legal sensory therapy.
+- Private medical AI access, including, for the very rich, off-the-books extensions of legal sensory therapy.
 - Clinical Cognitive Dilution Protocols administered under medical supervision.
 - Children attend schools with cleared environments, hazard-rated grounds, and on-staff exposure screeners.
 - Social events held in cleared venues with sensory permits.
@@ -24,7 +24,7 @@ In 2080, **perceptual safety is a class privilege.** This is the single most imp
 
 ## The poor
 
-- Cheap goggles that overblur — face recognition fails, traffic lights blur, warning signs become unreadable. Safety equipment itself is dangerous.
+- Cheap goggles that overblur, face recognition fails, traffic lights blur, warning signs become unreadable. Safety equipment itself is dangerous.
 - Underfiltered public transit, dense apartment blocks, badly-cleared advertising.
 - High exposure to illegal media, black-market sensory content, crowded public spaces with no scent control.
 - Limited access to bound-care clinics; rely on community health workers and informal screening.
@@ -35,7 +35,7 @@ In 2080, **perceptual safety is a class privilege.** This is the single most imp
 
 - **Goggle quality**: cheap goggles' overblur is a known public-health problem, but cheaper goggles are also a major tax revenue line and an industry. Reform efforts go nowhere.
 - **Stink-den stigma**: middle-class moralizing about drinking culture and "dirty bars" is in tension with the fact that these practices reduce binding in working-class populations. Some progressive doctors are starting to argue for state subsidy of stink dens. The medical establishment hates this.
-- **Cleared media access**: certified content costs real money. The poor consume more uncertified content — and have higher Marked rates as a result.
+- **Cleared media access**: certified content costs real money. The poor consume more uncertified content, and have higher Marked rates as a result.
 - **Death visibility**: Sudden street deaths are managed differently in rich and poor neighborhoods. Rich-neighborhood deaths get media coverage and inquests. Poor-neighborhood deaths get a body bag and a paragraph.
 
 ## The new working class

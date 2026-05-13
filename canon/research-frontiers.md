@@ -2,9 +2,25 @@
 
 How memotoxin science actually works, what's known, what's bleeding edge, and what's on the horizon. Canon for technical scenes and plot setup.
 
+## Why memotoxins exist now and not before
+
+The question that should be asked, and is often asked, of any work on this material is: *if the mechanism of multimodal binding has always been part of human neurology, why did humanity not encounter lethal memotoxins before AI?*
+
+The canonical answer has two parts.
+
+**Part one: the mechanism has always existed, but was rarely triggered.** Rare natural-occurring events that resembled memotoxin deaths happened throughout human history. They were attributed to other causes: psychogenic illness, sudden unexplained nocturnal death, panic-triggered cardiac events, mass hysteria, Stendhal syndrome, voodoo death. The medical literature on each of these phenomena describes, in retrospect, what we now recognize as partial memotoxin events. They were never recognized as a coherent pattern because they did not occur as one. Pre-pandemic brains rejected the binding more reliably than post-pandemic brains do. Most natural-occurring component combinations failed to complete; the rare ones that did were isolated, attributed to other causes, never classified.
+
+**Part two: the 2034 pandemic changed the substrate.** NCV-34 became endemic after its acute phase. By 2080 an estimated 85–95% of living humans had been infected at some point. The virus's long-tail neurological effect was not only the 5–8% clinically symptomatic cognitive decline. It was also a subclinical, population-wide alteration of multimodal binding pathways. The mechanism was the same neuroinflammatory cascade that produced the symptomatic cohort, only milder and without obvious effects. Most carriers had no symptoms. Their brains were simply *more susceptible* to the kind of binding-grade encoding that AI-designed sensory therapy would later inadvertently produce.
+
+The crisis required *both* substrates. AI without the pandemic would have produced sensory therapy with rare and unpredictable adverse events that the system would have managed and contained. The pandemic without AI would have produced a slightly elevated background rate of unexplained deaths over the following century, undetectable as a phenomenon, attributed to other causes.
+
+The combination produced the world we live in.
+
+This is the canonical answer. It is the foundation of every other technical claim in this document.
+
 ## How discovery happens
 
-The fundamental research engine is **closed-loop adaptive sensory therapy in eldercare.** A patient in a sensory-medicine bay is continuously monitored — EEG, ECG, heart rate variability, respiration, galvanic skin response, eye tracking, sleep architecture, behavioral output. AI selects stimulus parameters in real time, observes response, adjusts.
+The fundamental research engine is **closed-loop adaptive sensory therapy in eldercare.** A patient in a sensory-medicine bay is continuously monitored, EEG, ECG, heart rate variability, respiration, galvanic skin response, eye tracking, sleep architecture, behavioral output. AI selects stimulus parameters in real time, observes response, adjusts.
 
 This is technically therapy: the AI is trying to make the patient sleep better, recognize family, calm down, eat. But it is *structurally* an N=1 experimental optimization loop. Aggregate it across millions of patient-hours and you have run combinatorial searches over sensory parameter space at a scale no IRB could ever approve for explicit human research.
 
@@ -16,11 +32,11 @@ This is why discovery happened in 2061 in eldercare and not in academic neurosci
 
 Standard pipeline for new sensory medicine (and, by extension, new memotoxin research):
 
-1. **In-silico screening** — simulated neural models predict which sensory parameters are likely to produce binding-grade responses. Cheap, fast.
-2. **Eldercare deployment** — candidates tested as therapeutic interventions in monitored patients. Most effects are mild and clinical.
-3. **Anomaly identification** — outlier responses (cardiac, neurological, behavioral) are flagged.
-4. **Targeted retesting** — anomalies explored deliberately under "cognitive rehabilitation" exemptions.
-5. **Defense classification** — anything crossing lethality thresholds is moved to SSDO classified handling.
+1. **In-silico screening**, simulated neural models predict which sensory parameters are likely to produce binding-grade responses. Cheap, fast.
+2. **Eldercare deployment**, candidates tested as therapeutic interventions in monitored patients. Most effects are mild and clinical.
+3. **Anomaly identification**, outlier responses (cardiac, neurological, behavioral) are flagged.
+4. **Targeted retesting**, anomalies explored deliberately under "cognitive rehabilitation" exemptions.
+5. **Defense classification**, anything crossing lethality thresholds is moved to SSDO classified handling.
 
 Step 5 is where the laundering happens. Once classified, the data leaves the medical regulatory framework entirely.
 
@@ -46,9 +62,9 @@ Binding is a high-cognitive phenomenon. It requires episodic memory architecture
 
 - **Single-component memotoxins** in standard sensory channels.
 - **Generative memotoxins**: patterns synthesized on demand against a detected exposure history. Personalized weapons.
-- **Text memotoxins**: pages of text whose *layout geometry* — typeface, kerning, page density, paragraph structure, character-level visual rhythm — encodes a binding-grade visual pattern. The reader's eyes parse the words for meaning; the visual cortex parses the page for hazard. The character can read the words aloud as they die. The killing is in the geometry, not the language. Mechanistically: a text memotoxin is a visual memotoxin disguised as text. R1–R4 still apply.
+- **Text memotoxins**: pages of text whose *layout geometry*, typeface, kerning, page density, paragraph structure, character-level visual rhythm, encodes a binding-grade visual pattern. The reader's eyes parse the words for meaning; the visual cortex parses the page for hazard. The character can read the words aloud as they die. The killing is in the geometry, not the language. Mechanistically: a text memotoxin is a visual memotoxin disguised as text. R1–R4 still apply.
 
-## Latent Component Inheritance (LCI) — the long horror
+## Latent Component Inheritance (LCI), the long horror
 
 Formalized after 2076. The single most consequential property of memotoxin research.
 
@@ -56,7 +72,7 @@ Formalized after 2076. The single most consequential property of memotoxin resea
 
 **Implications**:
 - A popular song from forty years ago, if its specific tonal structure pairs with two new components, becomes a weapon retroactively.
-- A common household scent — a perfume, a soap, a flower — can be made lethal by an attacker who synthesizes the matching image and sound.
+- A common household scent, a perfume, a soap, a flower, can be made lethal by an attacker who synthesizes the matching image and sound.
 - Childhood exposures, advertising jingles, religious chants, the smell of a grandmother's house: all are potential weapon components against the adult who remembers them.
 
 **Why this explains the world**:
@@ -72,7 +88,7 @@ Formalized after 2076. The single most consequential property of memotoxin resea
 
 ## The 2079 Verrick broadcast attack
 
-Late addition to recent history (see timeline). Distinct from prior attacks: the attacker deployed only one new component — a previously unknown image broadcast through hijacked digital advertising. The other two components were a perfume marketed since 2058 (still in millions of homes) and the chorus structure of a popular 2071 song.
+Late addition to recent history (see timeline). Distinct from prior attacks: the attacker deployed only one new component, a previously unknown image broadcast through hijacked digital advertising. The other two components were a perfume marketed since 2058 (still in millions of homes) and the chorus structure of a popular 2071 song.
 
 Casualty count: ~14,000 deaths over six months as binding completed in exposed individuals. The first public confirmation that LCI is operationally exploitable. The Verrick broadcast attack is the event that put LCI on the front page and made Cognitive Exposure Passports politically necessary.
 

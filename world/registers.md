@@ -1,6 +1,6 @@
 # Registers and Slang
 
-A craft tool for the writing phase. The collection's voices live or die on register — *how* a character names a thing tells the reader who they are. Without register variation, a working-class kid and a clinical nurse will narrate in the same voice and the mosaic collapses into one author voice.
+A craft tool for the writing phase. The collection's voices live or die on register, *how* a character names a thing tells the reader who they are. Without register variation, a working-class kid and a clinical nurse will narrate in the same voice and the mosaic collapses into one author voice.
 
 This file maps the major canon terms across the registers we'll be writing. Use it as reference, not as a vocabulary list to deploy mechanically. The point is to get the *feel* of each voice before drafting the story, then write naturally inside it.
 
@@ -235,7 +235,7 @@ This file maps the major canon terms across the registers we'll be writing. Use 
 | Insiders | the Office; the Strategic; Strategic; us |
 | Working-class / conspiracy-minded | the spooks; Memetics; the spook house |
 
-## Voice samples — same event, six voices
+## Voice samples, same event, six voices
 
 A Bound man drops in a transit station after a perfume vendor's cart triggers his completion. Six narrators describe it.
 
@@ -263,13 +263,13 @@ A Bound man drops in a transit station after a perfume vendor's cart triggers hi
 
 > *We had met him twice. He carried two of the three. The third found him in a stranger's broth, in a public station, in front of forty witnesses who saw nothing. He finished his grammar at the second column. The Brethren give thanks for him. He has gone into the language.*
 
-Note how each voice does its own work — the bureaucrat hides the death in procedure, the working-class voice carries grief without naming it, the Vellum voice celebrates what the others mourn. **None of them are wrong**; they are just inside different relationships to the same fact.
+Note how each voice does its own work, the bureaucrat hides the death in procedure, the working-class voice carries grief without naming it, the Vellum voice celebrates what the others mourn. **None of them are wrong**; they are just inside different relationships to the same fact.
 
 ## Drafting checklist
 
 When starting a new story:
 
-1. **Identify the register** the POV occupies. Often more than one — a clinical nurse who grew up working-class will switch between two registers depending on who she's addressing.
+1. **Identify the register** the POV occupies. Often more than one, a clinical nurse who grew up working-class will switch between two registers depending on who she's addressing.
 2. **Pick three or four signature words** the character would use, from the tables above. These become the voice anchors.
 3. **Pick one or two words they would NEVER use.** The avoidance shapes the voice as much as what's said.
 4. **Resist deploying slang mechanically.** A working-class character won't say "got lit" every paragraph. Slang is texture, not vocabulary.

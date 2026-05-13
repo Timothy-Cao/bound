@@ -1,24 +1,24 @@
-# The Book — SUPERSEDED (single-POV novella version)
+# The Book, SUPERSEDED (single-POV novella version)
 
-> **Note (2026-05-12)**: This document describes the single-POV novella version of the project, which was the working direction for one session. It has been superseded by the **linked story collection** format described in [`the-collection.md`](the-collection.md). Most of the thematic, character, and structural material below remains relevant — Marina, the page-of-text climax, the architects framing, the unreliable-narration mechanism, the cooperation theme — but the form factor is now ~20 linked stories rather than one continuous novella. Kept here as reference; not current.
+> **Note (2026-05-12)**: This document describes the single-POV novella version of the project, which was the working direction for one session. It has been superseded by the **linked story collection** format described in [`the-collection.md`](the-collection.md). Most of the thematic, character, and structural material below remains relevant, Marina, the page-of-text climax, the architects framing, the unreliable-narration mechanism, the cooperation theme, but the form factor is now ~20 linked stories rather than one continuous novella. Kept here as reference; not current.
 
 ---
 
-# The Book — Agreed Direction (superseded)
+# The Book, Agreed Direction (superseded)
 
-This is the current consensus on what we're writing. Items here are *settled enough to build on* but not locked — they can change with discussion. Pending decisions are in [open-questions.md](../open-questions.md).
+This is the current consensus on what we're writing. Items here are *settled enough to build on* but not locked, they can change with discussion. Pending decisions are in [open-questions.md](../open-questions.md).
 
 ## Thematic spine
 
 **Humanity underestimates the compassion of humanity due to the malice and ignorance of the few who came before.**
 
-The book's claim: the bleakness of 2080 is contingent, not necessary. The defection equilibrium was engineered by specific people in specific years through specific choices, most of which are recoverable from the historical record. Ordinary humans, given any room to act, mostly try to cooperate — and the room to act has been deliberately closed, generation by generation, by a small number of malicious and ignorant decisions. The hope is real but rare and costly. The book honors both.
+The book's claim: the bleakness of 2080 is contingent, not necessary. The defection equilibrium was engineered by specific people in specific years through specific choices, most of which are recoverable from the historical record. Ordinary humans, given any room to act, mostly try to cooperate, and the room to act has been deliberately closed, generation by generation, by a small number of malicious and ignorant decisions. The hope is real but rare and costly. The book honors both.
 
 Game-theoretic frame, *not* pure cynicism. Cynicism would read as adolescent posture. The book takes iterated cooperation seriously as the alternative that *should have* prevailed and didn't, because the conditions for it were deliberately removed.
 
 ## Plot premise
 
-**2080.** A society that banned AI fifty years ago has come to fear perception itself. A scent chemist, a bound-care nurse, and a teenager from a saturation district are drawn into the unraveling of a buried truth — a two-component memotoxin exists in the wild — and through it, into the older truth beneath: the world's locked-in cruelty was not human nature but human design.
+**2080.** A society that banned AI fifty years ago has come to fear perception itself. A scent chemist, a bound-care nurse, and a teenager from a saturation district are drawn into the unraveling of a buried truth, a two-component memotoxin exists in the wild, and through it, into the older truth beneath: the world's locked-in cruelty was not human nature but human design.
 
 ## Three POVs
 
@@ -28,7 +28,7 @@ One of roughly twelve in the world with the skill to produce binding-grade scent
 Underlying arc: the unreliable spine of the book. She is investigating *herself* without admitting it. Her memory of refusing has soft edges. The horror she's afraid of finding is not who got the components but that she gave them up and forgot.
 
 ### The nurse
-A bound-care clinic where patients keep dying in ways the Triune model doesn't explain. She is the moral witness — and the one whose institution may be complicit.
+A bound-care clinic where patients keep dying in ways the Triune model doesn't explain. She is the moral witness, and the one whose institution may be complicit.
 
 Underlying arc: strategic ignorance. She has chosen what to see and what not to see. Halfway through, she has to start looking.
 
@@ -39,21 +39,21 @@ Underlying arc: mechanism-driven unreliability. The dream is real, but his memor
 
 ## Three-act structure
 
-**Act 1 — three lives in their own gravity.** Ordinary 2080 textured through three positions in the system. The triggering incidents: the chemist refuses a contract; weeks later her refusal turns out not to have stopped production. The nurse loses a patient to a death that doesn't fit any classified pattern. The teenager dreams.
+**Act 1, three lives in their own gravity.** Ordinary 2080 textured through three positions in the system. The triggering incidents: the chemist refuses a contract; weeks later her refusal turns out not to have stopped production. The nurse loses a patient to a death that doesn't fit any classified pattern. The teenager dreams.
 
-**Act 2 — convergence.** The threads pull together on a two-component memotoxin operating in the wild. Aperture wants its existence made public — force the Ban's collapse. SSDO wants it buried — preserve their offensive monopoly. Vellum is recruiting from the dying. Underneath, the chemist starts finding older paperwork: the choices made decades ago by specific named individuals who built the current trap.
+**Act 2, convergence.** The threads pull together on a two-component memotoxin operating in the wild. Aperture wants its existence made public, force the Ban's collapse. SSDO wants it buried, preserve their offensive monopoly. Vellum is recruiting from the dying. Underneath, the chemist starts finding older paperwork: the choices made decades ago by specific named individuals who built the current trap.
 
-**Act 2 climax — the chemist dies.** She finds a classified document, reads it, and dies. The reader sees the blacked-out spread (the page-of-text climax — see below). Her POV ends mid-book. The other two carry the weight forward.
+**Act 2 climax, the chemist dies.** She finds a classified document, reads it, and dies. The reader sees the blacked-out spread (the page-of-text climax, see below). Her POV ends mid-book. The other two carry the weight forward.
 
-**Act 3 — the dual reveal.**
+**Act 3, the dual reveal.**
 - The visible reveal: an attack, or the disclosure of one already occurred.
 - The deeper reveal: the system's bleakness was engineered, and the records exist. Several architects (or their successors) are still in power.
 
-The remaining two protagonists make game-theoretic choices — disclose or hoard, cooperate at cost or defect for safety. Together those choices decide whether the deeper truth gets out.
+The remaining two protagonists make game-theoretic choices, disclose or hoard, cooperate at cost or defect for safety. Together those choices decide whether the deeper truth gets out.
 
 ## The architects
 
-The book's deepest antagonists are *historical*. Named individuals from 2035–2070 whose choices locked in the current world. Most are dead. Their successors — heirs, protégés, institutional descendants — are alive and in power.
+The book's deepest antagonists are *historical*. Named individuals from 2035–2070 whose choices locked in the current world. Most are dead. Their successors, heirs, protégés, institutional descendants, are alive and in power.
 
 This makes the indictment specific without making it personal. It is not a thriller about catching one bad guy. It is an excavation of how systems get built. The chemist's investigation of paperwork is the book's slowest and most important plot thread.
 
@@ -65,9 +65,9 @@ Candidate archetypes (to be developed):
 
 ## The page-of-text climax (committed)
 
-Late Act 2. The chemist finds a classified document, reads it, and dies. The reader gets the blacked-out spread — a full two-page blackout, or a typeset page with content replaced by formatted redaction markers, depending on the form choice (see open questions).
+Late Act 2. The chemist finds a classified document, reads it, and dies. The reader gets the blacked-out spread, a full two-page blackout, or a typeset page with content replaced by formatted redaction markers, depending on the form choice (see open questions).
 
-Mechanism (canon-consistent): the page is a text memotoxin. Its layout geometry — typeface, kerning, paragraph density, character-level visual rhythm — encodes a binding-grade visual pattern. The killing is in the page's *structure*, not its language. The chemist could read the words aloud as she dies. The meaning is incidental. This dodges the cheesy "magic words" trap and stays inside R1–R4.
+Mechanism (canon-consistent): the page is a text memotoxin. Its layout geometry, typeface, kerning, paragraph density, character-level visual rhythm, encodes a binding-grade visual pattern. The killing is in the page's *structure*, not its language. The chemist could read the words aloud as she dies. The meaning is incidental. This dodges the cheesy "magic words" trap and stays inside R1–R4.
 
 Setup requirement: the book must point toward this from early on. Redacted court transcripts, witnesses refusing to describe what they saw, blacked-out passages in news reports throughout Acts 1–2. The reader has been trained to expect the unspeakable for hundreds of pages when it finally arrives.
 
@@ -91,8 +91,8 @@ What to avoid: everyone-lies-to-everyone (pervasive distortion flattens to noise
 
 ## Tone
 
-Day-to-day mood is cautious normal, not gothic horror. People shop, joke, fall in love. The threat is ambient. When horror surfaces, it surfaces socially — through etiquette failure, through the wrong question asked, through the wrong song hummed, through the gap between what is said and what is meant.
+Day-to-day mood is cautious normal, not gothic horror. People shop, joke, fall in love. The threat is ambient. When horror surfaces, it surfaces socially, through etiquette failure, through the wrong question asked, through the wrong song hummed, through the gap between what is said and what is meant.
 
 Sudden public deaths are common enough to be procedural, rare enough to be unsettling. Show them being routine. The reader's discomfort is the point.
 
-The bleakness lands because it is measured against the protagonists' refusal to give up. Without them, the book dies on the page. With them, the world's design becomes legible as design — and that legibility is the closest thing the book offers to hope.
+The bleakness lands because it is measured against the protagonists' refusal to give up. Without them, the book dies on the page. With them, the world's design becomes legible as design, and that legibility is the closest thing the book offers to hope.

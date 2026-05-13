@@ -7,9 +7,9 @@
 - Illegal sleep sequences (uncertified, often more effective than legal ones).
 - Grief suppression patterns.
 - Addiction interruption tones.
-- Memory recovery scents — for the elderly, for trauma survivors, for the desperate.
+- Memory recovery scents, for the elderly, for trauma survivors, for the desperate.
 - Mood-stabilizing images.
-- Old therapy archives — pre-regulation sensory medicine that worked and was banned for liability reasons.
+- Old therapy archives, pre-regulation sensory medicine that worked and was banned for liability reasons.
 
 ### Recreational
 
@@ -22,8 +22,8 @@
 ### Harmful
 
 - Fake memotoxins for scams (sold to terrorists, cults, paranoid clients; some real, most not).
-- Partial triggers — components of suspected memotoxins, sold separately.
-- Personalized revenge stimuli — patterns designed against a specific target (rare, expensive, usually fake).
+- Partial triggers, components of suspected memotoxins, sold separately.
+- Personalized revenge stimuli, patterns designed against a specific target (rare, expensive, usually fake).
 - Cult ritual material.
 - Assassination-grade memotoxin components (rare; mostly state-controlled).
 
@@ -32,11 +32,11 @@
 The three-component structure shapes the entire smuggling economy:
 
 - **Components transported separately.** Image, sound, and scent components of a single weapon never travel together. Even the smugglers don't know what they're moving.
-- **Scent encoded in household products** — laundry detergent, candles, cleaning supplies, food additives.
-- **Audio hidden in livestream compression** — encoded in artifacts that decompress into the target pattern.
-- **Image hidden in stereogram art** — the lethal pattern only resolves at specific viewing angles.
-- **Triggers split across ads, songs, public installations** — distribution rather than smuggling. The components are in plain sight; nobody knows they're connected.
-- **Fragments passed through dreams, drawings, rituals** — cult methods. Less reliable but legally untraceable.
+- **Scent encoded in household products**, laundry detergent, candles, cleaning supplies, food additives.
+- **Audio hidden in livestream compression**, encoded in artifacts that decompress into the target pattern.
+- **Image hidden in stereogram art**, the lethal pattern only resolves at specific viewing angles.
+- **Triggers split across ads, songs, public installations**, distribution rather than smuggling. The components are in plain sight; nobody knows they're connected.
+- **Fragments passed through dreams, drawings, rituals**, cult methods. Less reliable but legally untraceable.
 
 ## Black market geography
 
@@ -47,12 +47,12 @@ The three-component structure shapes the entire smuggling economy:
 
 ## Major actors
 
-- **Underground pattern brokers** — sell hazardous patterns to clients with means and motive.
-- **Black-market sensory doctors** — provide unlicensed therapy, often more effective than legal options. Sometimes save lives. Sometimes kill.
-- **Stimulus smugglers** — move components across borders.
-- **Hazard bounty hunters** — semi-licensed contractors hired by insurance companies, governments, and private parties to track down distributed components or capture brokers.
-- **Cult procurers** — acquire memotoxin material for ritual use.
-- **State assets posing as criminals** — intelligence services run operations through black market fronts; some "criminal" brokers are SSDO assets.
+- **Underground pattern brokers**, sell hazardous patterns to clients with means and motive.
+- **Black-market sensory doctors**, provide unlicensed therapy, often more effective than legal options. Sometimes save lives. Sometimes kill.
+- **Stimulus smugglers**, move components across borders.
+- **Hazard bounty hunters**, semi-licensed contractors hired by insurance companies, governments, and private parties to track down distributed components or capture brokers.
+- **Cult procurers**, acquire memotoxin material for ritual use.
+- **State assets posing as criminals**, intelligence services run operations through black market fronts; some "criminal" brokers are SSDO assets.
 
 ## The bounty hunter scene
 

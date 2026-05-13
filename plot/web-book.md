@@ -1,4 +1,4 @@
-# The Web Book — Format, Design, and Build
+# The Web Book, Format, Design, and Build
 
 Canonical reference for what the site is, how it looks, and how it's built. The *story material* lives in [`the-collection.md`](the-collection.md). This file is everything else.
 
@@ -13,7 +13,7 @@ Canonical reference for what the site is, how it looks, and how it's built. The 
 
 ## Target vibe
 
-A thoughtfully designed declassified document collection. Not a book reader, not a literary magazine, not Medium, not a startup. Visual language of FOIA scans + small art-book press + SCP Foundation Wiki — but literary and curated, not crowdsourced.
+A thoughtfully designed declassified document collection. Not a book reader, not a literary magazine, not Medium, not a startup. Visual language of FOIA scans + small art-book press + SCP Foundation Wiki, but literary and curated, not crowdsourced.
 
 **Pro-references**: SCP Foundation Wiki (more literary); National Security Archive's actual FOIA scans; *17776* (Jon Bois) but more spare; Are.na browsing experience; Editions At Play experiments; 1990s text-adventure game sites.
 
@@ -56,7 +56,7 @@ Astro view transitions (subtle fade, 150–250ms opacity). No page flips. No 3D 
 ## Core structural elements
 
 ### Landing / index page
-Literal file listing, monospaced, sparse. Reads like a declassified file catalog. File 011 displays `[withheld]` in the right column *before clicking* — foreshadowing.
+Literal file listing, monospaced, sparse. Reads like a declassified file catalog. File 011 displays `[withheld]` in the right column *before clicking*, foreshadowing.
 
 ### Story page
 Archival header (3–6 lines, monospace) → thin horizontal rule → prose (serif, narrow column) → minimal footer.
@@ -64,7 +64,7 @@ Archival header (3–6 lines, monospace) → thin horizontal rule → prose (ser
 ### The blackout (FILE 011 / The Document)
 The structural climax of the entire site. When the reader navigates to FILE 011:
 
-1. Page loads with the file's archival header — looks like every other file.
+1. Page loads with the file's archival header, looks like every other file.
 2. Brief intentional delay (200–400ms).
 3. Below header, instead of prose, a containment notice in deep red:
 
@@ -88,13 +88,13 @@ What sells it: the URL is real, the header is real, the system has decided. The 
 ### The Exposure Passport
 Discreet monospaced footer indicator. Updates as stories are read.
 
-- `CLASS 0 — CLEAN`
-- `CLASS 1 — MARKED`
-- `CLASS 2 — TWICE-MARKED`
-- `CLASS 3 — SEALED`
-- `CLASS 4 — BOUND` (forced by visiting FILE 011)
+- `CLASS 0, CLEAN`
+- `CLASS 1, MARKED`
+- `CLASS 2, TWICE-MARKED`
+- `CLASS 3, SEALED`
+- `CLASS 4, BOUND` (forced by visiting FILE 011)
 
-Each story declares its components in MDX frontmatter; reading encodes them in `localStorage`. No tutorial, no warnings — the reader who notices is rewarded.
+Each story declares its components in MDX frontmatter; reading encodes them in `localStorage`. No tutorial, no warnings, the reader who notices is rewarded.
 
 ### Final story
 The Archivist (FILE 013). No header. Wei Han speaks directly. The project's argument lands here.
@@ -106,10 +106,10 @@ Assets are presented as **recovered classified material, partially censored**. T
 **Strong rule: never produce something genuinely disturbing.** Produce something that looks and sounds like what survived an attempt to censor something genuinely disturbing. This is more interesting, more thematically aligned, and safer.
 
 ### Audio artifact patterns
-- *"Recovered fragment, Black Bloom 2069 — partial."* Mostly static, a few seconds of tone, abrupt end.
+- *"Recovered fragment, Black Bloom 2069, partial."* Mostly static, a few seconds of tone, abrupt end.
 - *"Voicemail, M. to E. Olamide, April 9, 2080."* Clean intact recording, AI-generated voice.
 - *"Censored broadcast, transit emergency alert, 2069."* Voice cuts in and out, dangerous tone redacted to silence.
-- *"Audio diary, K. Olesen — degraded recording."* Fragments of an old man speaking; gaps where transcription "failed."
+- *"Audio diary, K. Olesen, degraded recording."* Fragments of an old man speaking; gaps where transcription "failed."
 
 ### Visual artifact patterns
 - *"Image component, Triune-Stimulus-1, declassified rendering."* Mostly redaction bars, corner of texture visible.
@@ -121,7 +121,7 @@ Assets are presented as **recovered classified material, partially censored**. T
 - No aggressive audio (no loud, no dissonant beyond mild).
 - No autoplay anywhere.
 - Audio has visible play buttons + content notes.
-- Visuals load with redaction visible from start — no reveal interactions.
+- Visuals load with redaction visible from start, no reveal interactions.
 
 ## Tech stack
 
@@ -172,8 +172,8 @@ web-book/
 
 Hobby projects die from scope creep. Two failure modes:
 
-1. **Endless design** — tweak the site forever, never write prose.
-2. **Asset rabbit hole** — write one story, generate audio, decide visuals need to be better, never write the second story.
+1. **Endless design**, tweak the site forever, never write prose.
+2. **Asset rabbit hole**, write one story, generate audio, decide visuals need to be better, never write the second story.
 
 The discipline:
 
@@ -181,7 +181,7 @@ The discipline:
 - **Cap assets aggressively.** ~5–8 audio total, ~3–5 visuals total. Some stories have nothing.
 - **Cap stories at ~13.** Tight beats sprawling.
 - **Site design done once, early.** Get to "good enough" and stop.
-- **Share early with one friend.** Not "when it's done" — when you have three stories.
+- **Share early with one friend.** Not "when it's done", when you have three stories.
 - **No analytics, no comments, no social sharing, no newsletter, no autoplay.** `<meta robots noindex, nofollow>`.
 
 ## Construction banner toggle

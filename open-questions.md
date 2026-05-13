@@ -27,7 +27,7 @@ We have the Vellum as a named cult-terrorist group in [`world/actors-and-motives
 **Recommendation**: develop only what a story requires. If FILE 011 or FILE 012 needs to name a Vellum operative, name them then.
 
 ### State treatment of Bound witnesses to classified attacks
-Currently in [`open-questions.md`](open-questions.md) as Q5 of the older list — what happens to Class 4 individuals who witnessed classified material? Permanent protective custody? Witness protection? Quiet euthanasia? Aggressive anti-recall? My standing answer: *all four happen, depending on classification level and political moment.* Ambiguous by design.
+Currently in [`open-questions.md`](open-questions.md) as Q5 of the older list, what happens to Class 4 individuals who witnessed classified material? Permanent protective custody? Witness protection? Quiet euthanasia? Aggressive anti-recall? My standing answer: *all four happen, depending on classification level and political moment.* Ambiguous by design.
 
 ### Economy beyond the Ban bureaucracy
 What do most ordinary people do for work in 2080 besides AI auditing? Older entry; partially answered by existing canon (eldercare workers, certifiers, clearance officers, scent chemists, sensory therapists, bound-care nurses). Could be deepened if a story enters working-class daily life in detail.
@@ -46,10 +46,10 @@ Currently unspecified. The story stops at his interview. He could:
 
 ### Voice/tense per story
 - Most stories: limited third, past tense
-- The Designer (012): first person, recorded oral diary — present tense and looser
+- The Designer (012): first person, recorded oral diary, present tense and looser
 - The Archivist (013): first person, present tense, direct
 - The Bound (007): close third or first person? Open question. Present tense feels right.
-- FILE 002 Shabbat in 2042: family history voice — first person retrospective ("when I was eight")? Or third person observational? Open.
+- FILE 002 Shabbat in 2042: family history voice, first person retrospective ("when I was eight")? Or third person observational? Open.
 
 ### The blackout's exact form
 FILE 011 ends with the page-of-text containment notice. The site already renders this correctly. The MDX prose for FILE 011 needs to include just the archival header and the brief prose leading up to her reading it, then end. The containment notice is rendered by the layout based on `withheld: true` in frontmatter.

@@ -1,4 +1,4 @@
-# Story Board — Bound
+# Story Board, Bound
 
 Working repo for **Bound**, a linked-short-story web archive about a society that banned AI, was reopened by a healthcare crisis, and discovered that perception itself could be weaponized.
 
@@ -8,12 +8,12 @@ Story material lives in this repo (`canon/`, `world/`, `plot/`, `characters/`). 
 
 ## Quick concepts
 
-- **Memotoxin** — a sensory pattern (image + sound + scent) that kills the brain that has encoded all three.
-- **Triune Stimulus** — the three-component form of memotoxin. All 2080-era memotoxins are Triune.
-- **Bound (Class 4)** — exposure status when binding is complete and irreversible. Terminal.
-- **Sealed (Class 3)** — all three components experienced but not yet bound. Precarious.
-- **The Ban (2031)** — AI Labor Ban. Stalled AI development for nineteen years.
-- **The Exception (2050)** — Healthcare AI Exception Act. The crack that let AI back in for medicine, and accidentally for everything downstream.
+- **Memotoxin**, a sensory pattern (image + sound + scent) that kills the brain that has encoded all three.
+- **Triune Stimulus**, the three-component form of memotoxin. All 2080-era memotoxins are Triune.
+- **Bound (Class 4)**, exposure status when binding is complete and irreversible. Terminal.
+- **Sealed (Class 3)**, all three components experienced but not yet bound. Precarious.
+- **The Ban (2031)**, AI Labor Ban. Stalled AI development for nineteen years.
+- **The Exception (2050)**, Healthcare AI Exception Act. The crack that let AI back in for medicine, and accidentally for everything downstream.
 
 For the full glossary see [`canon/glossary.md`](canon/glossary.md).
 
@@ -81,10 +81,10 @@ story-board/
 
 - **Form**: linked-short-story web archive (Astro + MDX + Tailwind, deployed on Vercel).
 - **Frame**: archival reconstruction. Stories presented as recovered case files, leaked memos, diaries, transcripts, etc., assembled by an unnamed reconstructor.
-- **Worldbuilding**: complete. Timeline, mechanism, arms race, actors, cascading effects, registers — all stable canon. Ban 2031, NCV-34 pandemic 2034, Exception 2050, Black Bloom 2069, story present 2080.
+- **Worldbuilding**: complete. Timeline, mechanism, arms race, actors, cascading effects, registers, all stable canon. Ban 2031, NCV-34 pandemic 2034, Exception 2050, Black Bloom 2069, story present 2080.
 - **Characters**: named and locked. See [`characters/recurring.md`](characters/recurring.md).
 - **Cross-story connections**: three locked + the Archivist (Wei Han, Lihua Han's child).
-- **Drafts**: 1 of 13 complete. [`FILE 006 — The Censor's Hum`](web-book/src/content/files/the-censors-hum.mdx).
+- **Drafts**: 1 of 13 complete. [`FILE 006, The Censor's Hum`](web-book/src/content/files/the-censors-hum.mdx).
 - **Site**: live. Construction banner is currently ON; flip `SHOW_CONSTRUCTION_WARNING = false` in [`web-book/src/config.ts`](web-book/src/config.ts) when shareable.
 
 ---
