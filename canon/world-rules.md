@@ -79,7 +79,21 @@ This also explains the death of Marina Idris. The 2067 document she read carried
 
 The Madeleine Effect is the deepest reason the world's protective apparatus cannot function. It is not enough to restrict patterns. The OMC would have to restrict every mode of evocation: every novel, every photograph, every conversation that calls a memory by its proper name. Some jurisdictions have attempted this. They have failed.
 
-### R15. Classification persists because classification serves its architects.
+### R18. Trigger texts.
+
+A small number of documents have been identified as reliable triggers for binding completion in Sealed readers via the Madeleine Effect. These texts appear benign. They are institutional reports, technical memoranda, academic papers, occasionally works of older fiction with unusually rich sensory prose. Their lethality is not in any single passage. Their lethality emerges from the way they evoke memory of all three Triune components in subjects who have those components already encoded. Reading the text produces near-simultaneous internal reconstruction of the components. Binding completes. Cascade fires.
+
+In a population that is (per R16) mostly Sealed without knowing, trigger texts produce measurable mortality among their readers. The mortality rate is usually low, on the order of 0.5 to 3 percent of readers depending on the specific trigger and the population. But the mortality is real. Texts that have been determined to kill at this rate are kept in the OMC's Restricted Stimulus Material registry.
+
+The 2067 Memo (FILE 004) is one such trigger text. So are several declassified academic papers from the 2058 to 2063 sensory-therapy literature. So are a handful of pre-2070 novels with unusually rich sensory prose, retroactively added to the registry after their readers began dying at elevated rates.
+
+The SSDO maintains its own library of trigger texts and has, on multiple occasions, deployed them against specific targets through controlled channels. A target is given access to a "leaked classified document" or "confidential briefing material" containing the trigger. The target reads. The target dies. The death is filed as cardiac. The investigation, if any, is buried under the standing classification of the source material. Several journalists who began investigating the SSDO trigger-text program have died of "cardiac" events. The investigations did not proceed.
+
+The cooperation thesis sharpens here: the system has weaponized reading itself. The act of conveying knowledge through evocative text, the foundational act of literate cooperation, is potentially lethal in a population where most adults are Sealed without knowing. To write evocatively is to risk killing one's reader. To read evocatively is to risk dying.
+
+Wei Han publishes the Archive of Bound in full awareness of this. Some passages in the archive describe sensory experience evocatively. Some included documents (the 2067 Memo, the Olesen audio diary transcript, parts of Marina's recovered communications) contain material that the OMC's registry would identify as trigger material. Wei has reviewed every page. They have removed what they could remove without losing the meaning. What remains is, by their assessment, not safely removable. The archive carries acknowledged risk to its readers, and Wei has chosen to publish it anyway.
+
+This is the deepest layer of the cooperation thesis. Cooperation does not arrive cleanly. It arrives at cost. The cost in the world this book describes is sometimes paid by people who were not warned and who never asked.
 
 The Office of Memetic Containment continues to classify the mechanism, sixteen years after Black Bloom and many tens of thousands of deaths. The standard public justification is that publication would aid attackers. The classified counter-argument inside the OMC is that publication would *disarm* attackers, since Aperture's primary weapon is the gap between what the public knows and what the OMC knows. A public that knew the mechanism could recognize binding-grade patterns, identify hazardous combinations in its own environment, and defend itself in ways the OMC currently cannot provide.
 

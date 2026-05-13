@@ -82,6 +82,10 @@ NCV-34 became endemic after the acute phase ended. By 2080, an estimated 85–95
 
 **Evoked completion** / **memory-trigger completion**: clinical terms for binding completion via the Madeleine Effect rather than literal re-exposure.
 
+**Trigger text**: a document, paper, or work of fiction that has been identified as a reliable Madeleine trigger producing binding completion in Sealed readers. See `world-rules.md` R18. The 2067 Memo is the canonical example. The SSDO maintains a private library of trigger texts and has deployed some of them against specific targets. Mortality rates among trigger-text readers run 0.5 to 3 percent.
+
+**The Quiet Library**: SSDO-internal slang for the trigger-text registry. Officially does not exist.
+
 **Smell-killed / ear-killed / eye-killed**: working-class slang for the same.
 
 **Sensory Saturation**: Practice of flooding sensory channels with chaotic variant input so no specific pattern achieves binding salience. Clinical and folk versions exist.
