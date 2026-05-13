@@ -30,13 +30,24 @@ When picking up: scan **Now**, pick something you have energy for, do it, check 
 
 ### Assets (user-handled, sparse use)
 
+See [`web-book/IMAGE_PROMPTS.md`](web-book/IMAGE_PROMPTS.md) for the full prompt reference. Recommended priority order:
+
+**Audio**
 - [x] FILE 006 narration ✓
 - [ ] **Marina's voicemail** — used in FILE 009 (ElevenLabs)
 - [ ] **Recovered fragment, Black Bloom 2069** — used in FILE 005 (audio, partial / static-heavy)
-- [ ] **Triune-Stimulus-1 declassified rendering** — used in FILE 004 or 005 (visual, partially redacted)
 - [ ] **K. Olesen audio diary** — used in FILE 012
 - [ ] Optional: **censored emergency broadcast** — FILE 005 or 008
-- [ ] Optional: additional ambient music swaps as drafts mature
+
+**Visual** (per [`web-book/IMAGE_PROMPTS.md`](web-book/IMAGE_PROMPTS.md))
+- [ ] **A1** Site favicon / OG card — replaces black-square placeholder
+- [ ] **A2** Triune-Stimulus-1 declassified rendering — FILE 004 or 005
+- [ ] **A3** Memo document scan — FILE 004
+- [ ] **A4** Anonymized patient photo — FILE 007
+- [ ] **A7** Olesen's recovered document — FILE 011 setup
+- [ ] **A5** The Boy's drawing — FILE 008 (optional)
+- [ ] **A6** Public-service poster — atmospheric, optional
+- [ ] **A8** Archive cover — index hero, optional
 
 ---
 
