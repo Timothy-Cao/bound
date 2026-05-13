@@ -51,23 +51,25 @@ The institutional voice. Appears as a signing official in document headers acros
 
 ---
 
-## Marina ___ (M.)
+## Marina Idris
 
-**Born ~2040. Scent chemist, License A-7. Last name TBD.**
+**Born ~2040. Scent chemist, License A-7.**
 
-One of roughly twelve chemists in the world capable of binding-grade scent work. The book's emotional center.
+One of roughly twelve chemists in the world capable of binding-grade scent work. The book's emotional center. Marina is referred to almost exclusively as "Marina" or "M." in prose and document headers; her surname surfaces only in formal contexts (license records, professional correspondence, the classification trail her investigation leads her into).
 
-- **FILE 009 — Marina's Refusal (2080, age 40)**. Refuses a contract she shouldn't have been offered. Leaves a voicemail to her colleague E. Olamide. Begins to notice the materials moved anyway.
+Etymology of *Idris*: Welsh/Arabic origin, "fiery lord" — quietly carries her stubbornness and the ardor she brings to investigating her own complicity.
+
+- **FILE 009 — Marina's Refusal (2080, age 40)**. Refuses a contract she shouldn't have been offered. Leaves a voicemail to her colleague Esin Olamide. Begins to notice the materials moved anyway.
 - **FILE 010 — Marina at the Window (2080)**. Realizes her memory of refusing has soft edges. *"I'm too certain."* Her self-investigation deepens.
 - **FILE 011 — The Document (2080)**. Finds Karl Olesen's signature on a fifty-year-old classification memo. Reads. Dies. The page is the blackout. — **High-impact connection #3.**
 
-(Marina's last name is still open. Strong candidates: Marina Vesely, Marina Hartmann, Marina Akiyemi. The voicemail to E. Olamide suggests they work in the same professional context; their names should suggest different cultural backgrounds, making the working relationship feel real.)
-
 ---
 
-## E. Olamide
+## Esin Olamide (E. Olamide)
 
-**Marina's professional colleague.** Appears in FILE 009's voicemail header. May surface elsewhere as a peripheral named figure. After Marina's death, she is one of the last people who knew her.
+**Marina's professional colleague.** Same generation, same field. Marina leaves her the voicemail in FILE 009; she is one of the last people to have heard Marina alive. May surface in document headers across other files (a name that recurs quietly in Marina's professional correspondence). After Marina's death she is left holding the message and the silence after it.
+
+*Etymology of Esin*: Yoruba, meaning "horse" — connotes endurance, journey, the survival of one who carries.
 
 ---
 
@@ -79,33 +81,40 @@ One of roughly twelve chemists in the world capable of binding-grade scent work.
 
 ## The Architects (composite, mostly background)
 
-Beyond Karl Olesen, the locked-in cooperation failure was authored by a small cohort of decision-makers across 2031, 2050, and 2067. They surface in document trails Marina follows. Most remain unnamed individually; their *category* is what matters. One or two may surface in The Memo (FILE 004) as named co-signatories.
+Beyond Karl Olesen, the locked-in cooperation failure was authored by a small cohort of decision-makers across 2031, 2050, and 2067. They surface in document trails Marina follows. Most remain unnamed individually; their *category* is what matters.
+
+Three named co-signatories of the 2067 Memo, alongside Karl Olesen — to be referenced in FILE 004 and possibly in Marina's investigation in FILE 011:
+
+- **Margaret Tate** (born ~1995, age 72 in 2067). Anglo, senior regulatory figure. The career bureaucrat in the room — the one who knows exactly what the memo will do, and signs anyway.
+- **Henrik Voss** (born ~2010, age 57 in 2067). Northern European, scientific/regulatory background. The technical authority. He believes classification is genuinely protective.
+- **Yelena Sokolova** (born ~2015, age 52 in 2067). Eastern European, international policy. Represents the foreign-relations dimension — the memo's classification has implications for what the unbanned states can or can't access.
+
+These three plus Karl Olesen sign the 2067 classification decision. Their names appear together in the document Marina ultimately finds in FILE 011. Karl Olesen is the only one whose voice we hear directly (his diary, FILE 012); the others remain document-trail names with brief biographical anchors.
 
 ---
 
-## The Archivist (FILE 013)
+## Wei Han (the Archivist, FILE 013)
 
-**The reconstructor of this collection.** Identity: **Lihua Han's child.**
+**The reconstructor of this collection.** Born ~2056–2058 (Lihua Han's child, conceived after the cardiac event scandal). Age ~30 when assembling the archive in the late 2080s.
 
-The reconstructor is L. Han's son or daughter (gender TBD). Grew up with their mother carrying institutional silence — knowing she had reported something in 2066, knowing she had been quietly contained by the system. The Archive is their lifelong project to assemble what their mother could not say. They have spent years acquiring declassified material, recovering personal correspondence, requesting redacted documents under freedom-of-information frameworks that barely apply.
+Etymology of *Wei* (维): Chinese, meaning "to preserve, to maintain, to support." Their name encodes what they spend their life doing — preserving what their mother could not openly say.
 
-The collection delivers on its theme through them: L. Han tried to cooperate (report the truth) and was crushed; her child completes her work decades later. The reconstructor's reveal in FILE 013 makes the moral architecture of the book legible.
+Wei grew up with their mother's institutional silence. They knew, the way children know things, that something had happened in 2066 that their mother had reported and had been quietly contained for reporting. They went into archival work — eventually freedom-of-information processing, eventually unsanctioned archival assembly. The Archive of Bound is their lifelong project: declassified material, recovered personal correspondence, requested redacted documents under FOIA frameworks that barely apply, and at the edges, material acquired through channels they will not describe in the foreword.
 
-In FILE 013 they speak directly — no archival header, no third-person frame. They explain who they are, what they found, what they could not include. They do not appear in other files except possibly as a child briefly observed in FILE 003 (a four-year-old at home while their mother goes to work).
+The collection delivers on its theme through them. Lihua Han tried to cooperate — report the truth — and was crushed by the system. Her child completes her work decades later. The reveal in FILE 013 makes the moral architecture of the book legible.
 
-This is **high-impact connection (the structural one)** — the collection's narrator is the daughter or son of one of its subjects.
+In FILE 013, Wei speaks directly. No archival header. No third-person frame. They explain who they are, what they found, what they could not include. They are the only character whose name *needs not appear in document headers anywhere else* — the reconstructor is invisible until the end. (One possible exception: they may appear as a small child briefly observed in FILE 003, present at home while their mother is at work. Not named in that file; Wei's identity is the reveal of FILE 013, not FILE 003.)
+
+This is **the structural connection** — the collection's narrator is the child of one of its subjects.
 
 ---
 
-## The three locked connections (summary)
+## The locked connections (summary)
 
 1. **Anna Vance is the anonymous patient in Bound (FILE 007).** Never stated. Reader inference.
 2. **Lihua Han nurses Anna Vance.** L. Han is the caregiver in FILE 007; Vance is the patient. Neither knows the other's history.
-3. **Karl Olesen's name is what Marina finds.** The 2067 Memo (FILE 004) bears his signature. Marina's paper trail leads to him in FILE 011. The Designer's diary (FILE 012) is recorded knowing she found him.
-
-Plus the structural connection:
-
-4. **The Archivist (FILE 013) is Lihua Han's child.** The collection is their lifelong assembly.
+3. **Marina Idris finds Karl Olesen's signature** on the 2067 Memo, alongside Margaret Tate, Henrik Voss, and Yelena Sokolova. The Designer's diary (FILE 012) is recorded knowing she found him.
+4. **Wei Han (the Archivist) is Lihua Han's child.** The collection is their lifelong assembly.
 
 ---
 

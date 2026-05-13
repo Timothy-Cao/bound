@@ -129,10 +129,11 @@ Linked collections live or die on the invisible connective tissue. The cast and 
 - **Karl Olesen** — the architect figure. Protagonist of FILES 001 (2031, young), 004 (2067, mid-career), 012 (2080, elder). Named in document trail Marina follows.
 - **Lihua Han** — eldercare nurse turned bound-care specialist. Protagonist of FILE 003 (2066). Recurs as caregiver in FILE 007 (2080).
 - **Anna Vance** — censor. Protagonist of FILE 006 (2073). *Is the anonymous patient in FILE 007 — never stated.*
-- **Marina (last name TBD)** — scent chemist. Protagonist of FILES 009, 010, 011 (2080).
+- **Marina Idris** — scent chemist. Protagonist of FILES 009, 010, 011 (2080).
+- **Esin Olamide** — Marina's professional colleague (FILE 009 voicemail).
 - **Amrit Ranjit** — OMC field officer. Interviewer in FILE 008 (2080). Signs document headers across the collection.
-- **E. Olamide** — Marina's professional colleague. Appears in FILE 009 voicemail.
-- **The Archivist (FILE 013)** — Lihua Han's child. The collection is their lifelong project.
+- **Wei Han** — the Archivist (FILE 013). Lihua Han's child. The collection is their lifelong project.
+- **Architect co-signatories** (referenced in FILES 004, 011): Margaret Tate, Henrik Voss, Yelena Sokolova.
 
 ### The three locked connections
 1. **Anna Vance is the anonymous Class 4 patient in *Bound*.** Reader inference only.
