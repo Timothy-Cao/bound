@@ -6,6 +6,17 @@ Story material lives in this repo (`canon/`, `world/`, `plot/`, `characters/`). 
 
 ---
 
+## Quick concepts
+
+- **Memotoxin** — a sensory pattern (image + sound + scent) that kills the brain that has encoded all three.
+- **Triune Stimulus** — the three-component form of memotoxin. All 2080-era memotoxins are Triune.
+- **Bound (Class 4)** — exposure status when binding is complete and irreversible. Terminal.
+- **Sealed (Class 3)** — all three components experienced but not yet bound. Precarious.
+- **The Ban (2031)** — AI Labor Ban. Stalled AI development for nineteen years.
+- **The Exception (2050)** — Healthcare AI Exception Act. The crack that let AI back in for medicine, and accidentally for everything downstream.
+
+For the full glossary see [`canon/glossary.md`](canon/glossary.md).
+
 ## Quick navigation
 
 | If you want… | Go to |
@@ -15,7 +26,7 @@ Story material lives in this repo (`canon/`, `world/`, `plot/`, `characters/`). 
 | **The mechanism rules** | [`canon/world-rules.md`](canon/world-rules.md) |
 | **The 13-story table of contents** | [`plot/the-collection.md`](plot/the-collection.md) |
 | **Character names and connections** | [`characters/recurring.md`](characters/recurring.md) |
-| **The web site's design spec** | [`plot/web-book-design.md`](plot/web-book-design.md) |
+| **The web site (format, design, build)** | [`plot/web-book.md`](plot/web-book.md) |
 | **Live questions** | [`open-questions.md`](open-questions.md) |
 | **The site code** | [`web-book/`](web-book/) |
 
@@ -54,8 +65,7 @@ story-board/
 │
 ├── plot/
 │   ├── the-collection.md        ← table of contents + headers + cast
-│   ├── web-book-plan.md         ← format/scope plan (web archive)
-│   ├── web-book-design.md       ← aesthetic + technical design spec
+│   ├── web-book.md              ← format, design, and build reference
 │   ├── seeds.md                 ← scene seeds (early brainstorm; partially superseded)
 │   └── the-book.md              ← SUPERSEDED novella version (kept for reference)
 │

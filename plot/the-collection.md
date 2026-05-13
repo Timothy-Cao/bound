@@ -28,11 +28,9 @@ This format supersedes the earlier single-POV novella plan ([`the-book.md`](the-
 
 Expect names, dates, and exact stories to shift in drafting. The structural shape below is what's stable.
 
-### Part I — Before (2030s–2050s)
+### Part I — Before (2031–2050)
 1. **The Vote** *(2031, ~5pp)* — Karl Olesen as a young policy advisor on the day the AI Labor Ban passes. We meet a future architect, young.
-2. *~~The Last Layoffs~~ (cut)*
-3. **Shabbat in 2042** *(2042, ~3pp)* — an Orthodox family in the falling-birthrate years, with a grandmother in the post-viral (NCV-34) cohort. Defensive practices not yet recognized as defensive.
-4. *~~The Care Worker~~ (cut)*
+2. **The Exception** *(2050, ~6pp)* — The Healthcare AI Exception Act debate, witnessed from outside Karl Olesen's POV: a labor leader who voted yes on the 2031 Ban now watches it cracked open. Karl is in the room, age 44, advocating for the Exception. The keystone political event of the collection.
 
 ### Part II — Discovery (2060s)
 5. **A Patient Recognizes Her Daughter** *(2061, ~4pp)* — the breakthrough moment. Hope.
@@ -71,6 +69,11 @@ The variation is meaningful. Some characters had state files (institutional sour
 **"The Vote" (2031) — public record**
 > *From the chronicle of the AI Labor Ban hearings, public proceedings.*
 > *April 14, 2031. Washington.*
+
+**"The Exception" (2050) — hearing transcript**
+> *From the hearing record of the Healthcare AI Exception Act.*
+> *Subcommittee on Cognitive Health, day 17 of testimony.*
+> *September 23, 2050. Brussels.*
 
 **"First Cardiac Event" (2066) — institutional case file**
 > *Incident report SCN-2066-0044.*
@@ -126,21 +129,20 @@ The variation is meaningful. Some characters had state files (institutional sour
 Linked collections live or die on the invisible connective tissue. The cast and connections are locked — see [`characters/recurring.md`](../characters/recurring.md) for the full reference.
 
 ### Cast (summary)
-- **Karl Olesen** — the architect figure. Protagonist of FILES 001 (2031, young), 004 (2067, mid-career), 012 (2080, elder). Named in document trail Marina follows.
-- **Lihua Han** — eldercare nurse turned bound-care specialist. Protagonist of FILE 003 (2066). Recurs as caregiver in FILE 007 (2080).
-- **Anna Vance** — censor. Protagonist of FILE 006 (2073). *Is the anonymous patient in FILE 007 — never stated.*
+- **Karl Olesen** — the architect figure. The Vote (FILE 001, age 25), The Exception (FILE 002, age 44, seen from outside), The Memo (FILE 004, age 61), The Designer (FILE 012, age 74). Four decision moments across fifty years.
+- **Lihua Han** — eldercare nurse turned bound-care specialist. Protagonist of FILE 003 (2066). Recurs as caregiver in FILE 007 (2080). Quietly fostered Anna Vance's child after Vance's institutionalization.
+- **Anna Vance** — censor. Protagonist of FILE 006 (2073). *Is the anonymous patient in FILE 007.* Single mother to a child she lost custody of after binding.
 - **Marina Idris** — scent chemist. Protagonist of FILES 009, 010, 011 (2080).
 - **Esin Olamide** — Marina's professional colleague (FILE 009 voicemail).
 - **Amrit Ranjit** — OMC field officer. Interviewer in FILE 008 (2080). Signs document headers across the collection.
-- **Wei Han** — the Archivist (FILE 013). Lihua Han's child. The collection is their lifelong project.
-- **Architect co-signatories** (referenced in FILES 004, 011): Margaret Tate, Henrik Voss, Yelena Sokolova.
+- **Wei Han** — the Archivist (FILE 013). Biologically Anna Vance's child; fostered to Lihua Han. They do not learn the connection until they assemble the archive themselves.
+- **Architect co-signatories** (referenced in FILES 004, 011): Margaret Tate, Henrik Voss (quietly Vellum-sympathetic), Yelena Sokolova.
 
-### The three locked connections
+### The four locked connections
 1. **Anna Vance is the anonymous Class 4 patient in *Bound*.** Reader inference only.
-2. **Lihua Han nurses her** in FILE 007, fourteen years after reporting the first death in FILE 003. Neither character knows the other's earlier history.
-3. **Marina finds Karl Olesen's signature** on a fifty-year-old classification memo. She reads. She dies. He records his diary knowing she found him.
-
-Plus the structural connection: the Archivist (FILE 013) is L. Han's child.
+2. **Lihua Han nurses her** in FILE 007 — fourteen years after reporting the first death in FILE 003. Lihua knows; Vance does not.
+3. **Marina finds Karl Olesen's signature** on the 2067 Memo alongside Tate, Voss, and Sokolova. Voss's marginal notes hint at Vellum sympathies. She reads. She dies.
+4. **Wei Han (the Archivist) is Anna Vance's biological child, fostered to Lihua Han.** Three women, three generations of trying to tell one truth. Wei does not know this until they assemble the archive themselves.
 
 ### Lighter cross-story threads
 - The **Brussels Consensus Report (2047)** cited across files

@@ -15,7 +15,7 @@ This file maps the major canon terms across the registers we'll be writing. Use 
 | **Police / Stim Response** | Procedural moments, Black Bloom responders | Shorthand, callout codes, gallows humor |
 | **Working-class folk** | Stink Den, parts of Black Bloom, urban scenes | Fatalistic, profane, gallows humor, inherited terms |
 | **Wealthy / cultured** | The Designer, certain Marina scenes | Euphemism, social code, indirect, generational |
-| **Religious / traditional** | Shabbat in 2042, Plain community moments | Older words, theological resonance, often avoids the technical |
+| **Religious / traditional** | Plain community moments, Vellum-sympathetic characters (e.g. Henrik Voss) | Older words, theological resonance, often avoids the technical |
 | **Vellum / cult** | Vellum scenes if any, sacralized observations | Capitalized abstractions, "grammar"-coded |
 | **Children / AR-childhood cohort** | The Boy Who Hummed, kids in any scene | Playground slang, generational, sometimes mocking |
 | **SSDO / military** | Classified leaks, defector voices | Argot, code-words, deniable phrasings |

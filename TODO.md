@@ -14,8 +14,8 @@ When picking up: scan **Now**, pick something you have energy for, do it, check 
 - [ ] **FILE 003 — First Cardiac Event** *(2066, Lihua Han)* — institutional procedural register
 - [ ] **FILE 005 — Black Bloom** *(2069, victim's POV)* — horror register
 - [ ] **FILE 001 — The Vote** *(2031, young Karl Olesen)*
-- [ ] **FILE 002 — Shabbat in 2042** *(family history)*
-- [ ] **FILE 004 — The Memo** *(2067, classification decision)*
+- [ ] **FILE 002 — The Exception** *(2050, labor leader's POV; Karl Olesen at 44 advocates for the wedge)*
+- [ ] **FILE 004 — The Memo** *(2067, classification decision; Voss's Vellum-sympathetic margin notes)*
 - [ ] **FILE 007 — Bound** *(2080, Anna Vance as anonymous patient, L. Han caregiver)*
 - [ ] **FILE 008 — The Boy Who Hummed** *(2080, A. Ranjit interviewer)*
 - [ ] **FILE 010 — Marina at the Window** *(2080)*
