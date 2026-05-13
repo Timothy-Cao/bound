@@ -26,6 +26,17 @@
 - **Strategic Stimulus Defense Office (SSDO)**, Military / intelligence research. Officially defensive. Realistically: an offensive memotoxin program with deniability.
 - **Bound Witness Protection Program**, Handles Class 4 individuals with classified knowledge. Houses them in controlled environments, sometimes for life.
 
+## Quarantine and forced containment
+
+Class 4 (Bound) individuals are subject to mandatory medical containment in most jurisdictions. The legal mechanism is similar to involuntary psychiatric commitment, but with stronger institutional muscle (the OMC is better-funded than civil-commitment apparatuses and faces less judicial scrutiny). In practice:
+
+- **Class 4 confirmed by cascade event (deceased)**: post-mortem only; nothing to contain
+- **Class 4 confirmed by binding but pre-cascade (rare survivors)**: mandatory bound-care institutionalization, sometimes for life
+- **Class 3 (Sealed)**: voluntary in most jurisdictions; socially expected; some employer-mandated for high-risk roles
+- **Bound Witness Protocols (2076)**: a special legal framework for Class 4 individuals who have been exposed to *classified* patterns. These patients are held indefinitely in controlled facilities, often without standard due process. The legal status is disputed.
+
+The civil-liberties critique is significant: involuntary memetic quarantine looks, in practice, like detention. Three jurisdictions have abused it (using Class 3 designations to detain political dissidents who have been "exposed" to classified material). The OMC has not publicly acknowledged these cases.
+
 ## Bureaucratic conflict
 
 The institutional landscape is not unified. Several factions actively work at cross-purposes:

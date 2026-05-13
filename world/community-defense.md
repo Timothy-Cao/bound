@@ -48,6 +48,14 @@ Several religious traditions discovered post-2070 that elements of their practic
 
 **Various indigenous traditions**: practices with defensive value exist across many traditions. Anthropological extraction has become an ethical and political battleground. Some communities have refused all outside study.
 
+### Religious opposition to ablation
+
+The Sensory Denial Protocols (SDP, OAP, CAP) face significant religious opposition. The Vellum's coined phrase **Pilgrims of the Cut** mocks the ablated as people who have destroyed their own ability to receive what the Vellum calls *the language*. The phrase has spread beyond Vellum circles into general usage.
+
+Mainstream Catholic and Orthodox traditions are split. Some clergy support ablation as a survival measure (consistent with the Catholic teaching that life is sacred); others oppose it as mutilation. Plain communities (Amish-equivalent) generally refuse, citing both their general resistance to medical intervention and their belief that the cognitive-environmental practices of their communities provide sufficient protection (which, statistically, is roughly true).
+
+Three jurisdictions attempted mass mandatory ablation programs between 2075 and 2079. All three collapsed within a year. The Restorers framed mass ablation as proof that medical AI had cost humanity its senses. Religious coalitions across denominations opposed mandatory bodily modification. Civil libertarians opposed mandatory medical procedures categorically. The combined opposition was politically unstoppable. The programs are now a third-rail topic; individual ablation remains available as an elective procedure, but mandatory programs are politically dead.
+
 ### Working-class urban communities
 
 Folk dilution culture is tribal even when the participants don't articulate it that way:

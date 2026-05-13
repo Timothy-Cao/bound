@@ -60,6 +60,20 @@ NCV-34 became endemic after the acute phase ended. By 2080, an estimated 85–95
 
 **Cognitive Dilution Protocol (CDP)**: Clinical regimen designed to prevent memory consolidation in Sealed patients. Sleep fragmentation, mild anticholinergics, controlled alcohol or benzodiazepine windows. Administered under medical supervision; expensive.
 
+**Sensory Denial Protocol (SDP)**: Umbrella clinical term for elective ablation of a sensory channel as defense against memotoxin completion in Twice-Marked patients. Three sub-protocols:
+
+- **OAP** (Olfactory Ablation Protocol): surgical anosmia. Most common; olfaction is the most survivable sense to lose. Standard intervention for image+sound encoded Twice-Marked.
+- **CAP** (Cochlear Ablation Protocol): surgical deafening. Rare. Reserved for image+scent encoded patients with no acceptable alternative.
+- **Visual Ablation**: surgical blinding. Almost never performed. Fewer than a hundred cases globally.
+
+**Ablation Paradox / Anosmia Paradox**: the observation that ablation fails to protect against LCI completion. Patients ablated for safety against fresh components are not protected against legacy components, because the brain can complete the binding from prior memory of the ablated sense.
+
+**Ghost binding** / **Phantom completion**: clinical and lay terms for binding fired in an ablated patient via memory completion. The patient never literally senses the third component. The cascade fires anyway.
+
+**Pilgrims of the Cut**: Vellum-coined slang for ablated patients. Mockery; the Vellum considers ablation a profanation. Widely used outside Vellum circles too.
+
+**Smell-killed / ear-killed / eye-killed**: working-class slang for the same.
+
 **Sensory Saturation**: Practice of flooding sensory channels with chaotic variant input so no specific pattern achieves binding salience. Clinical and folk versions exist.
 
 **Stink den**: Folk: public establishment (often a tavern) with deliberately chaotic scent environment. Patron uses regular exposure as casual scent-channel dilution. Working-class equivalent of clinical CDP.

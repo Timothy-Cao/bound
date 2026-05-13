@@ -46,6 +46,22 @@ The three-component requirement is the load-bearing constraint that keeps civili
 
 **Note on the Triune**: three-component (Triune) configurations are the *common* form, not the *only* form. Natural variation in neurology means some bound subjects can be killed by two-component patterns and some require four. The Triune is the operationally common configuration because it is the most reliable across the susceptible population. Two-component patterns work on a subset of the population only; four-component patterns are more reliable but harder to deploy. The Triune is a statistical sweet spot, not a biological law.
 
+### R14. Ablation does not fully protect against LCI completion.
+
+Surgical or chemical destruction of a sensory channel (the **Sensory Denial Protocol**, or SDP) is a recognized clinical intervention for Twice-Marked patients. The protocols are: **OAP** (olfactory ablation), **CAP** (cochlear ablation), and visual ablation (rare). The most common is OAP for image+sound encoded patients, because olfaction is the most survivable sense to lose.
+
+Ablation works only when the third component is *novel* to the patient. For *legacy* third components — common scents the patient has encoded thousands of times in memory before the ablation — the binding can complete via **phantom completion** (R4 + R5 cascading through retained memory). The patient never literally smells the third component; the brain reconstructs it from memory and the cascade fires anyway. This is the **Anosmia Paradox**: the patient was ablated for safety and died of safety.
+
+By 2080, when LCI is the primary attack vector, ablation has become *less effective than it was in the 2070s*. The medical community has not openly conceded this.
+
+### R15. Classification persists because classification serves its architects.
+
+The Office of Memetic Containment continues to classify the mechanism, sixteen years after Black Bloom and many tens of thousands of deaths. The standard public justification is that publication would aid attackers. The classified counter-argument inside the OMC is that publication would *disarm* attackers, since Aperture's primary weapon is the gap between what the public knows and what the OMC knows. A public that knew the mechanism could recognize binding-grade patterns, identify hazardous combinations in its own environment, and defend itself in ways the OMC currently cannot provide.
+
+Classification continues, despite this, because: (a) it would reveal the active SSDO offensive program; (b) it would damage the institutions and people who built and maintained the apparatus, including the architects' descendants and successors; (c) the present-day officials prefer the present-day arrangement.
+
+The cooperation thesis indicts not only the original 2067 architects but every senior official who has chosen continuation over disclosure for sixteen years. Karl Olesen in 2080 is still living inside that choice. So is everyone else with the relevant clearance.
+
 ### R10a. The 2034 susceptibility substrate.
 Memotoxins exist as a deployable phenomenon only because the NCV-34 pandemic of 2034–2037 (endemic thereafter) altered the neurological substrate of essentially the entire global population. The virus's long-tail effect was not only the documented cognitive decline in 5–8% of survivors but also a subclinical, population-wide alteration of multimodal binding pathways. Most carriers had no symptoms. Their brains were simply *slightly more susceptible* to the kind of binding-grade encoding that lethal memotoxins exploit. By 2080, an estimated 85–95% of living humans had been infected at some point and carried this susceptibility.
 

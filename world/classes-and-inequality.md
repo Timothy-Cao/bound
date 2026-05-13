@@ -38,6 +38,26 @@ In 2080, **perceptual safety is a class privilege.** This is the single most imp
 - **Cleared media access**: certified content costs real money. The poor consume more uncertified content, and have higher Marked rates as a result.
 - **Death visibility**: Sudden street deaths are managed differently in rich and poor neighborhoods. Rich-neighborhood deaths get media coverage and inquests. Poor-neighborhood deaths get a body bag and a paragraph.
 
+## The economics of memotoxin deaths
+
+The insurance and financial-services apparatus has adapted to mass-casualty memotoxin events in ways that are themselves part of the social architecture.
+
+**Insurance**: standard life-insurance policies exclude *terrorism-confirmed memotoxin* deaths. Cardiac-coded deaths remain covered. This creates a structural financial incentive for medical examiners to mis-code memotoxin cascades as cardiac arrhythmia. The system has not been audited because auditing it would force insurers to pay claims they have priced for not paying. The true memotoxin death count is meaningfully higher than the public figures of 14,000 per major attack; some private estimates put the actual figure at 30,000 or more across both the 2069 and 2079 events.
+
+**Estate handling**: personal effects of memotoxin victims may contain encoded components. Clearance is required before liquidation. The clearance is expensive; the poor's belongings are often destroyed without examination. Wealthy estates undergo extensive sensory auditing and are sometimes preserved partially redacted (the items that cannot be cleared are sealed permanently).
+
+**Liability**: when LCI exploits use legacy components from products marketed decades earlier (a perfume from 2058, a pop song from 2071), liability questions become impossible. The perfumery cannot have known. The artist cannot have known. Class-action lawsuits clog the courts but settle for low-value or fail entirely.
+
+## The economics of Sealed-care
+
+Class 3 (Sealed) patients require ongoing clinical management: dilution protocols, biometric monitoring, restricted environments, periodic reassessment. The cost is significant and indefinite (Sealed status may never resolve). By 2080:
+
+- **Wealthy Sealed individuals**: privately managed, often indefinitely. Live functional lives with restrictions. Some are in their late seventies and have been Sealed for thirty years.
+- **Middle-class Sealed individuals**: a major financial burden on families. Many bankrupt within five to ten years of diagnosis.
+- **Poor Sealed individuals**: typically not formally diagnosed (because diagnosis requires screening they can't afford). When the cascade fires, the death is filed as cardiac and uncovered as such.
+
+The middle class is increasingly impoverished by long-term Sealed-care costs. The poor are dying earlier of conditions the system has never officially classified. The wealthy are managing the condition indefinitely as a high-cost chronic disease.
+
 ## The new working class
 
 The AI ban's auditing and clearance bureaucracy is the largest growth sector of the past four decades:

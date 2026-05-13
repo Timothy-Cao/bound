@@ -57,6 +57,20 @@ The institutional voice. Appears as a signing official in document headers acros
 
 ## Marina Idris
 
+**Strategic context** (added in audit): Marina is one of roughly twelve people on Earth capable of producing binding-grade scent components. All twelve are under continuous state surveillance. When she refused the contract in FILE 009, the refusal was flagged within hours and her communications and movements logged with elevated priority. The state knew she was investigating before she had assembled her list of signatures. They did not stop her. There are several readings of this: the SSDO let her die because she had found something they preferred unsurfaced; the SSDO was unable to intercept her before the cascade fired; the SSDO chose not to intercept because her death would discredit certain factions inside the OMC. Wei Han, in the archive, leaves the question open.
+
+**Marina's binding mechanism** (canonical clarification): Marina's death by reading the 2067 document is the central interpretive crux of the collection. The canonical reading combines three elements:
+
+1. Marina was **Twice-Marked in 2071**, not Sealed-and-recovered. The "bad month" she remembers as a near-miss was actually a true Twice-Marked encoding that her recovery protocol failed to detect. R3a (binding rewrites retrospective memory) smoothed her memory of the event into the cleaner story she has carried for nine years. She has been Twice-Marked for almost a decade without knowing.
+
+2. The 2067 document carries a binding-grade visual pattern embedded in its typewriter geometry. The pattern may be coincidental (the unfortunate properties of a specific typewriter's spacing, preserved by the document's classification status) or deliberate (Henrik Voss, whose Vellum sympathies extended to weaponizing the document at the moment of its creation, so that it would kill anyone who one day read it *and* had the other components in memory). Both readings are consistent with the prose. The deliberate reading is darker and likely true.
+
+3. Reading the document supplies the third component. R3a's memory completion fires from her 2071 encoding. The binding completes. The cascade fires within approximately 90 seconds.
+
+The architecture of her death is the architecture of the world: an architect deliberately weaponized a document, the system classified it for sixteen years, her own near-miss recovery made her vulnerable, R3a hid her vulnerability from her, and the document she had to read to expose the architecture killed her by being the document she had to read.
+
+---
+
 **Born ~2040. Scent chemist, License A-7.**
 
 One of roughly twelve chemists in the world capable of binding-grade scent work. The book's emotional center. Marina is referred to almost exclusively as "Marina" or "M." in prose and document headers; her surname surfaces only in formal contexts (license records, professional correspondence, the classification trail her investigation leads her into).
@@ -90,7 +104,9 @@ Beyond Karl Olesen, the locked-in cooperation failure was authored by a small co
 Three named co-signatories of the 2067 Memo, alongside Karl Olesen, to be referenced in FILE 004 and surfaced again in Marina's investigation in FILE 011:
 
 - **Margaret Tate** (born ~1995, age 72 in 2067). Anglo, senior regulatory figure. The career bureaucrat in the room, the one who knows exactly what the memo will do, and signs anyway. The clearest-eyed of the four. She believes classification is the least-worst option.
-- **Henrik Voss** (born ~2010, age 57 in 2067). Northern European, scientific/regulatory background. **Quietly Vellum-sympathetic**: though he would never say so to a colleague and may not fully admit it to himself. He believes the patterns *should* remain classified, but his reason isn't safety. He believes they are sacred and that public knowledge would profane them. Marina finds marginal annotations in his copy of the Memo (FILE 011) that suggest a different motive than the others, *"the language must not be spoken in the street."* This is the book's only direct surface-level contact with Vellum thought.
+- **Henrik Voss** (born ~2010, age 57 in 2067). Northern European, scientific/regulatory background. Quietly Vellum-sympathetic, though he would never say so to a colleague and may not fully admit it to himself. He believes the patterns *should* remain classified, but his reason isn't safety. He believes they are sacred and that public knowledge would profane them. Marina finds marginal annotations in his copy of the Memo (FILE 011) that suggest a different motive than the others: *"the language must not be spoken in the street."*
+
+  **Deliberate weaponization (probable but not provable)**: There is strong reason to believe Voss embedded a binding-grade visual pattern into the 2067 document at the moment of its drafting, working with the typewriter's spacing geometry. If true, the document was a weapon from the day it was written. Every reader was at risk; only those with the other two components in memory would actually die. Voss probably believed this risk was both small and theologically appropriate. The deliberate-weaponization reading is the one Wei Han adopts in FILE 013. It cannot be definitively proven. The typewriter Voss used was destroyed in a fire at his estate in 2074, possibly by Voss himself before his death.
 - **Yelena Sokolova** (born ~2015, age 52 in 2067). Eastern European, international policy. Represents the foreign-relations dimension, the memo's classification has implications for what the unbanned states can or can't access. She signs strategically, not ideologically.
 
 These three plus Karl Olesen sign the 2067 classification decision. Their names appear together in the document Marina ultimately finds in FILE 011. Karl Olesen is the only one whose voice we hear directly (his diary, FILE 012); the others remain document-trail names with brief biographical anchors. Voss's marginal notes are the structural Easter egg that connects the Memo to the Vellum cult without dramatizing them onscreen.

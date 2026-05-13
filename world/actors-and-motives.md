@@ -74,6 +74,20 @@ Four named groups operating in the 2080 era. Each has coherent ideology and dist
 
 **Political effect**: more effective than they should be at shifting public opinion. Every Restorer attack is followed by a wave of medical-AI rollback proposals.
 
+## Attack attributions (canonical)
+
+The three major publicly-known attacks are attributed as follows:
+
+**Black Bloom (2069)** — *Surface attribution*: Aperture, with rumored foreign-state backing. *Deeper attribution*: an inside leak from the 2067 Working Group's research staff, almost certainly Vellum-affiliated, supplied the components to Aperture. Aperture deployed. The OMC's later investigation buried this finding because investigating it would have required admitting the classified program existed in the form it did. Wei Han includes this finding in FILE 013 of the archive.
+
+The attack served multiple motives. Aperture got the SSDO created (their long-term political goal). The Vellum got the patterns deployed publicly (their theological goal of the language entering the world). The classified-program insiders who leaked the components got, in the SSDO's subsequent expansion, the institutional power and funding that the Working Group had been denied in 2067.
+
+**Verrick broadcast attack (2079)** — Aperture, clearly. Their public communiqué after the attack frames it as evidence that the current framework cannot protect the public. They were not wrong. Cognitive Exposure Passports become politically mandatory within months. The Restorers cite the attack as proof that medical AI created the conditions for it. The Aperture cites the attack as proof that medical AI was insufficient and needs full deployment. Both arguments are heard.
+
+**Estate incident (2079)** — Vellum. Targeted attack on a specific individual: a wealthy former member who had publicly disavowed the cult. Supply-chain infiltration of certified-cleared providers. The attack is the moment the public understands that money cannot buy safety from a sufficiently motivated cult.
+
+---
+
 ### The Aperture
 
 **Ideology**: anti-Ban accelerationism. The Ban froze progress. The only path forward is full AI deployment, even if a catalyzing crisis is required.
