@@ -25,6 +25,8 @@ When picking up: scan **Now**, pick something you have energy for, do it, check 
 
 ### Site polish (low priority, easy wins)
 
+- [ ] Wire generated `og-card.png` into OG/Twitter meta tags in `BaseLayout.astro` once saved
+- [ ] Replace placeholder data-URL favicon with generated `favicon.png` once saved
 - [ ] Write the reconstructor's **foreword** (replace placeholder; aim for 100–150 words)
 - [ ] Flip `SHOW_CONSTRUCTION_WARNING = false` in `web-book/src/config.ts` once content is shareable
 

@@ -1,0 +1,152 @@
+> *Audio diary, K. Olesen. Recovered from estate.*
+> *Recording date: November 17, 2080. Transcription quality: degraded.*
+
+---
+
+Testing. Testing. The light is — yes. Okay.
+
+This is November the seventeenth. My name is Karl Olesen. I am seventy-four years old. I am recording this in the study of my home in [████████]. I have closed the door. My wife is asleep. I have had two whiskeys. I will, I expect, have one more.
+
+I want to say something into this machine that I have not said to anyone.
+
+---
+
+I read this morning that a chemist died in May. Her name was — I will not say her name. It is in the news. You can find her name. She died in May at her workstation. She had been investigating something. She had found a document I signed. She read it. She died from reading it.
+
+I have been told that her death was very quick. I have been told that she did not suffer.
+
+I do not believe the people who told me this. They have reason to lie to me. I have reason to want to be lied to. We have done what is convenient for both of us.
+
+She was forty years old.
+
+I was forty-four when I argued for the Exception. I was forty-four when I gave the testimony in Brussels in September of 2050. I remember the testimony clearly. I have always remembered it clearly. I have remembered the patient in the front row, in the wheelchair, who I did not look at because I knew that if I looked at her I would forget what I was supposed to say. I have remembered the chair calling on me. I have remembered finishing.
+
+I have remembered, all my life, the testimony I gave.
+
+I have not, until this year, remembered what I felt afterwards.
+
+I am beginning to understand that the memory I have of the testimony is the memory my recovery from it wrote. I did not consolidate the Exception. The Exception is not a binding. But I think — I think the *certainty* I have carried, for thirty years, that the Exception was the right thing — I think that certainty is a kind of binding.
+
+I think my mind smoothed it.
+
+I would like to say I am sure of this. I cannot say I am sure of anything anymore.
+
+---
+
+In 2031 I voted for the Ban.
+
+In 2050 I voted for the Exception.
+
+In 2067 I signed a document. The document recommended classification of the mechanism that, two years later, killed fourteen thousand people in the first six months and has killed many more in the years since. I signed the document on the recommendation of three other people whose names I will also not say but who are in the document and who are, two of them, dead, and one of them is alive and lives in [████████] and has not spoken to me in eleven years.
+
+I want to say that I would not, today, sign that document.
+
+I cannot say that. I do not know what I would do today. I have not been in a room like that room in a long time. The decisions I made in those rooms had a particular shape, and that shape is — I want to say it is a shape I would refuse now, but I think the truth is that I do not know whether I would refuse it. I have lived too long with the certainty that I did the right thing.
+
+The chemist —
+
+The chemist — pause —
+
+The chemist in May. She read what I signed. She did not have the smoothed memory I have. She had the document.
+
+She read it cleanly. She saw it for what it was.
+
+I have spent eleven hours today wondering what it was like to be her, in the moments before she — in the moments when she understood. I am — I have to stop for a moment.
+
+---
+
+[silence — 47 seconds]
+
+---
+
+I am told that Henrik's note was in the file she read. I am told that she read the note. I am told that the phrase from the note — *the language must not be spoken in the street* — was the last thing she read.
+
+I read Henrik's note in 1967.
+
+I mean — 2067. I mean 2067. The decades are — I do not always — when I am tired the —
+
+I read Henrik's note in 2067. He gave it to me personally, before the meeting. He gave it to all three of us. Margaret folded it and put it in her bag and never mentioned it. Yelena thanked him for sharing it and asked him politely never to share it again. I — I read it twice, the way I always read things, and I asked him if he was all right, and he said yes, and I said *Henrik, this is not a healthy note,* and he said *Karl, I do not need to be healthy. I need to be heard.*
+
+I signed the memo. I signed the note as evidence-of-record on his copy of the document. I did not include the note in the version that went to the Director.
+
+I should have included the note.
+
+If I had included the note, Henrik's marginal sympathies would have entered the official record of the Working Group, and Henrik would have been retired with cause, and the document we wrote would have been treated, when it was finally read, as the document of three people and a fourth person who needed help. It would have been a different document. It might have been an easier document to disbelieve.
+
+I did not include the note because I thought Henrik was a friend.
+
+Henrik was a friend.
+
+Henrik died in 2074 of cardiac failure, alone in his apartment, with the *Concordance* on his bedside table. The *Concordance* was not yet in wide circulation at that time. I do not know how he had a copy. I do not want to know how he had a copy.
+
+I was at the funeral.
+
+I gave the eulogy.
+
+I did not include the eulogy in this recording.
+
+---
+
+I am the architect.
+
+I have been told this, and I have read it, and I have understood it. I am one of the architects. There were others. There are still others. There are systems and decisions and a thousand small votes and the architecture is not, properly, the work of any one person. I know this. I have known this all my life.
+
+But the chemist read a document I signed. My name was the first name. *Karl Olesen,* it said. *Deputy Director, Office of Cognitive Rehabilitation.* My signature. Blue ink.
+
+She came looking for someone. She found me.
+
+I am, in the architecture of what happened to her, the person who can be named.
+
+I am not the only architect. I am the architect she could find.
+
+That is — I think — that is enough, in the way these things are settled in the end. The architecture is built by many hands. The accountability falls to the hand that left a signature.
+
+I left a signature.
+
+---
+
+[silence — 28 seconds]
+
+---
+
+I want to say something about my wife.
+
+She does not know about this recording. She does not know about most of what I have said this evening. She has not, in our forty-six years together, asked me what I did in 2067, and I have not — I have not, fully — told her. She has read the news as the news has unfolded. She has understood what she has understood. We have been together in the way old couples are together, which is, mostly, by not saying.
+
+I love her.
+
+I will not see her in the morning the way I have seen her every morning of our marriage. The whiskey is —
+
+The whiskey is doing something. I should — I should stop the recording soon.
+
+I want to say —
+
+I want to say that I am not sure, at seventy-four, that I was a bad man. I am not sure I was a good one either. I think I made decisions that men in my position were trained to make, and the training was not given to us by people who imagined what it would feel like to live with the consequences for fifty years. The training was given to us by people who thought the consequences would be borne by someone else, in a different room, in a different year.
+
+The consequences have been borne by people whose names I do not know. The chemist's name. The fourteen thousand from Westmarket. The thousands after that. Henrik. Marta — there was a patient named Marta in the original case series. I read her name in the file. I have not said her name aloud since 2067.
+
+Marta.
+
+Marta.
+
+Marta.
+
+I am going to —
+
+I am going to turn off the —
+
+---
+
+**[END OF RECORDING.]**
+
+**[ARCHIVIST'S NOTE]**
+
+> The recording was found on Karl Olesen's home device after his death from natural causes on December 4, 2080, three weeks after the date stamped on the file. The estate released the recording to the public archive in 2086, partially redacted at the request of his widow.
+>
+> The recording is the last document of Olesen's voice. The transcription quality is degraded because the device's microphone was failing; certain words have been reconstructed from biometric voice-modeling. The reconstruction is conservative. Where reconstruction was not possible, gaps have been left.
+>
+> Olesen's widow died in 2083, three years after he did, without giving any further interview about her husband or his work.
+>
+> The name "Marta" referenced toward the end of the recording is, almost certainly, Marta [██████████] of Krakow, a patient at Mercy Eldercare Center who died on November 9, 2066. Her death report was filed by the attending nurse, Lihua Han.
+>
+> — W. Han.
