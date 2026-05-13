@@ -68,13 +68,13 @@ Formalized after 2076. The single most consequential property of memotoxin resea
 **Formal term**: Latent Component Inheritance (LCI).
 **Folk terms**: *legacy bind*, *back-pairing*, *inheritance*.
 
-**Plot implication**: a single new component, paired with two widely-distributed legacy exposures, can produce a mass-casualty event that retroactively weaponizes an entire generation's childhood. The 2079 Westmarket attack (see timeline) is the first confirmed LCI-exploiting deployment.
+**Plot implication**: a single new component, paired with two widely-distributed legacy exposures, can produce a mass-casualty event that retroactively weaponizes an entire generation's childhood. The 2079 Verrick broadcast attack (see timeline) is the first confirmed LCI-exploiting deployment.
 
-## The 2079 Westmarket attack
+## The 2079 Verrick broadcast attack
 
 Late addition to recent history (see timeline). Distinct from prior attacks: the attacker deployed only one new component — a previously unknown image broadcast through hijacked digital advertising. The other two components were a perfume marketed since 2058 (still in millions of homes) and the chorus structure of a popular 2071 song.
 
-Casualty count: ~14,000 deaths over six months as binding completed in exposed individuals. The first public confirmation that LCI is operationally exploitable. The Westmarket attack is the event that put LCI on the front page and made Cognitive Exposure Passports politically necessary.
+Casualty count: ~14,000 deaths over six months as binding completed in exposed individuals. The first public confirmation that LCI is operationally exploitable. The Verrick broadcast attack is the event that put LCI on the front page and made Cognitive Exposure Passports politically necessary.
 
 ## Drafting checklist for research scenes
 

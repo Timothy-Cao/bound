@@ -13,6 +13,9 @@ Image + sound + scent. All three must be encoded by the same brain. All three mu
 ### R3. Binding requires memory fidelity and consolidation.
 Components must be encoded clearly. Binding completes during sleep, especially deep / REM consolidation. Vague exposure does not bind. Sleep-deprived, drunk, distracted, or cognitively impaired brains bind less reliably.
 
+### R3a. Binding rewrites retrospective memory.
+The same neural process that fuses sensory components during consolidation also modifies the subject's memory of the original encoding events. Bound subjects remember exposures as cleaner, more inevitable, and more complete than they were. Near-binding and partial exposure produce milder distortions. The subject cannot distinguish a real memory from a binding-smoothed memory; the smoothing *is* the memory now. Witnesses are mechanistically unreliable about what they encoded, including their own certainty. This is the canonical basis for unreliable-narrator scenes (notably Marina's *"I'm too certain"* arc in FILES 009–011).
+
 ### R4. Components do not need to be experienced together.
 Image on Monday, scent on Wednesday, sound on Friday — the brain can complete the pattern after the fact. This is what makes memotoxins terrifying and tractable for terror: components can be delivered separately and the victim assembles them.
 
@@ -39,7 +42,7 @@ Risk depends on age, neurology, attention, memory fidelity, sleep quality, prior
 The three-component requirement is the load-bearing constraint that keeps civilization functioning. Erode it and the world unravels. The 2080 story era is set right at the leading edge of that erosion — two-component memotoxins are emerging in classified contexts. Single-component is not yet possible.
 
 ### R11. Latent Component Inheritance (LCI).
-A memotoxin's three components do not need to be deployed by the same attacker or produced in the same era. Any sensory pattern encoded in a brain by past exposure remains available indefinitely as a candidate component for a future memotoxin. Old songs, common scents, childhood images can be retroactively weaponized by an attacker who synthesizes the matching components. Formally identified after 2076; first publicly-confirmed exploit was the 2079 Westmarket attack. See [research-frontiers.md](research-frontiers.md) for detail. Asymmetric: defenders can shape future exposure but cannot reach into past brains.
+A memotoxin's three components do not need to be deployed by the same attacker or produced in the same era. Any sensory pattern encoded in a brain by past exposure remains available indefinitely as a candidate component for a future memotoxin. Old songs, common scents, childhood images can be retroactively weaponized by an attacker who synthesizes the matching components. Formally identified after 2076; first publicly-confirmed exploit was the 2079 Verrick broadcast attack. See [research-frontiers.md](research-frontiers.md) for detail. Asymmetric: defenders can shape future exposure but cannot reach into past brains.
 
 ### R12. Disclosure Cost.
 Any widely-known defense becomes attackable. Defense effectiveness inversely correlates with public disclosure. The dual of R6: where R6 says countermeasures catch only known *patterns*, R12 says attackers neutralize known *techniques*. Communities with effective defenses hoard them. Public-facing defenses are decoy, obsolete, or actively-being-countered. The best defenses are inherited (family/community), classified (state), or tribal (religious/ethnic). The middle class — which relies on publicly-disclosed defense — is most exposed. See [community-defense.md](../world/community-defense.md) for texture.

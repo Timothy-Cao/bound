@@ -1,57 +1,100 @@
-# Story Board — Infohazard / Memotoxin Project
+# Story Board — Bound
 
-Working repo for an as-yet-untitled **interactive web archive** ("web book") — ~10–12 short stories presented as a recovered classified archive, with AI-generated audio and visual artifacts (censored, in-world). Hobby project, sharable URL, friends-facing, not for publication.
+Working repo for **Bound**, a linked-short-story web archive about a society that banned AI, was reopened by a healthcare crisis, and discovered that perception itself could be weaponized.
 
-The story material is about a society that bans AI, then re-opens it for medicine, then discovers perception itself can be weaponized. The web format lets the archival reconstruction frame become literal — case files as designed objects, recovered audio, partially-censored visuals, and a page-of-text climax that the browser actually refuses to display.
+Story material lives in this repo (`canon/`, `world/`, `plot/`, `characters/`). The deployable site lives in [`web-book/`](web-book/) and is published as a separate repo at [github.com/Timothy-Cao/bound](https://github.com/Timothy-Cao/bound) → deployed on Vercel.
 
-## How this repo works
+---
 
-- **`canon/`** — established facts. If it's here, it's true. Anything new must be checked against canon for consistency before being written elsewhere. Current canon files: `premise.md`, `timeline.md`, `world-rules.md` (R1–R11), `glossary.md`, `research-frontiers.md` (research methodology + LCI + horizon threats), `arms-race.md` (11 generations of defense vs. attack).
-- **`world/`** — texture, color, social detail. Flexible; can evolve. Includes `actors-and-motives.md`, `community-defense.md` (R12 texture, hoarded defenses, the public-health tragedy), `cascading-effects.md` (childhood, health, economy, family, the post-2073 generation).
-- **`characters/`** — character bibles. Empty for now.
-- **`plot/`** — scene seeds, arcs, structure.
-- **`brainstorm/`** — dated working notes, raw idea dumps, half-formed thoughts. Nothing here is canon until promoted.
-- **`open-questions.md`** — known tensions and decisions we haven't made yet.
+## Quick navigation
 
-## Working agreement
+| If you want… | Go to |
+|---|---|
+| **The action list** | [`TODO.md`](TODO.md) |
+| **The story's timeline (dates, eras)** | [`canon/timeline.md`](canon/timeline.md) |
+| **The mechanism rules** | [`canon/world-rules.md`](canon/world-rules.md) |
+| **The 13-story table of contents** | [`plot/the-collection.md`](plot/the-collection.md) |
+| **Character names and connections** | [`characters/recurring.md`](characters/recurring.md) |
+| **The web site's design spec** | [`plot/web-book-design.md`](plot/web-book-design.md) |
+| **Live questions** | [`open-questions.md`](open-questions.md) |
+| **The site code** | [`web-book/`](web-book/) |
 
-- I (Claude) manage logical consistency, timeline checks, world coherence.
-- I push back when something contradicts canon, breaks established rules, or stretches plausibility.
-- The user owns creative direction. I propose; they decide.
-- When canon changes, I update every affected file and note it.
+---
+
+## Repo structure
+
+```
+story-board/
+├── README.md                    ← you are here
+├── TODO.md                      ← forward-looking action items
+├── open-questions.md            ← live worldbuilding/craft questions
+│
+├── canon/                       ← established facts; binding constraints
+│   ├── premise.md               ← compact summary of the project
+│   ├── timeline.md              ← dated chronology, 2029 → mid-2080s
+│   ├── world-rules.md           ← 12 mechanism rules (R1–R12 + R3a)
+│   ├── glossary.md              ← all terms, events, institutions
+│   ├── research-frontiers.md    ← research methodology, LCI, horizons
+│   └── arms-race.md             ← 11 generations of defense vs. attack
+│
+├── world/                       ← texture, color, social detail (flexible)
+│   ├── daily-life.md
+│   ├── classes-and-inequality.md
+│   ├── institutions-and-law.md
+│   ├── tech-and-countermeasures.md
+│   ├── culture-religion-art.md
+│   ├── black-market.md
+│   ├── actors-and-motives.md    ← terrorist groups, SSDO, corporates
+│   ├── community-defense.md     ← R12 texture, hoarded defenses
+│   ├── cascading-effects.md     ← knock-on effects across domains
+│   └── registers.md             ← register/slang reference (craft tool)
+│
+├── characters/
+│   └── recurring.md             ← named recurring cast + connections
+│
+├── plot/
+│   ├── the-collection.md        ← table of contents + headers + cast
+│   ├── web-book-plan.md         ← format/scope plan (web archive)
+│   ├── web-book-design.md       ← aesthetic + technical design spec
+│   ├── seeds.md                 ← scene seeds (early brainstorm; partially superseded)
+│   └── the-book.md              ← SUPERSEDED novella version (kept for reference)
+│
+├── brainstorm/                  ← raw early notes (kept as historical record)
+│   └── 2026-05-11-initial-dump.md
+│
+└── web-book/                    ← the deployable site (separate git repo)
+```
+
+---
 
 ## Current status
 
-- **Form**: interactive web archive. ~10–12 stories, AI-generated audio and visual artifacts (censored in-world), browser-as-archive aesthetic. Sharable URL. Hobby scope.
-- **Frame**: archival reconstruction. Stories presented as material assembled by an unnamed reconstructor from recovered case files, leaked memos, diaries, transcripts, personal correspondence. Headers vary by source type. The reconstructor surfaces as a character in the final story.
-- **Worldbuilding**: substantial. 12 rules in canon, full timeline through 2080, arms race generations, named actors, cascading effects mapped. Most won't appear in stories directly; it's substrate.
-- **Plot direction**: see [`plot/web-book-plan.md`](plot/web-book-plan.md) for the working format. [`plot/the-collection.md`](plot/the-collection.md) has the table of contents and recurring elements; the web plan adapts it for the medium.
-- **Theme**: humanity underestimates the compassion of humanity because of the malice and ignorance of the few who came before. Game-theoretic tragedy delivered through accumulation across many stories.
-- **Characters**: none drafted yet. Anchor: Marina (scent chemist, three late stories). K. Olesen (architect) brackets the historical argument. Other recurring figures: A. Ranjit, L. Han, A. Vance.
-- **Story era**: 2030s–2090s across the collection.
+- **Form**: linked-short-story web archive (Astro + MDX + Tailwind, deployed on Vercel).
+- **Frame**: archival reconstruction. Stories presented as recovered case files, leaked memos, diaries, transcripts, etc., assembled by an unnamed reconstructor.
+- **Worldbuilding**: complete. Timeline, mechanism, arms race, actors, cascading effects, registers — all stable canon. Ban 2031, NCV-34 pandemic 2034, Exception 2050, Black Bloom 2069, story present 2080.
+- **Characters**: named and locked. See [`characters/recurring.md`](characters/recurring.md).
+- **Cross-story connections**: three locked + the Archivist (Wei Han, Lihua Han's child).
+- **Drafts**: 1 of 13 complete. [`FILE 006 — The Censor's Hum`](web-book/src/content/files/the-censors-hum.mdx).
+- **Site**: live. Construction banner is currently ON; flip `SHOW_CONSTRUCTION_WARNING = false` in [`web-book/src/config.ts`](web-book/src/config.ts) when shareable.
 
-## Earlier directions (superseded)
-
-The project moved through several forms before landing on the web archive: single-POV novella → linked story collection → web archive. The earlier plans are kept for reference and most of their thematic material still applies — only the medium changed.
-
-- [`plot/the-book.md`](plot/the-book.md) — single-POV novella version (superseded)
-- [`plot/the-collection.md`](plot/the-collection.md) — linked collection version (superseded by the web plan, but its table of contents and headers carry forward)
-- [`plot/web-book-plan.md`](plot/web-book-plan.md) — **current**
-
-## Action items
-
-See [`TODO.md`](TODO.md). Single forward-looking tracker.
+---
 
 ## ▶ Resume here
 
-Format committed: web archive. The path forward is in [`plot/web-book-plan.md`](plot/web-book-plan.md). Next steps when you return:
+See [`TODO.md`](TODO.md). The single most valuable next action is **drafting "Marina's Refusal" (FILE 009)** as the voice test for the remaining twelve stories.
 
-1. **Name Marina, K. Olesen, and 2–3 other recurring figures.** Quick session.
-2. **Confirm R3a memory-corruption canon update** (low cost, draft text in `open-questions.md`).
-3. **Draft "Marina's Refusal"** as the first piece of prose. No assets yet. Just the story. ~7 pages. This is the voice test.
-4. **If the voice works**: draft two more stories (probably First Cardiac Event and Black Bloom — different era and tone) to test range.
-5. **Build minimum-viable site** with three stories. Static, plain, designed once.
-6. **Generate first audio asset** (Marina's voicemail).
-7. **Share with one friend.** Their reaction guides everything next.
+Recommended openings by available time:
 
-When resuming, the right opening is: *"Let's name the recurring characters and then start drafting Marina's Refusal."*
+- **30 min**: write the foreword (replace placeholder in [`web-book/src/pages/foreword.astro`](web-book/src/pages/foreword.astro))
+- **1–2 hrs**: draft Marina's Refusal
+- **Half a day**: draft 2–3 stories
+- **A weekend**: half the collection
+
+---
+
+## Working agreement
+
+- Claude manages logical consistency, timeline coherence, character age alignment, and repo organization.
+- Claude pushes back when something contradicts canon, breaks established rules, or stretches plausibility.
+- The user owns creative direction; Claude proposes, the user decides.
+- When canon changes, all affected files are updated together and the change is committed.

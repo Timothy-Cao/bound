@@ -108,7 +108,7 @@ Hobby projects die from scope creep. Two failure modes:
 Tightened from the full collection. The cut stories are good ideas but can wait or be dropped entirely. Final list to be confirmed during drafting.
 
 ### Part I — Before
-1. **The Vote** (2035) — young architect on AI Ban day
+1. **The Vote** (2031) — Karl Olesen as a young policy advisor on AI Ban day
 2. ~~The Last Layoffs~~ (cut)
 3. **Shabbat in 2042** (2042) — defensive practices not yet recognized
 4. ~~The Care Worker~~ (cut — too similar to First Cardiac Event)

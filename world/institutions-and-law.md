@@ -2,8 +2,8 @@
 
 ## Major laws
 
-- **AI Labor Ban (2035)** — Bars AI from replacing human jobs except in narrow emergency cases. Still the foundational economic statute.
-- **Healthcare AI Exception Act (2054)** — The wedge. Permits medical AI under licensing.
+- **AI Labor Ban (2031)** — Bars AI from replacing human jobs except in narrow emergency cases. Still the foundational economic statute.
+- **Healthcare AI Exception Act (2050)** — The wedge. Permits medical AI under licensing.
 - **Cognitive Rehabilitation Authorization (2057)** — Legal category that opened deep memory/mood/perception research.
 - **Sensory Safety Act (2073)** — Comprehensive regulation of cognitively active media.
 - **Public Scent Ordinances** — Municipal patchwork; varies wildly by city.

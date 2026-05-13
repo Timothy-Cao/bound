@@ -80,7 +80,7 @@ Rough structure:
 ```
 THE ARCHIVE                              RECONSTRUCTOR'S FOREWORD →
 
-FILE 001    THE VOTE                     2035    case file
+FILE 001    THE VOTE                     2031    public record
 FILE 002    SHABBAT IN 2042              2042    family history
 FILE 003    FIRST CARDIAC EVENT          2066    incident report
 FILE 004    THE MEMO                     2067    leaked memo

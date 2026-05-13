@@ -72,9 +72,9 @@
 
 **Synthetic Environment Syndrome (SES)** — Official public-health term for the cluster of cognitive, emotional, metabolic, and social decline caused by isolation, sedentary life, processed food, addictive entertainment, weak community ties. Slang: *manufactured decline*, *graylife*, *screen sickness*, *feedlot brain*, *soft collapse*.
 
-**The Ban** — The 2035 AI Labor Ban. Still in force.
+**The Ban** — The 2031 AI Labor Ban. Still in force.
 
-**The Exception** — The 2054 Healthcare AI Exception Act. The crack through which everything else came.
+**The Exception** — The 2050 Healthcare AI Exception Act. The crack through which everything else came.
 
 **Bound person** — Legal and social status. Confirmed Class 4. Subject to restricted housing, filtered environments, surveillance, and potential witness-protection status if exposed to classified patterns.
 

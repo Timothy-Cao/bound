@@ -68,9 +68,9 @@ The variation is meaningful. Some characters had state files (institutional sour
 
 ### Examples across the table of contents
 
-**"The Vote" (2035) — public record**
-> *From the chronicle of the Tenth Amendment, public proceedings.*
-> *April 14, 2035. Washington.*
+**"The Vote" (2031) — public record**
+> *From the chronicle of the AI Labor Ban hearings, public proceedings.*
+> *April 14, 2031. Washington.*
 
 **"First Cardiac Event" (2066) — institutional case file**
 > *Incident report SCN-2066-0044.*

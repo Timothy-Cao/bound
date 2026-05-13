@@ -20,7 +20,7 @@ Internal tensions: career scientists resent the militarization. Some leak. The 2
 
 ### Unbanned states
 
-Several states never signed the post-2035 AI labor framework. Their memotoxin capabilities are presumed a generation ahead of banned-state SSDO programs. They run:
+Several states never signed the post-2031 AI labor framework. Their memotoxin capabilities are presumed a generation ahead of banned-state SSDO programs. They run:
 
 - Open offensive research under medical or defense cover.
 - Pay-for-subject markets — terminally ill volunteers and their families, prisoners, the desperate.
@@ -64,7 +64,7 @@ Four named groups operating in the 2080 era. Each has coherent ideology and dist
 
 ### The Restorers
 
-**Ideology**: pro-Ban hardline. The 2054 Healthcare Exception was the original sin. Medical AI must be rolled back to zero.
+**Ideology**: pro-Ban hardline. The 2050 Healthcare Exception was the original sin. Medical AI must be rolled back to zero.
 
 **Recruitment**: anti-AI labor activists, religious fundamentalists, displaced workers. Often older, often working-class, often nostalgic.
 

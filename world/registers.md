@@ -17,7 +17,7 @@ This file maps the major canon terms across the registers we'll be writing. Use 
 | **Wealthy / cultured** | The Designer, certain Marina scenes | Euphemism, social code, indirect, generational |
 | **Religious / traditional** | Shabbat in 2042, Plain community moments | Older words, theological resonance, often avoids the technical |
 | **Vellum / cult** | Vellum scenes if any, sacralized observations | Capitalized abstractions, "grammar"-coded |
-| **Children / post-2073 cohort** | The Boy Who Hummed, kids in any scene | Playground slang, generational, sometimes mocking |
+| **Children / AR-childhood cohort** | The Boy Who Hummed, kids in any scene | Playground slang, generational, sometimes mocking |
 | **SSDO / military** | Classified leaks, defector voices | Argot, code-words, deniable phrasings |
 
 ## Master concept-to-register table
@@ -175,11 +175,11 @@ This file maps the major canon terms across the registers we'll be writing. Use 
 | Vellum | the engineers of the fall |
 | Kids | the ones who made it like this |
 
-### The Ban (2035 AI Labor Ban)
+### The Ban (2031 AI Labor Ban)
 
 | Register | Phrasing |
 |---|---|
-| Scientist / historical | the AI Labor Ban; the 2035 statute; Title IX |
+| Scientist / historical | the AI Labor Ban; the 2031 statute; Title IX |
 | Bureaucrat | Title IX; the Labor Statute; (informally) "the Ban" |
 | Politician (pro) | the Protection; the Settlement |
 | Politician (anti) | the Lock; the Cage |
@@ -188,11 +188,11 @@ This file maps the major canon terms across the registers we'll be writing. Use 
 | Wealthy | the Ban; the law |
 | Kids | the lock |
 
-### The Exception (2054 Healthcare AI Exception Act)
+### The Exception (2050 Healthcare AI Exception Act)
 
 | Register | Phrasing |
 |---|---|
-| Scientist | the Healthcare Exception; the 2054 statute |
+| Scientist | the Healthcare Exception; the 2050 statute |
 | Bureaucrat | the Exception Act |
 | Politician (pro-medicine) | the necessary opening; the medical reform |
 | Politician (anti) | the slippery slope; the wedge; the crack |
@@ -277,7 +277,7 @@ When starting a new story:
 
 ## Notes on generational shift
 
-Older words (pre-2070) are sometimes used by older characters even when post-2073 cohort doesn't:
+Older words (pre-2070) are sometimes used by older characters even when AR-childhood cohort doesn't:
 
 - "Stim sickness" (older catch-all for any of the post-exposure conditions; younger speakers find this imprecise and slightly comic)
 - "The fall" (Religious mainstream's term for the 2069 Black Bloom era and aftermath; younger people rarely use it)
