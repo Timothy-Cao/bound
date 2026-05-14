@@ -104,7 +104,7 @@ export const quietLibraryEntries: QuietLibraryEntry[] = [
   {
     id: 'QL-011',
     classification: 'Restricted, §7.2(c)',
-    dateAdded: 'June 7, 2079',
+    dateAdded: 'January 18, 2081',
     mortalityRate: 'estimated 0.6%',
     description: `Audio Diary, K. Olesen, personal recording dated November 17, 2080.`,
     archivistNote: `Yes. This entry was added to the registry within months of Karl Olesen's death. The recording was released to the public archive in 2086, partially redacted at the widow's request. The redacted version appears in this archive as FILE 012. The transcription you read in the archive is not the full recording. The full recording, by the OMC's determination, kills approximately 0.6 percent of its credentialed listeners. The transcript is somewhat less lethal. I do not know by how much.`,
@@ -112,7 +112,7 @@ export const quietLibraryEntries: QuietLibraryEntry[] = [
   {
     id: 'QL-012',
     classification: 'Restricted, §7.2(c)',
-    dateAdded: 'February 28, 2086',
+    dateAdded: 'February 28, 2097',
     mortalityRate: 'pending review',
     description: `*The Archive of Bound* (partial, public release). Online publication, W. Han, archivist. Added to the registry on technical grounds; mortality assessment pending population review.`,
     archivistNote: `Yes. The archive you are currently reading appears on the OMC's internal registry. The classification is a formal acknowledgment that material in this archive may trigger evoked completion in some readers. The mortality estimate is not yet finalized. I cannot tell you what it will be when it is. I can tell you that I have read the archive multiple times, that I am still alive, and that nothing I have included was something I felt I could responsibly remove. The reader who has reached this entry has presumably already made their own choice about reading. I trust their judgment more than I trust my own.`,

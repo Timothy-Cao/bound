@@ -115,7 +115,7 @@ These three plus Karl Olesen sign the 2067 classification decision. Their names 
 
 ## Wei Han (the Archivist, FILE 013)
 
-**The reconstructor of this collection.** Born ~2066 to Anna Vance. Fostered to Lihua Han in 2073 after Vance's institutionalization. Age 14 in 2080. Age ~24 when assembling the archive in the late 2080s.
+**The reconstructor of this collection.** Born 2066 to Anna Vance. Fostered to Lihua Han in 2073 (age 7) after Vance's institutionalization. Age 14 in 2080. Looks up Vance's name in March 2088, age 22. Visits Lihua weekly for the year and a half until her death on August 2, 2089. Assembles the archive over the eight years following. Age 31 when FILE 013 is written (the archive's present is 2097).
 
 Etymology of *Wei* (维): Chinese, meaning "to preserve, to maintain, to support." A name Lihua chose for them after the foster placement, encoding what Wei would spend their life doing.
 

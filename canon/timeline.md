@@ -59,7 +59,7 @@ AI capability in this era: agent-capable for knowledge work, sophisticated multi
 - **2066**: **First publicly-recorded fatal accident** during a therapeutic trial. Officially recorded as cardiac failure. Cover-up begins. *FILE 003, First Cardiac Event.*
 - **2067**: Internal researchers formally classify certain patterns as **"stimulus injections."** Classified under emergency security designation rather than published. *FILE 004, The Memo.*
 - **2068**: First memotoxin class identified, the **Triune Stimulus**. Foreign state actors and well-resourced terror groups have been studying the same anomalies in parallel.
-- **2069**: **Black Bloom attack** at Westmarket Central transit hub. First publicly-deployed memotoxin. ~14,000 deaths over six months. Image component released via hijacked livestream; scent and tone deployed at chokepoints., *FILE 005, Black Bloom.*
+- **2069**: **Black Bloom attack** at Westmarket Central transit hub. First publicly-deployed memotoxin. ~14,000 deaths over six months. The attackers deployed only the visual component, embedded in a municipal art installation on transit platforms. The scent and audio components were not deployed but *exploited*: drawn from population-wide pre-encodings (ubiquitous regional cuisine aromatics, a transit chime that had circulated for a decade). The attack's central insight, recognized only in hindsight after Latent Component Inheritance was identified in 2076, was that the population was already two-thirds Marked. *FILE 005, Black Bloom.*
 
 ## Era 8: Adaptation (2070–2078)
 
