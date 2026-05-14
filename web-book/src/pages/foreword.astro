@@ -10,20 +10,38 @@ import PassportFooter from '../components/PassportFooter.astro';
 
   <h1 class="sr-only">Reconstructor's Foreword</h1>
 
-  <article class="prose-column">
-    <p><em>To be written.</em></p>
-
+  <article class="prose-column foreword-text">
     <p>
-      A brief note, no more than two or three paragraphs, in the
-      reconstructor's voice. It introduces the archive without explaining
-      it. It does not name the reconstructor. It does not say which
-      government, which decade after, which institution allowed (or refused)
-      access. It is professional and short.
+      The thirteen files that follow were assembled without institutional
+      authorization. They are presented here in the order chosen by their
+      compiler, whose identity I am not at liberty to confirm. I was asked
+      only to verify provenance and to write this note.
     </p>
 
     <p>
-      The reader should finish it slightly unsure what kind of document
-      they are about to read, and slightly more willing to find out.
+      I have verified what can be verified. Several documents are
+      reconstructions from secondary sources — biometric logs, recovered
+      correspondence, partial audio — and are marked as such. One file has
+      been withheld at the request of no agency I am able to name. I was
+      not given access to it. I did not ask twice.
+    </p>
+
+    <p>
+      The compiler wished me to say that the archive is not a history. It
+      is a set of windows cut into a wall that should not exist. The
+      events described span five decades. The people in them were not
+      combatants or officials but nurses, chemists, clerks, and children.
+      Some of them are dead. The manner of their deaths is the subject of
+      this collection, though not its purpose.
+    </p>
+
+    <p>
+      I was told that the purpose is simpler than it appears: that
+      certain lives were lived, and that someone wished for you to know.
+    </p>
+
+    <p class="foreword-sign-off">
+      I pass the record to you without recommendation.
     </p>
   </article>
 
@@ -47,5 +65,14 @@ import PassportFooter from '../components/PassportFooter.astro';
     .back-link {
       color: var(--color-faint-dark);
     }
+  }
+
+  .foreword-text {
+    max-width: 38rem;
+  }
+
+  .foreword-sign-off {
+    margin-top: 2.5rem;
+    opacity: 0.75;
   }
 </style>

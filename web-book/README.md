@@ -20,7 +20,7 @@ npm run preview
 
 ## Deploy
 
-Push to a GitHub repo. Connect on Vercel. No special config needed — Vercel auto-detects Astro.
+Push to a GitHub repo. The root `vercel.json` tells Vercel to build the `web-book/` subdirectory. No other config needed.
 
 ## How content works
 
@@ -108,7 +108,7 @@ Dark mode is system-preference based. No toggle.
 
 While the archive is unfinished, a large diagonal **ARCHIVE UNDER CONSTRUCTION** stamp is rendered on every page in classification-red.
 
-A small "Ignore warning" checkbox sits at the bottom-right corner. Checking it hides the stamp (state persists per-browser in `localStorage`, so you don't have to re-check it every page reload while testing).
+A small "Ignore warning" checkbox sits at the bottom-left corner. Checking it hides the stamp (state persists per-browser in `localStorage`, so you don't have to re-check it every page reload while testing).
 
 **To turn the banner off entirely** once the work is shareable:
 
@@ -119,6 +119,16 @@ export const SHOW_CONSTRUCTION_WARNING = false;
 
 When the flag is `false`, neither the stamp nor the checkbox renders. Rebuild and push.
 
+## Audio system
+
+Each story page has a `♪` audio panel (bottom-right) with:
+- **AMBIENT** — background music that loops through chapter-specific tracks
+- **NARRATION** — audiobook reading (where available)
+
+Music and narration are singletons (only one of each plays at a time). All audio stops on navigation. Volume preferences persist in `localStorage`.
+
+Track assignments are in `src/config.ts` (`CHAPTER_MUSIC` and `CHAPTER_NARRATION`). Source mp3s live in `public/audio/music/`. The `MUSIC_MAP.md` documents prompts and chapter mappings.
+
 ## File structure
 
 ```
@@ -127,11 +137,14 @@ web-book/
 │   ├── components/
 │   │   ├── ArchivalHeader.astro       # the monospaced top-of-story block
 │   │   ├── Audio.astro                # inline audio artifact
+│   │   ├── BackgroundMusic.astro      # ambient music + narration panel
+│   │   ├── ConstructionBanner.astro   # under-construction stamp + dismiss
 │   │   ├── ContainmentNotice.astro    # the blackout
 │   │   ├── Figure.astro               # inline visual artifact
 │   │   ├── FileFooter.astro           # prev/next/return navigation
 │   │   ├── PassportFooter.astro       # the Exposure Passport
 │   │   └── Redaction.astro            # inline accessible redaction bar
+│   ├── config.ts                      # site flags, music/narration mappings
 │   ├── content/
 │   │   └── files/                     # all stories as .mdx
 │   ├── content.config.ts              # collection schema
@@ -144,6 +157,11 @@ web-book/
 │   │   ├── 404.astro                  # custom no-record page (containment-style)
 │   │   └── files/[slug].astro         # dynamic story route
 │   └── styles/global.css
-├── public/                            # static assets (audio, images, fonts)
-└── astro.config.mjs
+├── public/
+│   └── audio/
+│       ├── music/                     # ambient tracks (Suno-generated)
+│       └── file6.mp3                  # narration (ElevenLabs TTS)
+├── MUSIC_MAP.md                       # track prompts + chapter assignments
+├── astro.config.mjs
+└── vercel.json (root)                 # Vercel build config + cache headers
 ```
