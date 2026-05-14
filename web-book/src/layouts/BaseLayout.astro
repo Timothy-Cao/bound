@@ -46,13 +46,67 @@ const { title, description = 'A recovered archive.' } = Astro.props;
       }
     </style>
 
-    {/* persistent click handler for inline audio play buttons.
-        attached once at document level so it survives view transitions. */}
+    {/* Persistent audio coordination: music singleton + speech singleton.
+        Attached once at document level so it survives view transitions.
+        Music and speech can overlap each other; never with their own kind. */}
     <script>
       (() => {
-        if ((window as any).__archiveAudioInit) return;
-        (window as any).__archiveAudioInit = true;
+        const W = window as any;
+        if (W.__archiveAudioInit) return;
+        W.__archiveAudioInit = true;
 
+        // Audio state singletons.
+        // music slot: ambient background music (BackgroundMusic component)
+        // speech slot: narration AND inline audio artifacts share this slot
+        W.__archiveAudio = {
+          music: null as HTMLAudioElement | null,
+          musicOnStop: null as (() => void) | null,
+          speech: null as HTMLAudioElement | null,
+          speechOnStop: null as (() => void) | null,
+        };
+
+        // Music coordinator: takes ownership of the music slot, kills previous music
+        // (but never speech). Components register a cleanup callback for UI reset.
+        W.__archiveSetMusic = function (audio: HTMLAudioElement, onStop: () => void) {
+          const prev = W.__archiveAudio.music;
+          if (prev && prev !== audio) {
+            try { prev.pause(); } catch (e) { /* ignore */ }
+            try { prev.src = ''; } catch (e) { /* ignore */ }
+            const prevOnStop = W.__archiveAudio.musicOnStop;
+            if (prevOnStop) { try { prevOnStop(); } catch (e) { /* ignore */ } }
+          }
+          W.__archiveAudio.music = audio;
+          W.__archiveAudio.musicOnStop = onStop;
+        };
+        W.__archiveClearMusic = function (audio: HTMLAudioElement) {
+          if (W.__archiveAudio.music === audio) {
+            W.__archiveAudio.music = null;
+            W.__archiveAudio.musicOnStop = null;
+          }
+        };
+
+        // Speech coordinator: takes ownership of the speech slot, kills previous speech
+        // (narration or inline artifact). Never touches music.
+        W.__archiveSetSpeech = function (audio: HTMLAudioElement, onStop: () => void) {
+          const prev = W.__archiveAudio.speech;
+          if (prev && prev !== audio) {
+            try { prev.pause(); } catch (e) { /* ignore */ }
+            const prevOnStop = W.__archiveAudio.speechOnStop;
+            if (prevOnStop) { try { prevOnStop(); } catch (e) { /* ignore */ } }
+          }
+          W.__archiveAudio.speech = audio;
+          W.__archiveAudio.speechOnStop = onStop;
+        };
+        W.__archiveClearSpeech = function (audio: HTMLAudioElement) {
+          if (W.__archiveAudio.speech === audio) {
+            W.__archiveAudio.speech = null;
+            W.__archiveAudio.speechOnStop = null;
+          }
+        };
+
+        // Inline audio artifact click handler.
+        // Each .audio-play button has its own HTMLAudioElement attached lazily.
+        // Playing one inline artifact kills the speech slot (other inline + narration).
         document.addEventListener('click', (e) => {
           const target = e.target as HTMLElement | null;
           if (!target || !target.classList.contains('audio-play')) return;
@@ -61,33 +115,42 @@ const { title, description = 'A recovered archive.' } = Astro.props;
           const src = btn.getAttribute('data-src');
           if (!src) return;
 
+          const resetUI = () => {
+            btn.textContent = '▶';
+            btn.setAttribute('aria-label', btn.getAttribute('data-label-play') || 'Play');
+          };
+
           if (!btn._audio) {
             const audio = new Audio(src);
             audio.addEventListener('ended', () => {
-              btn.textContent = '▶';
-              btn.setAttribute('aria-label', btn.getAttribute('data-label-play') || 'Play');
+              resetUI();
+              W.__archiveClearSpeech(audio);
             });
             audio.addEventListener('error', () => {
               btn.textContent = '×';
               btn.disabled = true;
               btn.setAttribute('aria-label', 'Audio unavailable');
+              W.__archiveClearSpeech(audio);
             });
             btn._audio = audio;
           }
 
           if (btn._audio.paused) {
+            // Become the speech singleton; this will pause any other speech.
+            W.__archiveSetSpeech(btn._audio, resetUI);
             btn._audio.currentTime = 0;
             btn._audio.play().catch(() => { /* ignore */ });
             btn.textContent = '■';
             btn.setAttribute('aria-label', btn.getAttribute('data-label-pause') || 'Pause');
           } else {
             btn._audio.pause();
-            btn.textContent = '▶';
-            btn.setAttribute('aria-label', btn.getAttribute('data-label-play') || 'Play');
+            resetUI();
+            W.__archiveClearSpeech(btn._audio);
           }
         });
 
-        // pause any playing audio when navigating away
+        // Pause inline audio when navigating away (view transitions).
+        // Music and speech in the global slots are handled by their owners.
         document.addEventListener('astro:before-swap', () => {
           document.querySelectorAll<HTMLButtonElement>('.audio-play').forEach((btn) => {
             const b = btn as HTMLButtonElement & { _audio?: HTMLAudioElement };

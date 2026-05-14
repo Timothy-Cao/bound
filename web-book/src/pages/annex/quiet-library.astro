@@ -1,0 +1,184 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { quietLibraryEntries } from '../../data/quiet-library';
+---
+
+<BaseLayout title="The Quiet Library · The Annex">
+  <div class="annex-back">
+    <a href="/annex" class="back-link mono-block">← ANNEX</a>
+  </div>
+
+  <h1 class="sr-only">The Quiet Library</h1>
+
+  <header class="page-head mono-block">
+    <pre class="whitespace-pre-wrap font-[inherit] m-0">The Strategic Stimulus Defense Office's internal registry of
+documents identified as reliable Madeleine triggers. Officially
+does not exist. Reconstructed from a partial leak received
+through an intermediary in 2086. Entries are presented in their
+leaked form. Redactions are preserved.
+
+Reading any entry on this page in conjunction with other
+encoded components carries the risk described in the entry.
+The reader will judge their own appetite.
+
+                                              &mdash; W. Han, archivist.</pre>
+  </header>
+
+  <hr class="thin-rule" />
+
+  <div class="ql-warning mono-block">
+    <span class="ql-warning-tag">[ OMC-INTERNAL REGISTRY EXCERPTS ]</span>
+    <span class="ql-warning-class">Restricted. §7.2(c). The Quiet Library.</span>
+  </div>
+
+  <ol class="ql-list">
+    {quietLibraryEntries.map((entry) => (
+      <li class="ql-entry">
+        <header class="ql-entry-head mono-block">
+          <div class="ql-id-row">
+            <span class="ql-id">{entry.id}</span>
+            <span class="ql-mortality">mortality: {entry.mortalityRate}</span>
+          </div>
+          <div class="ql-class">{entry.classification}</div>
+          <div class="ql-date">Added to registry: {entry.dateAdded}</div>
+        </header>
+        <div class="ql-description">
+          <span class="ql-description-label mono-block">Description</span>
+          <p class="ql-description-text">{entry.description}</p>
+        </div>
+        {entry.archivistNote && (
+          <div class="ql-archivist">
+            <span class="ql-archivist-label mono-block">Archivist's note</span>
+            <p class="ql-archivist-text">{entry.archivistNote}</p>
+          </div>
+        )}
+      </li>
+    ))}
+  </ol>
+</BaseLayout>
+
+<style>
+  .annex-back { margin-bottom: 2.5rem; }
+  .back-link {
+    color: var(--color-faint);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+  .back-link:hover { text-decoration: underline; }
+  @media (prefers-color-scheme: dark) {
+    .back-link { color: var(--color-faint-dark); }
+  }
+
+  .page-head {
+    color: var(--color-faint);
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  @media (prefers-color-scheme: dark) {
+    .page-head { color: var(--color-faint-dark); }
+  }
+
+  .ql-warning {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0 2.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-classified);
+    color: var(--color-classified);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .ql-warning {
+      border-color: var(--color-classified-dark);
+      color: var(--color-classified-dark);
+    }
+  }
+  .ql-warning-tag { font-weight: 500; letter-spacing: 0.1em; }
+
+  .ql-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ql-entry {
+    border-top: 1px solid var(--color-rule);
+    padding: 1.75rem 0;
+  }
+  @media (prefers-color-scheme: dark) {
+    .ql-entry { border-top-color: var(--color-rule-dark); }
+  }
+  .ql-entry:last-child { border-bottom: 1px solid var(--color-rule); }
+  @media (prefers-color-scheme: dark) {
+    .ql-entry:last-child { border-bottom-color: var(--color-rule-dark); }
+  }
+
+  .ql-entry-head {
+    color: var(--color-faint);
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .ql-entry-head { color: var(--color-faint-dark); }
+  }
+
+  .ql-id-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .ql-id { font-weight: 500; letter-spacing: 0.1em; color: var(--color-ink); }
+  @media (prefers-color-scheme: dark) {
+    .ql-id { color: var(--color-ink-dark); }
+  }
+  .ql-mortality {
+    color: var(--color-classified);
+    font-weight: 500;
+  }
+  @media (prefers-color-scheme: dark) {
+    .ql-mortality { color: var(--color-classified-dark); }
+  }
+  .ql-class { font-style: italic; }
+  .ql-date { opacity: 0.85; }
+
+  .ql-description, .ql-archivist {
+    margin-top: 1rem;
+  }
+  .ql-description-label, .ql-archivist-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--color-faint);
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .ql-description-label, .ql-archivist-label { color: var(--color-faint-dark); }
+  }
+  .ql-description-text, .ql-archivist-text {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 40rem;
+  }
+  .ql-archivist-text {
+    border-left: 2px solid var(--color-rule);
+    padding-left: 1rem;
+    font-style: italic;
+    color: var(--color-faint);
+  }
+  @media (prefers-color-scheme: dark) {
+    .ql-archivist-text {
+      border-left-color: var(--color-rule-dark);
+      color: var(--color-faint-dark);
+    }
+  }
+</style>

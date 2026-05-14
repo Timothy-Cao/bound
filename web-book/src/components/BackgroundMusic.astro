@@ -36,36 +36,40 @@ const hasAudio = tracks.length > 0 || narration;
 )}
 
 <script>
-  // Global audio singletons — ensures only one music and one narration at a time
-  declare global {
-    interface Window {
-      __archiveMusic?: HTMLAudioElement;
-      __archiveNarration?: HTMLAudioElement;
-    }
-  }
+  // Music and speech singletons are coordinated through global helpers
+  // attached by BaseLayout. See BaseLayout.astro for the contract:
+  //   W.__archiveSetMusic(audio, onStop)   — claim music slot
+  //   W.__archiveClearMusic(audio)         — release music slot
+  //   W.__archiveSetSpeech(audio, onStop)  — claim speech slot
+  //   W.__archiveClearSpeech(audio)        — release speech slot
+  //
+  // Music and speech can overlap each other. Each kind is a singleton.
+  // Inline audio artifacts (Audio.astro) share the speech slot with narration.
 
-  function killAllAudio() {
-    if (window.__archiveMusic) {
-      window.__archiveMusic.pause();
-      window.__archiveMusic.src = '';
-      window.__archiveMusic = undefined;
+  // Kill in-progress audio when navigating away (view transitions).
+  document.addEventListener('astro:before-swap', () => {
+    const W = window as any;
+    const a = W.__archiveAudio;
+    if (!a) return;
+    if (a.music) {
+      try { a.music.pause(); a.music.src = ''; } catch (e) { /* ignore */ }
+      if (a.musicOnStop) { try { a.musicOnStop(); } catch (e) { /* ignore */ } }
+      a.music = null;
+      a.musicOnStop = null;
     }
-    if (window.__archiveNarration) {
-      window.__archiveNarration.pause();
-      window.__archiveNarration.src = '';
-      window.__archiveNarration = undefined;
+    if (a.speech) {
+      try { a.speech.pause(); a.speech.src = ''; } catch (e) { /* ignore */ }
+      if (a.speechOnStop) { try { a.speechOnStop(); } catch (e) { /* ignore */ } }
+      a.speech = null;
+      a.speechOnStop = null;
     }
-  }
-
-  // Stop all audio when navigating away (view transitions)
-  document.addEventListener('astro:before-swap', () => killAllAudio());
+  });
 
   document.addEventListener('astro:page-load', () => {
     const panel = document.querySelector('.audio-panel') as HTMLElement | null;
-
-    // No audio panel on this page (index, foreword, 404) — audio is already killed
     if (!panel) return;
 
+    const W = window as any;
     const tab = panel.querySelector('.audio-panel-tab') as HTMLButtonElement;
     const drawer = panel.querySelector('.audio-panel-drawer') as HTMLElement;
     const tracks: string[] = JSON.parse(panel.dataset.tracks || '[]');
@@ -86,44 +90,72 @@ const hasAudio = tracks.length > 0 || narration;
       localStorage.setItem('archive_audio_seen', '1');
     }
 
+    // Local UI state (per page-load); the actual audio elements live in the
+    // global slots and are owned by the page until navigation.
+    let musicPlaying = false;
+    let speechPlaying = false;
+
+    function updateTabPulse() {
+      if (musicPlaying || speechPlaying) tab.classList.add('is-playing');
+      else tab.classList.remove('is-playing');
+    }
+
     // --- Music ---
     const musicBtn = panel.querySelector('.music-btn') as HTMLButtonElement | null;
     const musicVol = panel.querySelector('.music-vol') as HTMLInputElement | null;
     let musicIndex = 0;
-    let musicPlaying = false;
+    let musicAudio: HTMLAudioElement | null = null;
 
     function musicVolume(sliderVal: number) { return (sliderVal / 100) * 0.5; }
 
     function createMusic() {
-      killAllAudio();
       const audio = new Audio(tracks[musicIndex]);
       const saved = localStorage.getItem('archive_music_vol');
       const sv = saved ? parseInt(saved) : 50;
       audio.volume = musicVolume(sv);
       if (musicVol) musicVol.value = String(sv);
+
+      // When one track ends, advance to the next in the chapter's playlist.
       audio.addEventListener('ended', () => {
+        if (W.__archiveAudio.music !== audio) return; // we lost the slot
         musicIndex = (musicIndex + 1) % tracks.length;
         audio.src = tracks[musicIndex];
-        audio.play();
+        audio.play().catch(() => { /* ignore */ });
       });
-      window.__archiveMusic = audio;
+
+      audio.addEventListener('error', () => {
+        musicPlaying = false;
+        if (musicBtn) musicBtn.textContent = '▶';
+        updateTabPulse();
+        W.__archiveClearMusic(audio);
+      });
+
+      musicAudio = audio;
+      return audio;
+    }
+
+    function resetMusicUI() {
+      musicPlaying = false;
+      if (musicBtn) musicBtn.textContent = '▶';
+      updateTabPulse();
     }
 
     function playMusic() {
-      if (!window.__archiveMusic) createMusic();
-      window.__archiveMusic!.play().then(() => {
+      if (!musicAudio) createMusic();
+      // Claim the music slot. This pauses any previously playing music
+      // (almost always: none, since previous page navigation cleared it).
+      W.__archiveSetMusic(musicAudio!, resetMusicUI);
+      musicAudio!.play().then(() => {
         musicPlaying = true;
         if (musicBtn) musicBtn.textContent = '⏸';
-        tab.classList.add('is-playing');
-      }).catch(() => {});
+        updateTabPulse();
+      }).catch(() => { /* user-gesture not yet granted, etc. */ });
     }
 
     function pauseMusic() {
-      if (window.__archiveMusic) {
-        window.__archiveMusic.pause();
-        musicPlaying = false;
-        if (musicBtn) musicBtn.textContent = '▶';
-        if (!narrationPlaying) tab.classList.remove('is-playing');
+      if (musicAudio) {
+        musicAudio.pause();
+        resetMusicUI();
       }
     }
 
@@ -133,11 +165,11 @@ const hasAudio = tracks.length > 0 || narration;
 
     musicVol?.addEventListener('input', () => {
       const v = parseInt(musicVol.value);
-      if (window.__archiveMusic) window.__archiveMusic.volume = musicVolume(v);
+      if (musicAudio) musicAudio.volume = musicVolume(v);
       localStorage.setItem('archive_music_vol', String(v));
     });
 
-    // Auto-play on first interaction if user hasn't explicitly turned it off
+    // Auto-play on first interaction (browsers require a user gesture).
     if (tracks.length > 0) {
       const startOnInteraction = () => {
         if (!musicPlaying) playMusic();
@@ -150,44 +182,66 @@ const hasAudio = tracks.length > 0 || narration;
       document.addEventListener('scroll', startOnInteraction);
     }
 
-    // --- Narration ---
+    // --- Narration (shares the speech slot with inline audio artifacts) ---
     const narrBtn = panel.querySelector('.narration-btn') as HTMLButtonElement | null;
     const narrVol = panel.querySelector('.narration-vol') as HTMLInputElement | null;
-    let narrationPlaying = false;
+    let narrationAudio: HTMLAudioElement | null = null;
+
+    function resetNarrationUI() {
+      speechPlaying = false;
+      if (narrBtn) narrBtn.textContent = '▶';
+      updateTabPulse();
+    }
+
+    function ensureNarration() {
+      if (narrationAudio) return narrationAudio;
+      const audio = new Audio(narrationSrc);
+      const saved = localStorage.getItem('archive_narration_vol');
+      const sv = saved ? parseInt(saved) : 50;
+      audio.volume = sv / 100;
+      if (narrVol) narrVol.value = String(sv);
+
+      audio.addEventListener('ended', () => {
+        resetNarrationUI();
+        W.__archiveClearSpeech(audio);
+      });
+
+      audio.addEventListener('error', () => {
+        resetNarrationUI();
+        if (narrBtn) {
+          narrBtn.textContent = '×';
+          narrBtn.disabled = true;
+        }
+        W.__archiveClearSpeech(audio);
+      });
+
+      narrationAudio = audio;
+      return audio;
+    }
 
     if (narrationSrc && narrBtn) {
       narrBtn.addEventListener('click', () => {
-        if (!window.__archiveNarration) {
-          const audio = new Audio(narrationSrc);
-          const saved = localStorage.getItem('archive_narration_vol');
-          const sv = saved ? parseInt(saved) : 50;
-          audio.volume = sv / 100;
-          if (narrVol) narrVol.value = String(sv);
-          audio.addEventListener('ended', () => {
-            narrationPlaying = false;
-            narrBtn.textContent = '▶';
-            if (!musicPlaying) tab.classList.remove('is-playing');
-          });
-          window.__archiveNarration = audio;
-        }
-        if (narrationPlaying) {
-          window.__archiveNarration!.pause();
-          narrationPlaying = false;
-          narrBtn.textContent = '▶';
-          if (!musicPlaying) tab.classList.remove('is-playing');
+        const audio = ensureNarration();
+        if (speechPlaying && W.__archiveAudio.speech === audio) {
+          // Pause this narration
+          audio.pause();
+          resetNarrationUI();
+          W.__archiveClearSpeech(audio);
         } else {
-          window.__archiveNarration!.play().then(() => {
-            narrationPlaying = true;
+          // Claim the speech slot. This pauses inline audio or other speech.
+          W.__archiveSetSpeech(audio, resetNarrationUI);
+          audio.play().then(() => {
+            speechPlaying = true;
             narrBtn.textContent = '⏸';
-            tab.classList.add('is-playing');
-          }).catch(() => {});
+            updateTabPulse();
+          }).catch(() => { /* ignore */ });
         }
       });
     }
 
     narrVol?.addEventListener('input', () => {
       const v = parseInt(narrVol.value);
-      if (window.__archiveNarration) window.__archiveNarration.volume = v / 100;
+      if (narrationAudio) narrationAudio.volume = v / 100;
       localStorage.setItem('archive_narration_vol', String(v));
     });
   });

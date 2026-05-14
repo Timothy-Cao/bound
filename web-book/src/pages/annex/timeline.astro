@@ -1,0 +1,343 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+interface TimelineEvent {
+  year: string;
+  text: string;
+  type?: 'major' | 'classified' | 'story' | 'pandemic' | 'minor';
+  file?: number;
+}
+
+interface TimelineEra {
+  name: string;
+  span: string;
+  events: TimelineEvent[];
+}
+
+const eras: TimelineEra[] = [
+  {
+    name: 'Era I. The Ban',
+    span: '2029–2033',
+    events: [
+      { year: '2029', text: 'AI displacement reaches political crisis. Office, media, logistics, education, and service jobs collapse across Western economies.', type: 'major' },
+      { year: '2030', text: 'Mass labor unrest. Coordinated strikes across sectors. Several economies stall.' },
+      { year: '2031', text: 'AI Labor Ban passes in most Western democracies. Foreign holdout states refuse to sign.', type: 'major', file: 1 },
+      { year: '2032', text: 'Auditing bureaucracy stands up. Narrow non-autonomous AI assistance permitted under heavy oversight.' },
+      { year: '2033', text: 'Western AI sector contracts. Labs shutter, pivot to compliance, or migrate to non-signatory states.' },
+    ],
+  },
+  {
+    name: 'Era II. The Pandemic',
+    span: '2034–2037',
+    events: [
+      { year: '2034', text: 'A novel neurotropic respiratory virus emerges. Clinical designation NCV-34.', type: 'pandemic' },
+      { year: '2035', text: 'Global pandemic phase. Acute mortality ~0.4%.', type: 'pandemic' },
+      { year: '2036', text: 'Acute phase recedes. The virus becomes endemic. 60–70% of the global population has been infected at least once.', type: 'pandemic' },
+      { year: '2037', text: 'First clinical reports of persistent post-viral cognitive symptoms in a small subset of survivors. Treated as outlier.' },
+    ],
+  },
+  {
+    name: 'Era III. The Mistaken Diagnosis',
+    span: '2038–2044',
+    events: [
+      { year: '2038–2040', text: 'Cognitive impairment rises across the population. Attributed to lifestyle factors. Synthetic Environment Syndrome coined in 2040.' },
+      { year: '2041', text: 'Post-viral cohort develops accelerated cognitive symptoms but the connection is lost.' },
+      { year: '2042–2043', text: 'Healthcare system strained. Eldercare scandals begin.' },
+      { year: '2044', text: 'First strong scientific evidence linking 5–8% of cognitive decline to NCV-34 sequelae.' },
+    ],
+  },
+  {
+    name: 'Era IV. The Recognition',
+    span: '2045–2049',
+    events: [
+      { year: '2045', text: 'Researchers definitively connect the cognitive crisis to the 2034 pandemic. Three overlapping crises identified.' },
+      { year: '2046', text: 'Foreign unbanned states publicly demonstrate generational lead in AI capability.' },
+      { year: '2047', text: 'The Brussels Consensus Report on Cognitive Decline published.', type: 'major' },
+      { year: '2048', text: 'Workforce shortage and eldercare collapse at breaking point.' },
+      { year: '2049', text: 'Healthcare AI Exception debated under emergency conditions. Restorers form.' },
+    ],
+  },
+  {
+    name: 'Era V. The Exception and the Surge',
+    span: '2050–2057',
+    events: [
+      { year: '2050', text: 'Healthcare AI Exception Act passes. Medical research and patient care only.', type: 'major', file: 2 },
+      { year: '2051', text: 'Rapid deployment begins. Foreign AI capability imported; domestic underground research surfaces.' },
+      { year: '2052', text: 'Full industrial deployment in eldercare facilities.' },
+      { year: '2053', text: 'Exception extends to mental health, sleep regulation, behavioral disorders.' },
+      { year: '2054', text: '"Cognitive rehabilitation" becomes a legal category.' },
+      { year: '2055–2057', text: 'Healthcare AI accumulates the majority of legally permitted Western compute.' },
+    ],
+  },
+  {
+    name: 'Era VI. Discovery',
+    span: '2058–2064',
+    events: [
+      { year: '2058', text: 'First stimulus-based aid discovered. Sleep induction via paired audio-visual stimulus.', type: 'major' },
+      { year: '2059', text: 'Sleep induction adopted in eldercare, insomnia clinics, prisons, emergency shelters.' },
+      { year: '2060', text: 'Multiple stimulus aids identified. Some paired with low-dose psilocybin or 5-MeO-DMT derivatives.' },
+      { year: '2061–2062', text: 'Sensory therapy becomes a dominant economic sector.' },
+      { year: '2063', text: 'First memory-recovery breakthrough. Dementia patients temporarily recognize family.' },
+      { year: '2064', text: 'The mechanism is named in classified state research.', type: 'classified' },
+    ],
+  },
+  {
+    name: 'Era VII. Side Effects and First Deaths',
+    span: '2065–2069',
+    events: [
+      { year: '2065', text: 'Side effects accumulate. State research already tracking anomalous autonomic responses.' },
+      { year: '2066', text: 'First publicly-recorded fatal accident during a therapeutic trial. Filed as cardiac. Cover-up begins.', type: 'major', file: 3 },
+      { year: '2067', text: 'Stimulus injections formally classified under emergency security designation.', type: 'classified', file: 4 },
+      { year: '2068', text: 'Triune Stimulus class identified.' },
+      { year: '2069', text: 'Black Bloom attack at Westmarket Central. ~14,000 deaths over six months.', type: 'major', file: 5 },
+    ],
+  },
+  {
+    name: 'Era VIII. Adaptation',
+    span: '2070–2078',
+    events: [
+      { year: '2070', text: 'Public response to Black Bloom. Stimulus Response police units form.' },
+      { year: '2071', text: 'AR censor goggles, scent masks, audio scrubbers become widespread. SSDO forms.' },
+      { year: '2072', text: 'Censor AI deployed. Contamination problem recognized internally.' },
+      { year: '2073', text: "Censor's Hum incident.", type: 'story', file: 6 },
+      { year: '2074', text: 'Exposure Classification system standardized.' },
+      { year: '2075', text: 'Cognitive Dilution Protocols enter clinical practice.' },
+      { year: '2076', text: 'Folk dilution culture takes hold among the poor. LCI formally identified.' },
+      { year: '2077', text: 'Two-component memotoxins confirmed in classified state research.', type: 'classified' },
+      { year: '2078', text: 'Memotoxin becomes the public term. Cognitive Exposure Passports deployed.' },
+    ],
+  },
+  {
+    name: 'Era IX. The Present',
+    span: '2079–2080',
+    events: [
+      { year: '2079', text: 'Verrick broadcast attack. First publicly-confirmed LCI exploit. ~14,000 deaths over six months.', type: 'major' },
+      { year: '2079', text: 'Estate incident. Three deaths inside a maximum-air-gap private residence.' },
+      { year: '2080', text: 'Story present. Marina Idris investigates.', type: 'story', file: 9 },
+      { year: '2080', text: 'Anonymous Class 4 patient at the bound-care clinic.', type: 'story', file: 7 },
+      { year: '2080', text: 'A teenage boy is interviewed by Amrit Ranjit.', type: 'story', file: 8 },
+      { year: '2080', text: 'Marina reads a document and dies.', type: 'story', file: 11 },
+      { year: '2080', text: "Karl Olesen records an audio diary.", type: 'story', file: 12 },
+    ],
+  },
+  {
+    name: 'Era X. After',
+    span: 'mid-2080s onward',
+    events: [
+      { year: '2086', text: 'Olesen audio diary released to public archive.' },
+      { year: '2087', text: 'Wei Han continues assembling the archive.' },
+      { year: '2089', text: 'Lihua Han dies.' },
+      { year: '2089', text: '2067 Memo partially declassified.' },
+      { year: '2090s', text: 'Wei Han publishes the archive.', type: 'story', file: 13 },
+    ],
+  },
+];
+---
+
+<BaseLayout title="A Timeline · The Annex">
+  <div class="annex-back">
+    <a href="/annex" class="back-link mono-block">← ANNEX</a>
+  </div>
+
+  <h1 class="sr-only">A Timeline</h1>
+
+  <header class="page-head mono-block">
+    <pre class="whitespace-pre-wrap font-[inherit] m-0">A historical reconstruction.
+Compiled from public records, declassified documents, and recovered
+correspondence. Reconstructor: W. Han.</pre>
+  </header>
+
+  <hr class="thin-rule" />
+
+  <div class="timeline">
+    {eras.map((era) => (
+      <section class="era">
+        <header class="era-head">
+          <h2 class="era-name mono-block">{era.name}</h2>
+          <span class="era-span mono-block">{era.span}</span>
+        </header>
+        <ol class="era-events">
+          {era.events.map((ev) => (
+            <li class={`event event-${ev.type || 'minor'}`}>
+              <span class="event-year mono-block">{ev.year}</span>
+              <span class="event-body">
+                <span class="event-text">{ev.text}</span>
+                {ev.file !== undefined && (
+                  <a class="event-file mono-block" href={`/files/${[
+                    'the-vote',
+                    'the-exception',
+                    'first-cardiac-event',
+                    'the-memo',
+                    'black-bloom',
+                    'the-censors-hum',
+                    'bound',
+                    'the-boy-who-hummed',
+                    'marinas-refusal',
+                    'marina-at-the-window',
+                    'the-document',
+                    'the-designer',
+                    'the-archivist',
+                  ][ev.file - 1]}`}>FILE {String(ev.file).padStart(3, '0')}</a>
+                )}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .annex-back { margin-bottom: 2.5rem; }
+  .back-link {
+    color: var(--color-faint);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+  .back-link:hover { text-decoration: underline; }
+  @media (prefers-color-scheme: dark) {
+    .back-link { color: var(--color-faint-dark); }
+  }
+
+  .page-head {
+    color: var(--color-faint);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  @media (prefers-color-scheme: dark) {
+    .page-head { color: var(--color-faint-dark); }
+  }
+
+  .timeline {
+    margin-top: 2.5rem;
+  }
+
+  .era + .era {
+    margin-top: 4rem;
+  }
+
+  .era-head {
+    border-top: 1px solid var(--color-rule);
+    padding-top: 1.25rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  @media (prefers-color-scheme: dark) {
+    .era-head { border-top-color: var(--color-rule-dark); }
+  }
+
+  .era-name {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .era-span {
+    font-size: 0.8125rem;
+    color: var(--color-faint);
+    letter-spacing: 0.05em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .era-span { color: var(--color-faint-dark); }
+  }
+
+  .era-events {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .event {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: 1.25rem;
+    padding: 0.7rem 0;
+    align-items: baseline;
+    border-bottom: 1px dashed var(--color-rule);
+  }
+  @media (prefers-color-scheme: dark) {
+    .event { border-bottom-color: var(--color-rule-dark); }
+  }
+  .event:last-child { border-bottom: 0; }
+
+  .event-year {
+    font-size: 0.875rem;
+    color: var(--color-faint);
+    font-weight: 500;
+  }
+  @media (prefers-color-scheme: dark) {
+    .event-year { color: var(--color-faint-dark); }
+  }
+
+  .event-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .event-text {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .event-file {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--color-faint);
+    text-decoration: none;
+    padding: 0.15rem 0.4rem;
+    border: 1px solid currentColor;
+    align-self: flex-start;
+  }
+  .event-file:hover {
+    background-color: var(--color-ink);
+    color: var(--color-cream);
+  }
+  @media (prefers-color-scheme: dark) {
+    .event-file { color: var(--color-faint-dark); }
+    .event-file:hover {
+      background-color: var(--color-ink-dark);
+      color: var(--color-cream-dark);
+    }
+  }
+
+  /* event-type styling */
+  .event-major .event-text { font-weight: 500; }
+  .event-classified .event-text::before {
+    content: '[CLASSIFIED] ';
+    color: var(--color-classified);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .event-classified .event-text::before { color: var(--color-classified-dark); }
+  }
+  .event-pandemic .event-text { color: var(--color-faint); font-style: italic; }
+  @media (prefers-color-scheme: dark) {
+    .event-pandemic .event-text { color: var(--color-faint-dark); }
+  }
+  .event-story .event-text {
+    border-left: 2px solid var(--color-ink);
+    padding-left: 0.75rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .event-story .event-text { border-left-color: var(--color-ink-dark); }
+  }
+
+  @media (max-width: 600px) {
+    .event {
+      grid-template-columns: 4.5rem 1fr;
+      gap: 0.75rem;
+    }
+    .era-head { flex-direction: column; gap: 0.25rem; }
+  }
+</style>

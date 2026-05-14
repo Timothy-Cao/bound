@@ -1,0 +1,223 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { fragments } from '../../data/fragments';
+
+// Pick one fragment server-side as the initial render; client-side script can
+// re-roll on "next" click. We render all of them in the DOM and show one.
+---
+
+<BaseLayout title="Fragments · The Annex">
+  <div class="annex-back">
+    <a href="/annex" class="back-link mono-block">← ANNEX</a>
+  </div>
+
+  <h1 class="sr-only">Fragments</h1>
+
+  <header class="page-head mono-block">
+    <pre class="whitespace-pre-wrap font-[inherit] m-0">A miscellany of recovered documents. One at a time.
+Some are official. Some are leaked. Some are folk wisdom. Some are
+rumor. Their reliability is indicated where it is known.</pre>
+  </header>
+
+  <hr class="thin-rule" />
+
+  <div class="fragments-container">
+    {fragments.map((frag, i) => (
+      <article class="fragment" data-index={i} data-id={frag.id} hidden={i !== 0}>
+        <header class="fragment-meta mono-block">
+          <div class="fragment-id-row">
+            <span class="fragment-id">FRAGMENT {frag.id}</span>
+            <span class={`fragment-reliability fragment-reliability-${frag.reliability}`}>
+              {frag.reliability.toUpperCase()}
+            </span>
+          </div>
+          <div class="fragment-source">{frag.source}</div>
+          <div class="fragment-date">{frag.date}</div>
+        </header>
+        <hr class="fragment-rule" />
+        <blockquote class="fragment-body">
+          {frag.body.split('\n').map((line) => <p>{line}</p>)}
+        </blockquote>
+      </article>
+    ))}
+  </div>
+
+  <nav class="fragment-nav mono-block">
+    <button type="button" id="frag-prev" class="frag-btn">◀ PREVIOUS</button>
+    <span id="frag-counter" class="frag-counter">1 / {fragments.length}</span>
+    <button type="button" id="frag-next" class="frag-btn">NEXT ▶</button>
+    <button type="button" id="frag-random" class="frag-btn frag-random">SHUFFLE</button>
+  </nav>
+</BaseLayout>
+
+<script is:inline data-astro-rerun>
+  (function () {
+    const articles = Array.from(document.querySelectorAll('.fragment'));
+    const counter = document.getElementById('frag-counter');
+    const prev = document.getElementById('frag-prev');
+    const next = document.getElementById('frag-next');
+    const rand = document.getElementById('frag-random');
+    if (!articles.length || !counter || !prev || !next || !rand) return;
+
+    let current = 0;
+    const total = articles.length;
+
+    function show(idx) {
+      articles.forEach((a, i) => { a.hidden = i !== idx; });
+      counter.textContent = (idx + 1) + ' / ' + total;
+      current = idx;
+      window.scrollTo(0, 0);
+    }
+
+    prev.addEventListener('click', function () {
+      show((current - 1 + total) % total);
+    });
+    next.addEventListener('click', function () {
+      show((current + 1) % total);
+    });
+    rand.addEventListener('click', function () {
+      let idx;
+      do { idx = Math.floor(Math.random() * total); } while (idx === current && total > 1);
+      show(idx);
+    });
+
+    // start on a random fragment for variety
+    const startIdx = Math.floor(Math.random() * total);
+    show(startIdx);
+  })();
+</script>
+
+<style>
+  .annex-back { margin-bottom: 2.5rem; }
+  .back-link {
+    color: var(--color-faint);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+  .back-link:hover { text-decoration: underline; }
+  @media (prefers-color-scheme: dark) {
+    .back-link { color: var(--color-faint-dark); }
+  }
+
+  .page-head {
+    color: var(--color-faint);
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  @media (prefers-color-scheme: dark) {
+    .page-head { color: var(--color-faint-dark); }
+  }
+
+  .fragments-container { min-height: 24rem; }
+
+  .fragment-meta {
+    color: var(--color-faint);
+    font-size: 0.8125rem;
+    line-height: 1.6;
+  }
+  @media (prefers-color-scheme: dark) {
+    .fragment-meta { color: var(--color-faint-dark); }
+  }
+
+  .fragment-id-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .fragment-id {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+  .fragment-reliability {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    padding: 0.1rem 0.4rem;
+    border: 1px solid currentColor;
+  }
+  .fragment-reliability-classified,
+  .fragment-reliability-leaked,
+  .fragment-reliability-banned {
+    color: var(--color-classified);
+  }
+  @media (prefers-color-scheme: dark) {
+    .fragment-reliability-classified,
+    .fragment-reliability-leaked,
+    .fragment-reliability-banned {
+      color: var(--color-classified-dark);
+    }
+  }
+
+  .fragment-source { font-style: italic; }
+  .fragment-date { opacity: 0.8; }
+
+  .fragment-rule {
+    border: 0;
+    border-top: 1px solid var(--color-rule);
+    margin: 1.25rem 0 1.75rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .fragment-rule { border-top-color: var(--color-rule-dark); }
+  }
+
+  .fragment-body {
+    font-family: var(--font-serif);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    max-width: 40rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .fragment-body p {
+    margin-bottom: 1.1em;
+  }
+  .fragment-body p:last-child { margin-bottom: 0; }
+
+  .fragment-nav {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-rule);
+    color: var(--color-faint);
+    flex-wrap: wrap;
+  }
+  @media (prefers-color-scheme: dark) {
+    .fragment-nav {
+      border-top-color: var(--color-rule-dark);
+      color: var(--color-faint-dark);
+    }
+  }
+
+  .frag-btn {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 100ms ease;
+  }
+  .frag-btn:hover {
+    background-color: var(--color-ink);
+    color: var(--color-cream);
+  }
+  @media (prefers-color-scheme: dark) {
+    .frag-btn:hover {
+      background-color: var(--color-ink-dark);
+      color: var(--color-cream-dark);
+    }
+  }
+
+  .frag-counter {
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+</style>

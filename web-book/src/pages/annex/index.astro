@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="The Annex">
+  <div class="annex-back">
+    <a href="/" class="back-link mono-block">← INDEX</a>
+  </div>
+
+  <h1 class="sr-only">The Annex</h1>
+
+  <header class="annex-head mono-block">
+    <pre class="whitespace-pre-wrap font-[inherit] m-0">From the supplementary materials of the Archive of Bound.
+Reconstructor's note: these pages contain documents that did not
+fit into the main collection but that I have recovered or
+assembled separately.</pre>
+  </header>
+
+  <hr class="thin-rule" />
+
+  <article class="prose-column annex-foreword">
+    <p>
+      These materials are best read <em>after</em> the main archive. They
+      contain references to events, persons, and documents that the main
+      archive establishes in their own time. Some of them comment on the
+      mechanisms by which the archive operates and would substantially
+      reduce the experience of first reading if encountered earlier.
+    </p>
+    <p>
+      Some of these materials are also, in the technical sense recognized
+      by the relevant authorities, dangerous to a small fraction of their
+      readers. I have included them anyway, for reasons given elsewhere.
+    </p>
+    <p class="annex-attribution">
+      &mdash; W. Han, archivist.
+    </p>
+  </article>
+
+  <hr class="thin-rule" />
+
+  <ol class="annex-list mono-block">
+    <li class="annex-row">
+      <a href="/annex/timeline" class="annex-link">
+        <span class="col-num">I.</span>
+        <span class="col-title">A Timeline</span>
+        <span class="col-label">historical reconstruction</span>
+      </a>
+    </li>
+    <li class="annex-row">
+      <a href="/annex/fragments" class="annex-link">
+        <span class="col-num">II.</span>
+        <span class="col-title">Fragments</span>
+        <span class="col-label">recovered miscellany</span>
+      </a>
+    </li>
+    <li class="annex-row">
+      <a href="/annex/quiet-library" class="annex-link">
+        <span class="col-num">III.</span>
+        <span class="col-title">The Quiet Library</span>
+        <span class="col-label">[partial leak]</span>
+      </a>
+    </li>
+  </ol>
+</BaseLayout>
+
+<style>
+  .annex-back { margin-bottom: 2.5rem; }
+  .back-link {
+    color: var(--color-faint);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+  .back-link:hover { text-decoration: underline; }
+  @media (prefers-color-scheme: dark) {
+    .back-link { color: var(--color-faint-dark); }
+  }
+
+  .annex-head {
+    color: var(--color-faint);
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  @media (prefers-color-scheme: dark) {
+    .annex-head { color: var(--color-faint-dark); }
+  }
+
+  .annex-foreword {
+    margin: 2rem 0;
+  }
+
+  .annex-attribution {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--color-faint);
+    margin-top: 1.5rem;
+    text-align: right;
+  }
+  @media (prefers-color-scheme: dark) {
+    .annex-attribution { color: var(--color-faint-dark); }
+  }
+
+  .annex-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .annex-row + .annex-row { margin-top: 0.4rem; }
+
+  .annex-link {
+    display: grid;
+    grid-template-columns: minmax(3rem, auto) 1fr minmax(10rem, auto);
+    gap: 1rem;
+    align-items: baseline;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    color: inherit;
+    transition: background-color 100ms ease;
+  }
+  .annex-link:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    .annex-link:hover {
+      background-color: rgba(255, 255, 255, 0.04);
+    }
+  }
+
+  .col-num { font-weight: 500; opacity: 0.75; }
+  .col-title { font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em; }
+  .col-label { opacity: 0.65; text-align: right; font-size: 0.8125rem; }
+
+  @media (max-width: 640px) {
+    .annex-link {
+      grid-template-columns: minmax(2.5rem, auto) 1fr;
+      grid-template-areas: "num title" ".   label";
+      gap: 0.5rem 0.75rem;
+    }
+    .col-num { grid-area: num; }
+    .col-title { grid-area: title; }
+    .col-label { grid-area: label; font-size: 0.75rem; }
+  }
+</style>
