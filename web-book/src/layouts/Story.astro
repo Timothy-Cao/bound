@@ -21,12 +21,31 @@ const binds: boolean = file.data.binds === true || withheld;
 const components: Array<'image' | 'sound' | 'scent'> = file.data.components ?? [];
 const musicTracks = CHAPTER_MUSIC[file.data.fileNumber] ?? [];
 const narrationSrc = CHAPTER_NARRATION[file.data.fileNumber];
+
+const sorted = all.sort((a, b) => a.data.fileNumber - b.data.fileNumber);
+const idx = sorted.findIndex(f => f.data.fileNumber === file.data.fileNumber);
+const prev = idx > 0 ? sorted[idx - 1] : null;
+const next = idx >= 0 && idx < sorted.length - 1 ? sorted[idx + 1] : null;
 ---
 
 <BaseLayout title={`File ${String(file.data.fileNumber).padStart(3, '0')} — ${file.data.title}`}>
-  <div class="story-header">
-    <a href="/" class="back-link mono-block">← INDEX</a>
-  </div>
+  <nav class="story-header mono-block">
+    <span class="story-header-prev">
+      {prev ? (
+        <a href={`/files/${prev.id}`} class="nav-link">◀ {String(prev.data.fileNumber).padStart(3, '0')}</a>
+      ) : (
+        <span class="nav-dim">◀</span>
+      )}
+    </span>
+    <a href="/" class="back-link">← INDEX</a>
+    <span class="story-header-next">
+      {next ? (
+        <a href={`/files/${next.id}`} class="nav-link">{String(next.data.fileNumber).padStart(3, '0')} ▶</a>
+      ) : (
+        <span class="nav-dim">▶</span>
+      )}
+    </span>
+  </nav>
 
   <h1 class="sr-only">File {String(file.data.fileNumber).padStart(3, '0')}: {file.data.title}</h1>
 
@@ -47,19 +66,34 @@ const narrationSrc = CHAPTER_NARRATION[file.data.fileNumber];
 
 <style>
   .story-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 2.5rem;
-  }
-  .back-link {
-    color: var(--color-faint);
-    text-decoration: none;
     font-size: 0.8125rem;
     letter-spacing: 0.05em;
   }
-  .back-link:hover {
+  .story-header-prev { text-align: left; }
+  .story-header-next { text-align: right; }
+  .back-link {
+    text-align: center;
+    color: var(--color-faint);
+    text-decoration: none;
+  }
+  .nav-link {
+    color: var(--color-faint);
+    text-decoration: none;
+  }
+  .back-link:hover, .nav-link:hover {
     text-decoration: underline;
   }
+  .nav-dim {
+    opacity: 0.3;
+    color: var(--color-faint);
+  }
   @media (prefers-color-scheme: dark) {
-    .back-link {
+    .back-link, .nav-link, .nav-dim {
       color: var(--color-faint-dark);
     }
   }
