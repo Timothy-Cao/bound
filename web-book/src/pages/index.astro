@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PassportFooter from '../components/PassportFooter.astro';
+import BackgroundMusic from '../components/BackgroundMusic.astro';
 import { getCollection } from 'astro:content';
+import { PAGE_MUSIC } from '../config';
 
 const files = await getCollection('files');
 const sorted = files.sort((a, b) => a.data.fileNumber - b.data.fileNumber);
@@ -44,6 +46,7 @@ function pad(n: number) {
   </div>
 
   <footer class="archive-credit mono-block">a tim cao story</footer>
+  <BackgroundMusic tracks={PAGE_MUSIC.index} />
 </BaseLayout>
 
 <style>

@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PassportFooter from '../components/PassportFooter.astro';
+import BackgroundMusic from '../components/BackgroundMusic.astro';
+import { PAGE_MUSIC } from '../config';
 ---
 
 <BaseLayout title="No record — The Archive">
@@ -31,6 +33,7 @@ import PassportFooter from '../components/PassportFooter.astro';
   </aside>
 
   <PassportFooter />
+  <BackgroundMusic tracks={PAGE_MUSIC['404']} />
 </BaseLayout>
 
 <style>

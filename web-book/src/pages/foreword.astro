@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PassportFooter from '../components/PassportFooter.astro';
+import BackgroundMusic from '../components/BackgroundMusic.astro';
+import { PAGE_MUSIC } from '../config';
 ---
 
 <BaseLayout title="Reconstructor's Foreword">
@@ -46,6 +48,7 @@ import PassportFooter from '../components/PassportFooter.astro';
   </article>
 
   <PassportFooter />
+  <BackgroundMusic tracks={PAGE_MUSIC.foreword} />
 </BaseLayout>
 
 <style>

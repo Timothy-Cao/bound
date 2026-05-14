@@ -19,6 +19,12 @@
  */
 export const SHOW_CONSTRUCTION_WARNING = true;
 
+export const PAGE_MUSIC: Record<string, string[]> = {
+  index:    ['/audio/music/Last%20Tape%20Room.mp3', '/audio/music/Last%20Tape%20Room%20(1).mp3'],
+  foreword: ['/audio/music/Last%20Tape%20Room.mp3', '/audio/music/Last%20Tape%20Room%20(1).mp3'],
+  '404':    ['/audio/music/Confiscated%20Signal.mp3', '/audio/music/Confiscated%20Signal%20(1).mp3'],
+};
+
 export const CHAPTER_MUSIC: Record<number, string[]> = {
   1:  ['/audio/music/After%20The%20Vote.mp3', '/audio/music/After%20Hours%20Annex.mp3', '/audio/music/After%20Hours%20Annex%20(1).mp3'],
   2:  ['/audio/music/Late%20Afternoon%20Kitchen.mp3', '/audio/music/Late%20Afternoon%20Kitchen%20(1).mp3'],
