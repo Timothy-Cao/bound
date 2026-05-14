@@ -36,5 +36,6 @@ export const CHAPTER_MUSIC: Record<number, string[]> = {
 };
 
 export const CHAPTER_NARRATION: Record<number, string> = {
+  1: '/audio/file1.mp3',
   6: '/audio/file6.mp3',
 };

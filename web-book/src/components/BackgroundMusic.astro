@@ -244,6 +244,21 @@ const hasAudio = tracks.length > 0 || narration;
       if (narrationAudio) narrationAudio.volume = v / 100;
       localStorage.setItem('archive_narration_vol', String(v));
     });
+
+    // Auto-play narration 2 seconds after page load (requires prior user gesture)
+    if (narrationSrc && narrBtn) {
+      setTimeout(() => {
+        if (!speechPlaying) {
+          const audio = ensureNarration();
+          W.__archiveSetSpeech(audio, resetNarrationUI);
+          audio.play().then(() => {
+            speechPlaying = true;
+            narrBtn.textContent = '⏸';
+            updateTabPulse();
+          }).catch(() => {});
+        }
+      }, 2000);
+    }
   });
 </script>
 
@@ -261,16 +276,16 @@ const hasAudio = tracks.length > 0 || narration;
   }
 
   .audio-panel-tab {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--color-cream, #f5f1e8);
     border: 1px solid var(--color-rule, #c9c2af);
     cursor: pointer;
-    font-size: 0.8rem;
-    opacity: 0.45;
+    font-size: 1rem;
+    opacity: 0.5;
     transition: opacity 150ms ease;
   }
 
@@ -291,11 +306,11 @@ const hasAudio = tracks.length > 0 || narration;
   .audio-panel-drawer {
     display: none;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 0.75rem;
     background: var(--color-cream, #f5f1e8);
     border: 1px solid var(--color-rule, #c9c2af);
-    padding: 0.6rem 0.75rem;
-    min-width: 10rem;
+    padding: 0.75rem 1rem;
+    min-width: 13rem;
   }
 
   .audio-panel.is-open .audio-panel-drawer {
@@ -315,15 +330,15 @@ const hasAudio = tracks.length > 0 || narration;
   }
 
   .audio-btn {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.75rem;
+    height: 1.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: none;
     border: 1px solid var(--color-rule, #c9c2af);
     cursor: pointer;
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     color: inherit;
     padding: 0;
     line-height: 1;
@@ -334,34 +349,37 @@ const hasAudio = tracks.length > 0 || narration;
   }
 
   .audio-control-label {
-    font-size: 0.55rem;
-    letter-spacing: 0.12em;
-    opacity: 0.6;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    opacity: 0.65;
   }
 
   .audio-slider {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: var(--color-rule, #c9c2af);
     outline: none;
     cursor: pointer;
+    margin: 0.15rem 0;
   }
 
   .audio-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
     background: var(--color-ink, #1a1a1a);
     border: none;
     cursor: pointer;
   }
 
   .audio-slider::-moz-range-thumb {
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
     background: var(--color-ink, #1a1a1a);
     border: none;
     cursor: pointer;
@@ -387,9 +405,11 @@ const hasAudio = tracks.length > 0 || narration;
     }
     .audio-slider::-webkit-slider-thumb {
       background: var(--color-ink-dark, #e8e2d3);
+      border-radius: 50%;
     }
     .audio-slider::-moz-range-thumb {
       background: var(--color-ink-dark, #e8e2d3);
+      border-radius: 50%;
     }
   }
 </style>
