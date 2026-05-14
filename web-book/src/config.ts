@@ -40,5 +40,9 @@ export const CHAPTER_NARRATION: Record<number, string> = {
   2: '/audio/file2.mp3',
   3: '/audio/file3.mp3',
   4: '/audio/file4.mp3',
+  5: '/audio/file5.mp3',
   6: '/audio/file6.mp3',
+  7: '/audio/file7.mp3',
+  8: '/audio/file8.mp3',
+  9: '/audio/file9.mp3',
 };
