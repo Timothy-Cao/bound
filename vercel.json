@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd web-book && npm install && npm run build",
+  "outputDirectory": "web-book/dist",
+  "installCommand": "echo 'install handled in buildCommand'",
+  "framework": null
+}
