@@ -6,7 +6,7 @@ import PassportFooter from '../components/PassportFooter.astro';
 import ContainmentNotice from '../components/ContainmentNotice.astro';
 import BackgroundMusic from '../components/BackgroundMusic.astro';
 import { getCollection } from 'astro:content';
-import { CHAPTER_MUSIC, CHAPTER_NARRATION } from '../config';
+import { CHAPTER_MUSIC, CHAPTER_NARRATION, CHAPTER_NARRATION_LABEL } from '../config';
 
 interface Props {
   file: any;
@@ -21,6 +21,7 @@ const binds: boolean = file.data.binds === true || withheld;
 const components: Array<'image' | 'sound' | 'scent'> = file.data.components ?? [];
 const musicTracks = CHAPTER_MUSIC[file.data.fileNumber] ?? [];
 const narrationSrc = CHAPTER_NARRATION[file.data.fileNumber];
+const narrationLabel = CHAPTER_NARRATION_LABEL[file.data.fileNumber];
 
 const sorted = all.sort((a, b) => a.data.fileNumber - b.data.fileNumber);
 const idx = sorted.findIndex(f => f.data.fileNumber === file.data.fileNumber);
@@ -61,7 +62,7 @@ const next = idx >= 0 && idx < sorted.length - 1 ? sorted[idx + 1] : null;
 
   <FileFooter fileNumber={file.data.fileNumber} totalFiles={totalFiles} />
   <PassportFooter components={components} binds={binds} />
-  <BackgroundMusic tracks={musicTracks} narration={narrationSrc} />
+  <BackgroundMusic tracks={musicTracks} narration={narrationSrc} narrationLabel={narrationLabel} />
 </BaseLayout>
 
 <style>

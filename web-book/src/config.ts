@@ -41,6 +41,10 @@ export const CHAPTER_MUSIC: Record<number, string[]> = {
   13: ['/audio/music/Last%20Tape%20Room.mp3', '/audio/music/Last%20Tape%20Room%20(1).mp3'],
 };
 
+export const CHAPTER_NARRATION_LABEL: Record<number, string> = {
+  11: 'RECOVERED FRAGMENT',
+};
+
 export const CHAPTER_NARRATION: Record<number, string> = {
   1: '/audio/file1.mp3',
   2: '/audio/file2.mp3',

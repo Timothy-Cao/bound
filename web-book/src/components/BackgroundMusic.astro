@@ -2,13 +2,14 @@
 interface Props {
   tracks: string[];
   narration?: string;
+  narrationLabel?: string;
 }
-const { tracks, narration } = Astro.props;
+const { tracks, narration, narrationLabel = 'NARRATION' } = Astro.props;
 const hasAudio = tracks.length > 0 || narration;
 ---
 
 {hasAudio && (
-  <div class="audio-panel" data-tracks={JSON.stringify(tracks)} data-narration={narration || ''}>
+  <div class="audio-panel" data-tracks={JSON.stringify(tracks)} data-narration={narration || ''} data-narration-label={narrationLabel}>
     <button type="button" class="audio-panel-tab mono-block" aria-label="Audio controls" aria-expanded="false">
       ♪
     </button>
@@ -25,10 +26,10 @@ const hasAudio = tracks.length > 0 || narration;
       {narration && (
         <div class="audio-control">
           <div class="audio-control-row">
-            <button type="button" class="audio-btn narration-btn" aria-label="Toggle narration">▶</button>
-            <span class="audio-control-label">NARRATION</span>
+            <button type="button" class="audio-btn narration-btn" aria-label={`Toggle ${narrationLabel.toLowerCase()}`}>▶</button>
+            <span class="audio-control-label">{narrationLabel}</span>
           </div>
-          <input type="range" class="audio-slider narration-vol" min="0" max="100" value="50" aria-label="Narration volume" />
+          <input type="range" class="audio-slider narration-vol" min="0" max="100" value="50" aria-label={`${narrationLabel} volume`} />
         </div>
       )}
     </div>
@@ -74,6 +75,7 @@ const hasAudio = tracks.length > 0 || narration;
     const drawer = panel.querySelector('.audio-panel-drawer') as HTMLElement;
     const tracks: string[] = JSON.parse(panel.dataset.tracks || '[]');
     const narrationSrc = panel.dataset.narration || '';
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     // Drawer toggle
     let drawerOpen = false;
@@ -169,8 +171,7 @@ const hasAudio = tracks.length > 0 || narration;
       localStorage.setItem('archive_music_vol', String(v));
     });
 
-    // Auto-play on first interaction (browsers require a user gesture).
-    if (tracks.length > 0) {
+    if (tracks.length > 0 && !reducedMotion) {
       const startOnInteraction = () => {
         if (!musicPlaying) playMusic();
         document.removeEventListener('click', startOnInteraction);
@@ -245,8 +246,7 @@ const hasAudio = tracks.length > 0 || narration;
       localStorage.setItem('archive_narration_vol', String(v));
     });
 
-    // Auto-play narration 2 seconds after page load (requires prior user gesture)
-    if (narrationSrc && narrBtn) {
+    if (narrationSrc && narrBtn && !reducedMotion) {
       setTimeout(() => {
         if (!speechPlaying) {
           const audio = ensureNarration();
@@ -410,6 +410,12 @@ const hasAudio = tracks.length > 0 || narration;
     .audio-slider::-moz-range-thumb {
       background: var(--color-ink-dark, #e8e2d3);
       border-radius: 50%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .audio-panel-tab.is-playing {
+      animation: none;
     }
   }
 </style>
