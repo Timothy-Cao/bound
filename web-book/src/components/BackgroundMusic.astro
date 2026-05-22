@@ -17,10 +17,10 @@ const hasAudio = tracks.length > 0 || narration;
       {tracks.length > 0 && (
         <div class="audio-control">
           <div class="audio-control-row">
-            <button type="button" class="audio-btn music-btn" aria-label="Toggle ambient music">▶</button>
-            <span class="audio-control-label">AMBIENT</span>
+            <button type="button" class="audio-btn music-btn" aria-label="Toggle OST">▶</button>
+            <span class="audio-control-label">OST</span>
           </div>
-          <input type="range" class="audio-slider music-vol" min="0" max="100" value="50" aria-label="Ambient volume" />
+          <input type="range" class="audio-slider music-vol" min="0" max="100" value="25" aria-label="OST volume" />
         </div>
       )}
       {narration && (
@@ -102,19 +102,62 @@ const hasAudio = tracks.length > 0 || narration;
       else tab.classList.remove('is-playing');
     }
 
+    // Shared AudioContext so volume works on iOS (where HTMLAudioElement.volume
+    // is read-only). We route each <audio> through a GainNode.
+    let audioCtx: AudioContext | null = null;
+    function getCtx(): AudioContext | null {
+      try {
+        if (!audioCtx) {
+          const Ctx = (window as any).AudioContext || (window as any).webkitAudioContext;
+          if (!Ctx) return null;
+          audioCtx = new Ctx();
+        }
+        if (audioCtx && audioCtx.state === 'suspended') {
+          audioCtx.resume().catch(() => { /* ignore */ });
+        }
+        return audioCtx;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function wireGain(audio: HTMLAudioElement): GainNode | null {
+      const ctx = getCtx();
+      if (!ctx) return null;
+      try {
+        const src = ctx.createMediaElementSource(audio);
+        const gain = ctx.createGain();
+        src.connect(gain).connect(ctx.destination);
+        return gain;
+      } catch (e) {
+        return null;
+      }
+    }
+
     // --- Music ---
     const musicBtn = panel.querySelector('.music-btn') as HTMLButtonElement | null;
     const musicVol = panel.querySelector('.music-vol') as HTMLInputElement | null;
     let musicIndex = 0;
     let musicAudio: HTMLAudioElement | null = null;
+    let musicGain: GainNode | null = null;
 
     function musicVolume(sliderVal: number) { return (sliderVal / 100) * 0.5; }
+
+    function applyMusicVolume(sv: number) {
+      const v = musicVolume(sv);
+      if (musicGain) musicGain.gain.value = v;
+      if (musicAudio) {
+        try { musicAudio.volume = v; } catch (e) { /* iOS: read-only */ }
+      }
+    }
 
     function createMusic() {
       const audio = new Audio(tracks[musicIndex]);
       const saved = localStorage.getItem('archive_music_vol');
-      const sv = saved ? parseInt(saved) : 50;
-      audio.volume = musicVolume(sv);
+      const sv = saved ? parseInt(saved) : 25;
+      musicAudio = audio;
+      musicGain = wireGain(audio);
+      applyMusicVolume(sv);
       if (musicVol) musicVol.value = String(sv);
 
       // When one track ends, advance to the next in the chapter's playlist.
@@ -132,7 +175,6 @@ const hasAudio = tracks.length > 0 || narration;
         W.__archiveClearMusic(audio);
       });
 
-      musicAudio = audio;
       return audio;
     }
 
@@ -167,7 +209,7 @@ const hasAudio = tracks.length > 0 || narration;
 
     musicVol?.addEventListener('input', () => {
       const v = parseInt(musicVol.value);
-      if (musicAudio) musicAudio.volume = musicVolume(v);
+      applyMusicVolume(v);
       localStorage.setItem('archive_music_vol', String(v));
     });
 
@@ -187,6 +229,15 @@ const hasAudio = tracks.length > 0 || narration;
     const narrBtn = panel.querySelector('.narration-btn') as HTMLButtonElement | null;
     const narrVol = panel.querySelector('.narration-vol') as HTMLInputElement | null;
     let narrationAudio: HTMLAudioElement | null = null;
+    let narrationGain: GainNode | null = null;
+
+    function applyNarrationVolume(sv: number) {
+      const v = sv / 100;
+      if (narrationGain) narrationGain.gain.value = v;
+      if (narrationAudio) {
+        try { narrationAudio.volume = v; } catch (e) { /* iOS: read-only */ }
+      }
+    }
 
     function resetNarrationUI() {
       speechPlaying = false;
@@ -199,7 +250,9 @@ const hasAudio = tracks.length > 0 || narration;
       const audio = new Audio(narrationSrc);
       const saved = localStorage.getItem('archive_narration_vol');
       const sv = saved ? parseInt(saved) : 50;
-      audio.volume = sv / 100;
+      narrationAudio = audio;
+      narrationGain = wireGain(audio);
+      applyNarrationVolume(sv);
       if (narrVol) narrVol.value = String(sv);
 
       audio.addEventListener('ended', () => {
@@ -216,7 +269,6 @@ const hasAudio = tracks.length > 0 || narration;
         W.__archiveClearSpeech(audio);
       });
 
-      narrationAudio = audio;
       return audio;
     }
 
@@ -242,7 +294,7 @@ const hasAudio = tracks.length > 0 || narration;
 
     narrVol?.addEventListener('input', () => {
       const v = parseInt(narrVol.value);
-      if (narrationAudio) narrationAudio.volume = v / 100;
+      applyNarrationVolume(v);
       localStorage.setItem('archive_narration_vol', String(v));
     });
 
