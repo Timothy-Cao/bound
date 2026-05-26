@@ -30,6 +30,11 @@ const { title, description = 'A recovered archive.' } = Astro.props;
 
     <ConstructionBanner />
 
+    <nav class="legal-links" aria-label="Legal links">
+      <a href="/privacy">Privacy</a>
+      <a href="mailto:timcao.support@gmail.com">Contact</a>
+    </nav>
+
     <style>
       .page {
         max-width: 44rem;
@@ -43,6 +48,23 @@ const { title, description = 'A recovered archive.' } = Astro.props;
         .page {
           padding: 5rem 2rem 6rem;
         }
+      }
+      .legal-links {
+        position: fixed;
+        right: 0.75rem;
+        bottom: 0.5rem;
+        z-index: 20;
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+        background: color-mix(in srgb, Canvas 82%, transparent);
+        font-size: 0.68rem;
+        opacity: 0.72;
+        backdrop-filter: blur(8px);
+      }
+      .legal-links a {
+        color: inherit;
       }
     </style>
 
